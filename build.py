@@ -257,6 +257,20 @@ def src_concertinfo():
 FIXED_HOLIDAYS = {(1, d) for d in range(1, 9)} | {(2, 23), (3, 8), (5, 1), (5, 9), (6, 12), (11, 4)}
 
 
+HOLIDAY_FALLBACK_YEARS = []
+
+
+def apply_overrides(off, year):
+    """Ручные поправки из config.json: перенесённые выходные и рабочие субботы."""
+    for x in CONFIG.get("extra_days_off", []):
+        d = dt.date.fromisoformat(x)
+        if d.year == year:
+            off.add(d)
+    for x in CONFIG.get("extra_workdays", []):
+        off.discard(dt.date.fromisoformat(x))
+    return off
+
+
 def days_off_for_year(year):
     """Нерабочие дни года. Сначала пытаемся взять официальный производственный календарь
     (с переносами), иначе — выходные + фиксированные праздники."""
@@ -268,7 +282,7 @@ def days_off_for_year(year):
                 if "*" in tok:      # сокращённый рабочий день
                     continue
                 off.add(dt.date(year, m["month"], int(re.sub(r"\D", "", tok))))
-        return off, True
+        return apply_overrides(off, year), True
     except Exception as e:  # noqa
         log(f"  производственный календарь {year}: {e} — использую базовый")
         off = set()
@@ -277,7 +291,8 @@ def days_off_for_year(year):
             if d.weekday() >= 5 or (d.month, d.day) in FIXED_HOLIDAYS:
                 off.add(d)
             d += dt.timedelta(days=1)
-        return off, False
+        HOLIDAY_FALLBACK_YEARS.append(year)
+        return apply_overrides(off, year), False
 
 
 def src_holidays():
@@ -298,8 +313,8 @@ def src_holidays():
                 b += dt.timedelta(days=1)
             length = (b - a).days + 1
             holiday = (d.month, d.day) in FIXED_HOLIDAYS
-            if length >= 3 and a == d:
-                out.append({**ev(f"Длинные выходные ({length} дн.)", a, b, "", w["long_weekend_day"],
+            if length >= 3 and (a == d or d == TODAY):
+                out.append({**ev(f"Длинные выходные ({length} дн.)", max(a, TODAY), b, "", w["long_weekend_day"],
                                  "выходные", "holidays"), "per_day": True})
             if holiday:
                 out.append({**ev("Государственный праздник", d, d, "", w["holiday"], "праздник", "holidays"),
@@ -308,6 +323,13 @@ def src_holidays():
                 out.append({**ev("Выходной", d, d, "", w["weekend"], "выходные", "holidays"),
                             "per_day": True, "hidden": True})
         d += dt.timedelta(days=1)
+    # Особые даты (каждый год), например новогодняя ночь — config.json → special_days
+    for y in range(TODAY.year, end.year + 1):
+        for sd in CONFIG.get("special_days", []):
+            mth, day = map(int, sd["date"].split("-"))
+            d = dt.date(y, mth, day)
+            if TODAY <= d <= end:
+                out.append({**ev(sd["title"], d, d, "", sd["weight"], "праздник", "holidays"), "per_day": True})
     return out
 
 
@@ -374,6 +396,8 @@ def main():
             if name in ("crocus_expo", "kudago", "concertinfo"):
                 cache.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
             status[name] = {"ok": True, "count": len(items)}
+            if name == "holidays" and HOLIDAY_FALLBACK_YEARS:
+                status[name]["note"] = "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
             log(f"  {name}: {len(items)} событий")
         except Exception as e:  # noqa
             items = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else []
