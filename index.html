@@ -151,7 +151,7 @@ function peaks(){
   el.querySelectorAll(".peak").forEach(p => p.onclick = () => { const d=new Date(p.dataset.k+"T00:00"); cur=new Date(d.getFullYear(),d.getMonth(),1); showDay(p.dataset.k); });
 }
 
-fetch("data/events.json?"+Date.now()).then(r => r.json()).then(d => {
+fetch("events.json?"+Date.now()).then(r => r.json()).then(d => {
   DATA = d; d.events.forEach(e => EV[e.id] = e);
   document.getElementById("hotel").textContent = `${d.hotel.name} · м. ${d.hotel.metro} · обновлено ${d.generated_at.replace("T"," ")}`;
   const now = new Date(); cur = new Date(now.getFullYear(), now.getMonth(), 1);
