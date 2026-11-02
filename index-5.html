@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Календарь спроса · Москва</title>
+<style>
+  :root{
+    --bg:#f6f4ef; --card:#ffffff; --ink:#1f1d1a; --muted:#6f6a62; --line:#e4dfd5;
+    --low:#eef1ec; --low-ink:#4b5a48;
+    --mid:#f7dfa8; --mid-ink:#6b4a00;
+    --high:#e8846b; --high-ink:#ffffff;
+    --accent:#7a2e1f;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#161513; --card:#201f1c; --ink:#eeeae2; --muted:#a29c91; --line:#34322d;
+      --low:#262a25; --low-ink:#a9b8a5; --mid:#5c4612; --mid-ink:#f7dfa8; --high:#a8452f; --high-ink:#fff; --accent:#e8a08c; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:20px 16px 48px}
+  header h1{font-size:22px;margin:0 0 2px;font-weight:650;letter-spacing:-.01em}
+  header p{margin:0;color:var(--muted);font-size:13px}
+  .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:18px 0 10px}
+  .nav{display:flex;gap:6px;align-items:center}
+  .nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:6px 12px;font-size:15px;cursor:pointer}
+  .nav .m{min-width:150px;text-align:center;font-weight:600;text-transform:capitalize}
+  .legend{display:flex;gap:12px;font-size:12px;color:var(--muted)}
+  .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px}
+  .grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+  .dow{font-size:11px;color:var(--muted);text-align:center;padding:4px 0;text-transform:uppercase;letter-spacing:.04em}
+  .day{min-height:74px;border-radius:8px;padding:6px;background:var(--card);border:1px solid var(--line);cursor:pointer;position:relative;overflow:hidden}
+  .day.empty{background:transparent;border:none;cursor:default}
+  .day.past{opacity:.45}
+  .day.low{background:var(--low);color:var(--low-ink);border-color:transparent}
+  .day.medium{background:var(--mid);color:var(--mid-ink);border-color:transparent}
+  .day.high{background:var(--high);color:var(--high-ink);border-color:transparent}
+  .day.sel{outline:2px solid var(--ink);outline-offset:1px}
+  .day .n{font-weight:650;font-size:14px}
+  .day .s{position:absolute;right:6px;top:6px;font-size:11px;opacity:.75}
+  .day .t{font-size:11px;line-height:1.25;margin-top:4px;opacity:.9;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .day.wk .n{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:16px}
+  .panel h2{font-size:17px;margin:0 0 4px}
+  .panel .sub{color:var(--muted);font-size:13px;margin-bottom:10px}
+  .ev{padding:10px 0;border-top:1px solid var(--line)}
+  .ev:first-of-type{border-top:none}
+  .ev b{font-weight:600}
+  .ev a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+  .ev .meta{color:var(--muted);font-size:12.5px}
+  .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;background:var(--bg);border:1px solid var(--line);margin-right:6px}
+  .peaks{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-top:8px}
+  .peak{border-radius:10px;padding:10px;cursor:pointer}
+  .peak.high{background:var(--high);color:var(--high-ink)} .peak.medium{background:var(--mid);color:var(--mid-ink)}
+  .peak small{display:block;opacity:.85;font-size:12px}
+  footer{margin-top:24px;color:var(--muted);font-size:12px}
+  footer .bad{color:var(--accent)}
+  @media (max-width:600px){ .day{min-height:54px;padding:4px} .day .t{display:none} .day .s{font-size:10px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Календарь спроса · Москва</h1>
+    <p id="hotel">Загружаю данные…</p>
+  </header>
+
+  <div class="bar">
+    <div class="nav">
+      <button id="prev" aria-label="Предыдущий месяц">‹</button>
+      <div class="m" id="month"></div>
+      <button id="next" aria-label="Следующий месяц">›</button>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--low)"></i>низкий</span>
+      <span><i style="background:var(--mid)"></i>средний</span>
+      <span><i style="background:var(--high)"></i>высокий</span>
+    </div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="panel" id="detail" hidden></div>
+
+  <div class="panel">
+    <h2>Ближайшие пики спроса</h2>
+    <div class="sub">Дни со средним и высоким баллом на 90 дней вперёд</div>
+    <div class="peaks" id="peaks"></div>
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const MONTHS = ["январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"];
+const MONTHS_G = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
+const DOW = ["пн","вт","ср","чт","пт","сб","вс"];
+const LEVEL_RU = {low:"низкий", medium:"средний", high:"высокий"};
+const SRC_RU = {crocus_expo:"Крокус Экспо", kudago:"Афиша KudaGo", holidays:"Производственный календарь", manual:"Ручные события"};
+
+let DATA, EV = {}, cur, selected;
+const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const human = s => { const d = new Date(s+"T00:00"); return d.getDate()+" "+MONTHS_G[d.getMonth()]; };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const today = iso(new Date());
+
+function render(){
+  const y = cur.getFullYear(), m = cur.getMonth();
+  document.getElementById("month").textContent = MONTHS[m]+" "+y;
+  const g = document.getElementById("grid");
+  g.innerHTML = DOW.map(d => `<div class="dow">${d}</div>`).join("");
+  const first = new Date(y, m, 1), shift = (first.getDay()+6)%7;
+  for (let i=0;i<shift;i++) g.insertAdjacentHTML("beforeend", `<div class="day empty"></div>`);
+  const n = new Date(y, m+1, 0).getDate();
+  for (let d=1; d<=n; d++){
+    const date = new Date(y, m, d), k = iso(date), info = DATA.days[k];
+    const lvl = info ? info.level : "low";
+    const names = info ? info.events.map(id => EV[id]?.title).filter(Boolean) : [];
+    const cls = ["day", lvl, k<today?"past":"", date.getDay()%6===0?"wk":"", k===selected?"sel":""].join(" ");
+    g.insertAdjacentHTML("beforeend",
+      `<div class="${cls}" data-k="${k}"><div class="n">${d}</div>${info?`<div class="s">${info.score}</div>`:""}<div class="t">${esc(names.slice(0,2).join(" · "))}</div></div>`);
+  }
+  g.querySelectorAll(".day[data-k]").forEach(el => el.onclick = () => showDay(el.dataset.k));
+}
+
+function showDay(k){
+  selected = k; render();
+  const info = DATA.days[k] || {score:0, level:"low", events:[]};
+  const box = document.getElementById("detail");
+  const evs = info.events.map(id => EV[id]).filter(Boolean).sort((a,b)=>b.weight-a.weight);
+  box.hidden = false;
+  box.innerHTML = `<h2>${human(k)} — спрос ${LEVEL_RU[info.level]}</h2>
+    <div class="sub">Сумма: ${String(info.score).replace(".",",")} · пороги: средний от ${DATA.levels.medium}, высокий от ${DATA.levels.high}</div>
+    ${evs.length ? evs.map(e => `<div class="ev">
+        <span class="tag">${esc(e.category)}</span><b>${e.url?`<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`:esc(e.title)}</b>
+        <div class="meta">${human(e.start)}${e.end!==e.start?" — "+human(e.end):""}${e.venue?" · "+esc(e.venue):""}${e.km!=null?" · "+e.km+" км от отеля":""} · <b>+${String(e.weight).replace(".",",")}</b> к спросу${e.detail?" · "+esc(e.detail):""}</div>
+        ${e.start>k?`<div class="meta">↳ день заезда: событие начинается ${human(e.start)}</div>`:""}
+      </div>`).join("") : `<div class="ev meta">Крупных событий нет${info.score?" — балл даёт выходной день":""}.</div>`}`;
+  box.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function peaks(){
+  const until = iso(new Date(Date.now()+90*864e5));
+  const list = Object.entries(DATA.days).filter(([k,v]) => k>=today && k<=until && v.level!=="low");
+  const el = document.getElementById("peaks");
+  if (!list.length){ el.innerHTML = `<div class="sub">Пока пиков не видно.</div>`; return; }
+  el.innerHTML = list.map(([k,v]) => {
+    const top = v.events.map(id=>EV[id]).filter(Boolean).sort((a,b)=>b.weight-a.weight)[0];
+    return `<div class="peak ${v.level}" data-k="${k}"><b>${human(k)}</b> · ${v.score}<small>${esc(top?top.title:"выходные")}</small></div>`;
+  }).join("");
+  el.querySelectorAll(".peak").forEach(p => p.onclick = () => { const d=new Date(p.dataset.k+"T00:00"); cur=new Date(d.getFullYear(),d.getMonth(),1); showDay(p.dataset.k); });
+}
+
+fetch("events.json?"+Date.now()).then(r => r.json()).then(d => {
+  DATA = d; d.events.forEach(e => EV[e.id] = e);
+  document.getElementById("hotel").textContent = `${d.hotel.name} · м. ${d.hotel.metro} · обновлено ${d.generated_at.replace("T"," ")}`;
+  const now = new Date(); cur = new Date(now.getFullYear(), now.getMonth(), 1);
+  document.getElementById("prev").onclick = () => { cur = new Date(cur.getFullYear(), cur.getMonth()-1, 1); render(); };
+  document.getElementById("next").onclick = () => { cur = new Date(cur.getFullYear(), cur.getMonth()+1, 1); render(); };
+  render(); peaks();
+  document.getElementById("foot").innerHTML = "Источники: " + Object.entries(d.sources).map(([k,s]) =>
+    `<span class="${s.ok?"":"bad"}">${SRC_RU[k]||k} — ${s.count}${s.ok?"":" (сбой, показаны прошлые данные)"}</span>`).join(" · ");
+}).catch(err => { document.getElementById("hotel").textContent = "Не удалось загрузить events.json: " + err; });
+</script>
+</body>
+</html>

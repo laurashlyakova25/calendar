@@ -2,15 +2,15 @@
 """
 Сборщик календаря спроса для отеля.
 
-Запуск:  python collector/build.py            (обычный режим, ходит в интернет)
-         python collector/build.py --offline  (без интернета, только кэш и ручные события)
+Запуск:  python build.py            (обычный режим, ходит в интернет)
+         python build.py --offline  (без интернета, только кэш и ручные события)
 
 Что делает:
   1. Собирает события из источников (Крокус Экспо, KudaGo, производственный календарь,
-     ручной файл data/manual_events.csv).
-  2. Если источник не ответил, берёт его прошлые данные из data/cache_<источник>.json,
+     ручной файл manual_events.csv).
+  2. Если источник не ответил, берёт его прошлые данные из cache_<источник>.json,
      чтобы календарь не «пустел» из-за сбоя одного сайта.
-  3. Считает баллы спроса по дням и пишет data/events.json, который читает index.html.
+  3. Считает баллы спроса по дням и пишет events.json, который читает index.html.
 
 Только стандартная библиотека Python, ничего устанавливать не нужно.
 """
@@ -25,8 +25,8 @@ import sys
 import urllib.request
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT
 CONFIG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 OFFLINE = "--offline" in sys.argv
 TODAY = dt.date.today()
