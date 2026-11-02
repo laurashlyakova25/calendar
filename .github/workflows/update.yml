@@ -1,0 +1,34 @@
+name: Обновить календарь
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "manual_events.csv"
+      - "config.json"
+      - "build.py"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Собрать события
+        env:
+          TZ: Europe/Moscow
+        run: python build.py
+      - name: Сохранить результат
+        run: |
+          git config user.name "calendar-bot"
+          git config user.email "calendar-bot@users.noreply.github.com"
+          git add events.json cache_*.json
+          git diff --cached --quiet || git commit -m "Обновление календаря $(date +%F)"
+          git push
