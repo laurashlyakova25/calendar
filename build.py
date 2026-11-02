@@ -125,7 +125,7 @@ DATE_RANGE_RE = re.compile(
 
 def parse_crocus_lines(lines):
     """Разбирает текст страницы календаря Крокус Экспо.
-    На странице у каждой выставки: Название / Подзаголовок / «03 February 2026 — 06 February 2026» / ... / Location: Pavilion 1 Halls 3 / 4
+    На странице у каждой выставки: Название / Подзаголовок / «21 Января 2026 — 23 Января 2026» / ... / Павильон 3 Залы 13 / 14 / ... / Сайт: www.site.ru
     Выставки без точных дат (только «December») пропускаются."""
     out = []
     for i, ln in enumerate(lines):
@@ -142,17 +142,25 @@ def parse_crocus_lines(lines):
         # Если подзаголовка нет, строка i-2 может оказаться мусором — берём i-1.
         if DATE_RANGE_RE.search(title) or len(title) > 120:
             title, subtitle = subtitle, ""
-        halls = 1
-        for nxt in lines[i + 1:i + 25]:
+        halls, site = 1, ""
+        block = []
+        for nxt in lines[i + 1:i + 30]:
             if DATE_RANGE_RE.search(nxt):
                 break
-            if re.search(r"(?i)(pavilion|павильон)", nxt):
+            block.append(nxt)
+        for j, nxt in enumerate(block):
+            if halls == 1 and re.search(r"(?i)(pavilion|павильон)", nxt):
                 halls = max(1, len(re.findall(r"\d+", re.sub(r"(?i)(pavilions?|павильоны?)\s*[\d/ ]+", "", nxt))) or 1)
-                break
-        # Вес: малая выставка (1 зал) = 2, огромная (8+ залов) = 7
+            sm = re.match(r"(?i)\s*(сайт|website)\s*:?\s*(\S*)", nxt)
+            if sm and not site:
+                cand = sm.group(2) or (block[j + 1] if j + 1 < len(block) else "")
+                if re.match(r"^(https?://)?[\w.-]+\.[a-zа-я]{2,}", cand, re.I):
+                    site = cand if cand.startswith("http") else "https://" + cand
+        # Влияние: малая выставка (1 зал) = 2, огромная (6+ залов) = 7
         weight = min(7, 1 + halls)
         out.append(ev(title, start, end, "Крокус Экспо", weight, "выставка", "crocus_expo",
-                      url="https://www.crocus-expo.ru/exhibition/", detail=f"{subtitle} · залов: {halls}".strip(" ·")))
+                      url=site or "https://www.crocus-expo.ru/exhibition/",
+                      detail=f"{subtitle} · залов: {halls}".strip(" ·")))
     return out
 
 
@@ -165,7 +173,7 @@ def src_crocus_expo():
         d = (d + dt.timedelta(days=32)).replace(day=1)
     ok = 0
     for y, m in months:
-        url = f"https://eng.crocus-expo.ru/exhibition/?year={y}&month={m}"
+        url = f"https://www.crocus-expo.ru/exhibition/?year={y}&month={m:02d}"
         try:
             events += parse_crocus_lines(html_to_lines(fetch(url)))
             ok += 1
@@ -211,6 +219,39 @@ def src_kudago():
         url = data.get("next")
     log(f"  kudago: страниц {pages}")
     return out
+
+
+CONCERTINFO_ALT_RE = re.compile(r'alt="([^"]{2,200}?),\s*(\d{2})\.(\d{2})\.(\d{4})"')
+CONCERTINFO_GIG_RE = re.compile(r'href="(https://concertinfo\.ru/gig/\d+/?)"')
+
+
+def parse_concertinfo(page, venue_name):
+    """Страница площадки на concertinfo.ru. У обложки каждого концерта alt="Название, ДД.ММ.ГГГГ"."""
+    out, seen = [], set()
+    for m in CONCERTINFO_ALT_RE.finditer(page):
+        title = html.unescape(m.group(1)).strip()
+        d = dt.date(int(m.group(4)), int(m.group(3)), int(m.group(2)))
+        if d < TODAY or (title.lower(), d) in seen:
+            continue
+        seen.add((title.lower(), d))
+        links = CONCERTINFO_GIG_RE.findall(page[max(0, m.start() - 2000):m.start()])
+        venue = find_venue(venue_name) or {"weight": 2}
+        out.append(ev(title, d, d, venue_name, venue["weight"], "концерт/шоу", "concertinfo",
+                      url=links[-1] if links else "", detail=venue_name))
+    return out
+
+
+def src_concertinfo():
+    events, ok = [], 0
+    for pid, venue_name in CONFIG.get("concertinfo_places", {}).items():
+        try:
+            events += parse_concertinfo(fetch(f"https://concertinfo.ru/place/{pid}/"), venue_name)
+            ok += 1
+        except Exception as e:  # noqa
+            log(f"  concertinfo {venue_name}: {e}")
+    if ok == 0:
+        raise RuntimeError("concertinfo.ru не ответил")
+    return events
 
 
 FIXED_HOLIDAYS = {(1, d) for d in range(1, 9)} | {(2, 23), (3, 8), (5, 1), (5, 9), (6, 12), (11, 4)}
@@ -285,12 +326,13 @@ def src_manual():
                 log(f"  manual: пропускаю строку {row}: {err}")
                 continue
             out.append(ev(row["title"], s, e, row.get("venue", ""), w, row.get("category") or "событие",
-                          "manual", detail=row.get("note", "")))
+                          "manual", url=(row.get("url") or "").strip(), detail=row.get("note") or ""))
     return out
 
 
 SOURCES = {
     "crocus_expo": src_crocus_expo,
+    "concertinfo": src_concertinfo,
     "kudago": src_kudago,
     "holidays": src_holidays,
     "manual": src_manual,
@@ -329,7 +371,7 @@ def main():
         cache = DATA / f"cache_{name}.json"
         try:
             items = fn()
-            if name in ("crocus_expo", "kudago"):
+            if name in ("crocus_expo", "kudago", "concertinfo"):
                 cache.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
             status[name] = {"ok": True, "count": len(items)}
             log(f"  {name}: {len(items)} событий")
@@ -341,6 +383,10 @@ def main():
 
     # убираем прошедшие и дубли
     horizon = TODAY + dt.timedelta(days=CONFIG["horizon_days"])
+    # если событие на ту же дату и площадку есть в ручном файле, автоматическое не считаем второй раз
+    manual_keys = {(e["start"], e["venue"]) for e in all_events if e["source"] == "manual" and e["venue"]}
+    all_events = [e for e in all_events
+                  if not (e["source"] in ("concertinfo", "kudago") and (e["start"], e["venue"]) in manual_keys)]
     seen, events = set(), []
     for e in all_events:
         if dt.date.fromisoformat(e["end"]) < TODAY or dt.date.fromisoformat(e["start"]) > horizon:

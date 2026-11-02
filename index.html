@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Календарь спроса · Москва</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
   :root{
     --bg:#f6f4ef; --card:#ffffff; --ink:#1f1d1a; --muted:#6f6a62; --line:#e4dfd5;
@@ -48,6 +50,11 @@
   .ev b{font-weight:600}
   .ev a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
   .ev .meta{color:var(--muted);font-size:12.5px}
+  a.ev{display:block;color:inherit;text-decoration:none;border-radius:8px;margin:0 -8px;padding:10px 8px}
+  a.ev:hover{background:var(--bg)}
+  .ev-top{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .ev .go{margin-left:auto;font-size:12px;color:var(--accent);white-space:nowrap}
+  .ev .desc{font-size:13px;margin:2px 0 1px}
   .tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:99px;background:var(--bg);border:1px solid var(--line);margin-right:6px}
   .peaks{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-top:8px}
   .peak{border-radius:10px;padding:10px;cursor:pointer}
@@ -96,7 +103,7 @@ const MONTHS = ["январь","февраль","март","апрель","ма�
 const MONTHS_G = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"];
 const DOW = ["пн","вт","ср","чт","пт","сб","вс"];
 const LEVEL_RU = {low:"низкий", medium:"средний", high:"высокий"};
-const SRC_RU = {crocus_expo:"Крокус Экспо", kudago:"Афиша KudaGo", holidays:"Производственный календарь", manual:"Ручные события"};
+const SRC_RU = {crocus_expo:"Крокус Экспо", concertinfo:"Концерты на площадках", kudago:"Афиша KudaGo", holidays:"Производственный календарь", manual:"Ручные события"};
 
 let DATA, EV = {}, cur, selected;
 const iso = d => d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -131,11 +138,13 @@ function showDay(k){
   box.hidden = false;
   box.innerHTML = `<h2>${human(k)} — спрос ${LEVEL_RU[info.level]}</h2>
     <div class="sub">Сумма: ${String(info.score).replace(".",",")} · пороги: средний от ${DATA.levels.medium}, высокий от ${DATA.levels.high}</div>
-    ${evs.length ? evs.map(e => `<div class="ev">
-        <span class="tag">${esc(e.category)}</span><b>${e.url?`<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>`:esc(e.title)}</b>
-        <div class="meta">${human(e.start)}${e.end!==e.start?" — "+human(e.end):""}${e.venue?" · "+esc(e.venue):""}${e.km!=null?" · "+e.km+" км от отеля":""} · <b>+${String(e.weight).replace(".",",")}</b> к спросу${e.detail?" · "+esc(e.detail):""}</div>
-        ${e.start>k?`<div class="meta">↳ день заезда: событие начинается ${human(e.start)}</div>`:""}
-      </div>`).join("") : `<div class="ev meta">Крупных событий нет${info.score?" — балл даёт выходной день":""}.</div>`}`;
+    ${evs.length ? evs.map(e => {
+        const inner = `<div class="ev-top"><span class="tag">${esc(e.category)}</span><b>${esc(e.title)}</b>${e.url?`<span class="go">на сайт ↗</span>`:""}</div>
+        ${e.detail?`<div class="desc">${esc(e.detail)}</div>`:""}
+        <div class="meta">${human(e.start)}${e.end!==e.start?" — "+human(e.end):""}${e.venue?" · "+esc(e.venue):""}${e.km!=null?" · "+String(e.km).replace(".",",")+" км от отеля":""} · <b>+${String(e.weight).replace(".",",")}</b> к спросу</div>
+        ${e.start>k?`<div class="meta">↳ день заезда: событие начинается ${human(e.start)}</div>`:""}`;
+        return e.url ? `<a class="ev link" href="${esc(e.url)}" target="_blank" rel="noopener">${inner}</a>` : `<div class="ev">${inner}</div>`;
+      }).join("") : `<div class="ev meta">Крупных событий нет${info.score?" — балл даёт выходной день":""}.</div>`}`;
   box.scrollIntoView({behavior:"smooth", block:"nearest"});
 }
 

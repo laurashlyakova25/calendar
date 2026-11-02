@@ -3,52 +3,242 @@
     "name": "Chekhoff Hotel Moscow",
     "metro": "Пушкинская",
     "lat": 55.7655,
-    "lon": 37.6050
+    "lon": 37.605
   },
   "horizon_days": 400,
-
   "_comment_levels": "Пороги баллов для цвета дня. Подстройте после пары месяцев сравнения с реальной загрузкой.",
   "levels": {
     "medium": 4,
     "high": 9
   },
-
   "_comment_distance": "Множитель по расстоянию площадки от отеля (км). Первое подходящее правило.",
   "distance_factors": [
-    { "max_km": 3,   "factor": 1.5 },
-    { "max_km": 10,  "factor": 1.0 },
-    { "max_km": 999, "factor": 0.7 }
+    {
+      "max_km": 3,
+      "factor": 1.5
+    },
+    {
+      "max_km": 10,
+      "factor": 1.0
+    },
+    {
+      "max_km": 999,
+      "factor": 0.7
+    }
   ],
-
   "calendar_weights": {
     "weekend": 1,
     "holiday": 3,
     "long_weekend_day": 2
   },
-
   "sources": {
-    "crocus_expo": { "enabled": true },
-    "kudago": { "enabled": true, "max_pages": 30 },
-    "holidays": { "enabled": true },
-    "manual": { "enabled": true }
+    "crocus_expo": {
+      "enabled": true
+    },
+    "concertinfo": {
+      "enabled": true
+    },
+    "kudago": {
+      "enabled": false,
+      "_note": "KudaGo блокирует серверы GitHub (ошибка 403)"
+    },
+    "holidays": {
+      "enabled": true
+    },
+    "manual": {
+      "enabled": true
+    }
   },
-
   "_comment_venues": "Крупные площадки. aliases — как площадка может называться в афише. weight — насколько одно событие там поднимает спрос (1–7).",
   "venues": [
-    { "name": "Крокус Экспо", "aliases": ["крокус экспо", "crocus expo"], "lat": 55.8256, "lon": 37.3880, "weight": 3 },
-    { "name": "Крокус Сити Холл", "aliases": ["крокус сити холл", "crocus city hall"], "lat": 55.8255, "lon": 37.3900, "weight": 2 },
-    { "name": "Тимирязев Центр", "aliases": ["тимирязев центр", "timiryazev"], "lat": 55.8340, "lon": 37.5530, "weight": 3 },
-    { "name": "ВДНХ", "aliases": ["вднх", "vdnh"], "lat": 55.8263, "lon": 37.6377, "weight": 2 },
-    { "name": "Экспоцентр", "aliases": ["экспоцентр", "expocentre", "expocenter"], "lat": 55.7496, "lon": 37.5435, "weight": 3 },
-    { "name": "Гостиный двор", "aliases": ["гостиный двор"], "lat": 55.7542, "lon": 37.6268, "weight": 2 },
-    { "name": "Манеж", "aliases": ["манеж"], "lat": 55.7535, "lon": 37.6111, "weight": 1 },
-    { "name": "ВТБ Арена", "aliases": ["втб арена", "динамо"], "lat": 55.7914, "lon": 37.5596, "weight": 3 },
-    { "name": "Лужники", "aliases": ["лужники"], "lat": 55.7158, "lon": 37.5537, "weight": 4 },
-    { "name": "Лукойл Арена", "aliases": ["лукойл арена", "открытие арена", "спартак"], "lat": 55.8178, "lon": 37.4402, "weight": 3 },
-    { "name": "ЦСКА Арена", "aliases": ["цска арена"], "lat": 55.7912, "lon": 37.5306, "weight": 2 },
-    { "name": "Мегаспорт", "aliases": ["мегаспорт"], "lat": 55.7876, "lon": 37.5363, "weight": 2 },
-    { "name": "Live Арена", "aliases": ["live арена", "live arena"], "weight": 3 },
-    { "name": "Государственный Кремлёвский дворец", "aliases": ["кремлёвский дворец", "кремлевский дворец"], "lat": 55.7516, "lon": 37.6170, "weight": 1 },
-    { "name": "Зарядье", "aliases": ["зарядье"], "lat": 55.7506, "lon": 37.6290, "weight": 1 }
-  ]
+    {
+      "name": "Крокус Экспо",
+      "aliases": [
+        "крокус экспо",
+        "crocus expo"
+      ],
+      "lat": 55.8256,
+      "lon": 37.388,
+      "weight": 3
+    },
+    {
+      "name": "Крокус Сити Холл",
+      "aliases": [
+        "крокус сити холл",
+        "crocus city hall"
+      ],
+      "lat": 55.8255,
+      "lon": 37.39,
+      "weight": 2
+    },
+    {
+      "name": "Тимирязев Центр",
+      "aliases": [
+        "тимирязев центр",
+        "timiryazev"
+      ],
+      "lat": 55.834,
+      "lon": 37.553,
+      "weight": 3
+    },
+    {
+      "name": "ВДНХ",
+      "aliases": [
+        "вднх",
+        "vdnh"
+      ],
+      "lat": 55.8263,
+      "lon": 37.6377,
+      "weight": 2
+    },
+    {
+      "name": "Экспоцентр",
+      "aliases": [
+        "экспоцентр",
+        "expocentre",
+        "expocenter"
+      ],
+      "lat": 55.7496,
+      "lon": 37.5435,
+      "weight": 3
+    },
+    {
+      "name": "Гостиный двор",
+      "aliases": [
+        "гостиный двор"
+      ],
+      "lat": 55.7542,
+      "lon": 37.6268,
+      "weight": 2
+    },
+    {
+      "name": "Манеж",
+      "aliases": [
+        "манеж"
+      ],
+      "lat": 55.7535,
+      "lon": 37.6111,
+      "weight": 1
+    },
+    {
+      "name": "ВТБ Арена",
+      "aliases": [
+        "втб арена",
+        "динамо"
+      ],
+      "lat": 55.7914,
+      "lon": 37.5596,
+      "weight": 3
+    },
+    {
+      "name": "Лужники",
+      "aliases": [
+        "лужники"
+      ],
+      "lat": 55.7158,
+      "lon": 37.5537,
+      "weight": 4
+    },
+    {
+      "name": "Лукойл Арена",
+      "aliases": [
+        "лукойл арена",
+        "открытие арена",
+        "спартак"
+      ],
+      "lat": 55.8178,
+      "lon": 37.4402,
+      "weight": 3
+    },
+    {
+      "name": "ЦСКА Арена",
+      "aliases": [
+        "цска арена"
+      ],
+      "lat": 55.7912,
+      "lon": 37.5306,
+      "weight": 2
+    },
+    {
+      "name": "Мегаспорт",
+      "aliases": [
+        "мегаспорт"
+      ],
+      "lat": 55.7876,
+      "lon": 37.5363,
+      "weight": 2
+    },
+    {
+      "name": "Live Арена",
+      "aliases": [
+        "live арена",
+        "live arena"
+      ],
+      "weight": 3
+    },
+    {
+      "name": "Государственный Кремлёвский дворец",
+      "aliases": [
+        "кремлёвский дворец",
+        "кремлевский дворец"
+      ],
+      "lat": 55.7516,
+      "lon": 37.617,
+      "weight": 1
+    },
+    {
+      "name": "Зарядье",
+      "aliases": [
+        "зарядье"
+      ],
+      "lat": 55.7506,
+      "lon": 37.629,
+      "weight": 1
+    },
+    {
+      "name": "Vegas City Hall",
+      "aliases": [
+        "vegas city hall",
+        "вегас сити холл"
+      ],
+      "lat": 55.8261,
+      "lon": 37.3867,
+      "weight": 2
+    },
+    {
+      "name": "VK Stadium",
+      "aliases": [
+        "vk stadium",
+        "adrenaline",
+        "адреналин"
+      ],
+      "lat": 55.8075,
+      "lon": 37.5155,
+      "weight": 2
+    },
+    {
+      "name": "Национальный центр «Россия»",
+      "aliases": [
+        "национальный центр «россия»",
+        "национальный центр россия",
+        "нц «россия»"
+      ],
+      "lat": 55.752,
+      "lon": 37.553,
+      "weight": 3
+    }
+  ],
+  "_comment_concertinfo": "Площадки, чьи афиши собираются с concertinfo.ru: номер страницы площадки → название площадки из venues.",
+  "concertinfo_places": {
+    "171": "Лужники",
+    "226": "ВТБ Арена",
+    "767": "Live Арена",
+    "284": "Мегаспорт",
+    "242": "Vegas City Hall",
+    "225": "Крокус Сити Холл",
+    "228": "Государственный Кремлёвский дворец",
+    "323": "Зарядье",
+    "245": "Лукойл Арена",
+    "186": "VK Stadium"
+  }
 }
