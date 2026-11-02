@@ -1,7 +1,7 @@
 [
  {
-  "id": "fe856fd952",
-  "title": "National Veterinary Conference",
+  "id": "63ca979b0b",
+  "title": "Национальная Ветеринарная Конференция",
   "start": "2026-11-02",
   "end": "2026-11-04",
   "venue": "Крокус Экспо",
@@ -10,8 +10,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Exhibition and conference · залов: 2"
+  "url": "https://nvc.moscow",
+  "detail": "Выставка и конференция · залов: 2"
  },
  {
   "id": "ccff34d381",
@@ -24,8 +24,22 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition for housing, utilities and construction · залов: 1"
+  "url": "https://utilicon.ru",
+  "detail": "Международная выставка услуг, технологий и материалов для ЖКХ и строительства · залов: 1"
+ },
+ {
+  "id": "2b587dd4af",
+  "title": "Мир Климата",
+  "start": "2026-11-10",
+  "end": "2026-11-13",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://www.climatexpo.ru",
+  "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 1"
  },
  {
   "id": "8d93826f9c",
@@ -38,12 +52,12 @@
   "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Moscow International Tool Expo · залов: 5"
+  "url": "https://www.mitexpo.ru",
+  "detail": "Международная выставка инcтрумента, оборудования и технологий · залов: 5"
  },
  {
-  "id": "7d1e2be233",
-  "title": "Lift Expo. Moscow",
+  "id": "22299e1b17",
+  "title": "Лифт Экспо. Москва",
   "start": "2026-11-10",
   "end": "2026-11-12",
   "venue": "Крокус Экспо",
@@ -52,26 +66,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Exhibition of Lifts, Lifting Equipment and Components · залов: 1"
+  "url": "https://lift-expo.com",
+  "detail": "Международная выставка лифтов, подъемного оборудования и комплектующих · залов: 1"
  },
  {
-  "id": "c2a675e80f",
-  "title": "Climate Expo AUTUMN",
-  "start": "2026-11-10",
-  "end": "2026-11-13",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Exhibition of Heating, Ventilation, Air Conditioning and Refrigeration · залов: 1"
- },
- {
-  "id": "048c4ed095",
-  "title": "National dog show «Eurasia 2026»",
+  "id": "7418c087ea",
+  "title": "Выставки собак всех пород «Евразия 2026»",
   "start": "2026-11-14",
   "end": "2026-11-15",
   "venue": "Крокус Экспо",
@@ -80,12 +80,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "National dog show · залов: 2"
+  "url": "https://eurasia.rkf.org.ru",
+  "detail": "Национальная выставка собак · залов: 2"
  },
  {
-  "id": "0fd4be36e4",
-  "title": "BIOT 2026",
+  "id": "c9e010f936",
+  "title": "БИОТ 2026",
   "start": "2026-11-17",
   "end": "2026-11-20",
   "venue": "Крокус Экспо",
@@ -94,8 +94,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "XXX International Specialised Exhibition and Forum · залов: 2"
+  "url": "https://biot-expo.ru",
+  "detail": "30-я международная специализированная выставка-форум · залов: 2"
  },
  {
   "id": "5a909e6836",
@@ -108,12 +108,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "28th International exhibition of equipment and products for professional cleaning, sanitary, hygiene, dry-cleaning and laundry · залов: 1"
+  "url": "https://www.cleanexpo-moscow.ru",
+  "detail": "28-я международная выставка оборудования и средств для профессиональной уборки, санитарии, гигиены, химической чистки и стирки · залов: 1"
  },
  {
-  "id": "2b0710ea3c",
-  "title": "MEBEL-2026",
+  "id": "8397727ded",
+  "title": "МЕБЕЛЬ-2026",
   "start": "2026-11-23",
   "end": "2026-11-26",
   "venue": "Крокус Экспо",
@@ -122,8 +122,22 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "37th international exhibition for furniture, fittings and upholstery · залов: 3"
+  "url": "https://www.meb-expo.ru",
+  "detail": "37-я международная выставка «Мебель, фурнитура и обивочные материалы» · залов: 3"
+ },
+ {
+  "id": "914de62111",
+  "title": "Электроника России",
+  "start": "2026-11-24",
+  "end": "2026-11-26",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://www.rus-elektronika.ru",
+  "detail": "Международная выставка-форум · залов: 1"
  },
  {
   "id": "426ae71721",
@@ -136,22 +150,8 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "28th International exhibition of equipment, raw materials and technologies for pharmaceutical manufacturing · залов: 3"
- },
- {
-  "id": "7bffbdfa18",
-  "title": "Electronica Russia",
-  "start": "2026-11-24",
-  "end": "2026-11-26",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition and forum · залов: 1"
+  "url": "https://pharmtech-expo.ru",
+  "detail": "28-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 3"
  },
  {
   "id": "b5f02b3af1",
@@ -164,12 +164,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "20th Annual International Exhibition of Equipment, Materials and Components for the Woodworking and Furniture Industries · залов: 2"
+  "url": "https://woodexpo.ru",
+  "detail": "20-я ежегодная Международная выставка оборудования, материалов и комплектующих для деревообрабатывающей и мебельной промышленности · залов: 2"
  },
  {
-  "id": "6287c1c422",
-  "title": "«Russian Healthcare Week\": Zdravookhraneniye, Healthy Lifestyle, MedTravelExpo. Clinics, Health and SPA resorts",
+  "id": "2d22b2e4a4",
+  "title": "Международные выставки медицинской техники, изделий медицинского назначения, расходных материалов, средств реабилитации и профилактики, эстетической медицины, фармацевтики, медицинских и оздоровительных услуг, технологий оздоровления и лечения в России и за рубежом",
   "start": "2026-12-07",
   "end": "2026-12-10",
   "venue": "Крокус Экспо",
@@ -178,12 +178,12 @@
   "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibitions of Medical Engineering, Products and Consumables. Rehabilitation and Preventive Treatment facilities, Medical aesthetics, Pharmaceuticals, Medical and Wellness Services, Health Improvements and medical Treatment · залов: 5"
+  "url": "https://www.zdravo-expo.ru",
+  "detail": "залов: 5"
  },
  {
-  "id": "63bb74502e",
-  "title": "XXX Russian Cancer Congresswith international participation",
+  "id": "de9a3314c3",
+  "title": "XXX Российский онкологический конгресс с международным участием",
   "start": "2026-12-10",
   "end": "2026-12-12",
   "venue": "Крокус Экспо",
@@ -192,22 +192,22 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Exhibition and conference · залов: 2"
+  "url": "https://rosoncoweb.ru",
+  "detail": "Выставка и конференция · залов: 2"
  },
  {
-  "id": "326401afeb",
-  "title": "AGRAVIA",
+  "id": "31cef5768d",
+  "title": "AGRAVIA (АГРАВИЯ)",
   "start": "2027-01-20",
   "end": "2027-01-22",
   "venue": "Крокус Экспо",
   "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
+  "base_weight": 6,
+  "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Russia’s Premier Trade Fair for Production & Processing Technologies in Agriculture, Horticulture, Livestock and Poultry · залов: 1"
+  "detail": "Международная выставка технологий производства и переработки для профессионалов АПК · залов: 5"
  },
  {
   "id": "44a318e50d",
@@ -216,12 +216,12 @@
   "end": "2027-01-22",
   "venue": "Крокус Экспо",
   "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
+  "base_weight": 6,
+  "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade-Show of Agri-Tech Innovations and Smart Farming Solutions · залов: 1"
+  "detail": "Международная выставка инноваций и высоких технологий для агропромышленного комплекса · залов: 5"
  },
  {
   "id": "82df427d29",
@@ -234,12 +234,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "25th Anniversary exhibition of equipment and technologies for milk and food processing · залов: 1"
+  "url": "https://dairytech-expo.ru",
+  "detail": "25-я Юбилейная международная выставка оборудования и технологий для молочной и пищевой промышленности · залов: 1"
  },
  {
   "id": "0fb2a2b280",
-  "title": "PROMEDIATECH",
+  "title": "ProMediaTech",
   "start": "2027-01-27",
   "end": "2027-01-28",
   "venue": "Крокус Экспо",
@@ -248,8 +248,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition of exhibition and event service, marketing and advertising · залов: 1"
+  "url": "https://www.pmtf.ru",
+  "detail": "Международная выставка выставочного и ивент-сервиса, маркетинга и рекламы · залов: 1"
  },
  {
   "id": "32fa595166",
@@ -262,8 +262,8 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "5th International Exhibition of Equipment, Technologies and Services for Ventilation, Air Conditioning and Refrigeration of Domestic, Industrial and Commercial Facilities · залов: 3"
+  "url": "https://airventmoscow.ru",
+  "detail": "5-я международная выставка оборудования, технологий и услуг для вентиляции, кондиционирования и холодоснабжения бытовых, промышленных и коммерческих объектов · залов: 3"
  },
  {
   "id": "5946aca70a",
@@ -276,12 +276,12 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "31st International Exhibition for domestic and industrial heating, water supply, engineering and plumbing systems, equipment for swimming pools, saunas and spas · залов: 3"
+  "url": "https://aquaflame-expo.ru",
+  "detail": "31-я международная выставка бытового и промышленного оборудования для отопления, водоснабжения, инженерно-сантехнических систем, бассейнов, саун и спа · залов: 3"
  },
  {
-  "id": "8ac7711e30",
-  "title": "NAIS",
+  "id": "970a642282",
+  "title": "ДРОНТЕХ",
   "start": "2027-02-10",
   "end": "2027-02-11",
   "venue": "Крокус Экспо",
@@ -290,12 +290,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "14th National Aviation Infrastructure Show · залов: 1"
+  "url": "https://dronetech-expo.ru",
+  "detail": "Выставка беспилотных, автономных и робототехнических комплексов · залов: 1"
  },
  {
-  "id": "a7dd9f2550",
-  "title": "DRONETECH",
+  "id": "f98493a9b5",
+  "title": "НАИС",
   "start": "2027-02-10",
   "end": "2027-02-11",
   "venue": "Крокус Экспо",
@@ -304,12 +304,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Exhibition of Unmanned, Autonomous & Robotic Systems · залов: 1"
+  "url": "https://www.naisrussia.ru",
+  "detail": "14-й Национальный авиационный инфраструктурный салон · залов: 1"
  },
  {
-  "id": "21f8f26382",
-  "title": "MOSCOW INTERNATIONAL OPTICAL FAIR (MIOF)",
+  "id": "fff5b184e1",
+  "title": "МОСКОВСКАЯ МЕЖДУНАРОДНАЯ ОПТИЧЕСКАЯ ВЫСТАВКА (MIOF)",
   "start": "2027-02-16",
   "end": "2027-02-18",
   "venue": "Крокус Экспо",
@@ -318,12 +318,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International specialized exhibition · залов: 1"
+  "url": "https://www.optica-expo.ru",
+  "detail": "Международная специализированная выставка · залов: 1"
  },
  {
-  "id": "d4494f5e81",
-  "title": "DIGITAL TECHNOLOGIES AND SECURITY (TB Forum)",
+  "id": "2780fd6ffa",
+  "title": "Технологии и безопасность (ТБ Форум)",
   "start": "2027-02-17",
   "end": "2027-02-19",
   "venue": "Крокус Экспо",
@@ -332,8 +332,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "XXXII International forum · залов: 1"
+  "url": "https://www.tbforum.ru",
+  "detail": "32-й международный форум · залов: 1"
  },
  {
   "id": "e99926e462",
@@ -346,12 +346,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Exhibition of furniture, Interior Solutions and Art · залов: 4"
+  "url": "https://artdom-design.ru",
+  "detail": "Международная выставка мебели, интерьерных решений и исскуства · залов: 4"
  },
  {
-  "id": "fee97c757e",
-  "title": "HUNTING AND FISHING WORLD",
+  "id": "2db16609be",
+  "title": "МИР Охоты и Рыбалки",
   "start": "2027-02-19",
   "end": "2027-02-22",
   "venue": "Крокус Экспо",
@@ -360,12 +360,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "INTERNATIONAL EXHIBITION · залов: 2"
+  "url": "https://www.huntfishexpo.ru",
+  "detail": "Международная выставка · залов: 2"
  },
  {
-  "id": "72f0aa57a6",
-  "title": "MOSCOW BOAT SHOW",
+  "id": "4f9651e01f",
+  "title": "Московское Боут Шоу",
   "start": "2027-02-19",
   "end": "2027-02-22",
   "venue": "Крокус Экспо",
@@ -374,12 +374,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "20th International exhibition of boats and yachts · залов: 2"
+  "url": "https://www.mosboatshow.ru",
+  "detail": "20-я международная выставка катеров и яхт · залов: 2"
  },
  {
-  "id": "106758e372",
-  "title": "PRODEXPO-2027",
+  "id": "d6a92f2f0c",
+  "title": "ПРОДЭКСПО-2027",
   "start": "2027-03-01",
   "end": "2027-03-04",
   "venue": "Крокус Экспо",
@@ -388,12 +388,12 @@
   "weight": 4.9,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "34rd International Exhibition for Food, Beverages and Food Raw Materials · залов: 11"
+  "url": "https://www.prod-expo.ru",
+  "detail": "34-я международная выставка продуктов питания, напитков и сырья для их производства · залов: 11"
  },
  {
-  "id": "b448a2f7a1",
-  "title": "TEXTILLEGPRОM",
+  "id": "be576d3e46",
+  "title": "Текстильлегпром",
   "start": "2027-03-10",
   "end": "2027-03-12",
   "venue": "Крокус Экспо",
@@ -402,8 +402,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "67th International exhibition of textile and light industry · залов: 1"
+  "url": "https://www.textilexpo.ru",
+  "detail": "67-я международная выставка текстильной и легкой промышленности · залов: 1"
  },
  {
   "id": "3db150ce06",
@@ -416,8 +416,8 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "6-th Special Exposition for Warehouse and Handling Equipment, Automation Systems and Solutions · залов: 3"
+  "url": "https://transrussia.ru",
+  "detail": "6-я Специальная экспозиция складской техники, систем хранения, погрузо-разгрузочного оборудования и средств автоматизации склада · залов: 3"
  },
  {
   "id": "d5070b1797",
@@ -430,12 +430,12 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "31th International exhibition for transport and logistics services, warehouse equipment and technologies · залов: 3"
+  "url": "https://transrussia.ru",
+  "detail": "31-я международная выставка транспортно-логистических услуг, складского оборудования и технологий · залов: 3"
  },
  {
-  "id": "c7b6167e03",
-  "title": "Resources for Growth. Chemistry for life: State and Business",
+  "id": "db6545d151",
+  "title": "Игрушка Маркет 2027",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -444,12 +444,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Industrial Forum · залов: 1"
+  "url": "https://igrushka-market.ru",
+  "detail": "Международная B2B-выставка · залов: 1"
  },
  {
-  "id": "45ac08e8c1",
-  "title": "Igrushka Market 2027",
+  "id": "5c1e0a3362",
+  "title": "Ресурсы роста. Химия для жизни: государство и бизнес",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -458,8 +458,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International B2B exhibition · залов: 1"
+  "url": "https://форумресурсыроста.рф",
+  "detail": "Международный промышленный форум · залов: 1"
  },
  {
   "id": "a333eb078f",
@@ -472,8 +472,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International specialized exposition of equipment, raw materials, ingredients and packaging for cosmetics, perfumery and household detergents manufacturing · залов: 1"
+  "url": "https://chemicos.ru",
+  "detail": "Международная специализированная выставка оборудования, химического сырья, ингредиентов и упаковочных решений для организации полного цикла производства готовой продукции из мало- и среднетоннажной химии · залов: 1"
  },
  {
   "id": "62d32d01c3",
@@ -486,12 +486,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "12th international specialized exhibition of professional and household chemicals for retail chains and marketplaces · залов: 1"
+  "url": "https://chemicos.ru",
+  "detail": "12-я международная специализированная выставка готовой продукции из мало- и среднетоннажной химии для торговых сетей и маркетплейсов · залов: 1"
  },
  {
-  "id": "9f09d0d592",
-  "title": "ITF-2027. Spring",
+  "id": "04802261eb",
+  "title": "ITF-2027. Весна",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -500,12 +500,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "21st International Textile Fair · залов: 1"
+  "url": "https://itfshow.ru",
+  "detail": "21-я международная текстильная выставка · залов: 1"
  },
  {
-  "id": "3abe305795",
-  "title": "POLYURETHANEX 2027",
+  "id": "6aea3d9c9c",
+  "title": "КОМПОЗИТ-ЭКСПО 2027",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -515,11 +515,11 @@
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "18th International specialized exhibition on on raw materials, equipment and technologies for polyurethane producing · залов: 2"
+  "detail": "19-я международная выставка: композитные материалы, технологии производства композитов, оборудование, изделия из композиционных материалов · залов: 2"
  },
  {
-  "id": "4d377e0750",
-  "title": "COMPOSITE-EXPO 2027",
+  "id": "6542becfe0",
+  "title": "Инновационные материалы и технологии",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -529,11 +529,25 @@
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "19th International specialized exhibition on raw materials, equipment and technologies for composites' producing · залов: 2"
+  "detail": "Международный Форум · залов: 2"
  },
  {
-  "id": "76e5d42c9e",
-  "title": "HouseHold Expo Spring 2027",
+  "id": "90a76c2ba9",
+  "title": "ПОЛИУРЕТАНЭКС 2027",
+  "start": "2027-03-16",
+  "end": "2027-03-18",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 3,
+  "weight": 2.1,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://www.crocus-expo.ru/exhibition/",
+  "detail": "18-я международная выставка: полиуретан, полиуретановые материалы, технологии производства полиуретанов, сферы использования · залов: 2"
+ },
+ {
+  "id": "c58ee6ba72",
+  "title": "HouseHold Expo Весна 2027",
   "start": "2027-03-16",
   "end": "2027-03-18",
   "venue": "Крокус Экспо",
@@ -542,8 +556,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "38th International B2B exhibition of household goods and supplies · залов: 1"
+  "url": "https://hhexpo.ru",
+  "detail": "38-я международная В2В выставка товаров для дома · залов: 1"
  },
  {
   "id": "4feb44489f",
@@ -556,12 +570,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International B2B-exhibition · залов: 1"
+  "url": "https://christmasbox.ru",
+  "detail": "Международная B2B-выставка · залов: 1"
  },
  {
-  "id": "63edb8a42e",
-  "title": "R-BEAUTY by InterCHARM 2027",
+  "id": "250f06bf92",
+  "title": "R-BEAUTY от InterCHARM 2027",
   "start": "2027-03-23",
   "end": "2027-03-25",
   "venue": "Крокус Экспо",
@@ -570,8 +584,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Off-season perfumery and cosmetics exhibition for Russian brands and manufacturers. · залов: 1"
+  "url": "https://rbeautyexpo.ru",
+  "detail": "Межсезонная парфюмерно-косметическая выставка для российских брендов и производителей · залов: 1"
  },
  {
   "id": "440ba85b20",
@@ -584,8 +598,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Convention of Specialists in Cosmetology and Aesthetic Medicine · залов: 1"
+  "url": "https://beaunity-expo.ru",
+  "detail": "Международная конвенция специалистов в области косметологии и эстетической медицины · залов: 1"
  },
  {
   "id": "ed7bee4312",
@@ -598,12 +612,12 @@
   "weight": 4.9,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Building and Interiors Trade Show · залов: 9"
+  "url": "https://www.mosbuild.com",
+  "detail": "Международная специализированная выставка · залов: 9"
  },
  {
-  "id": "bd668a12f6",
-  "title": "NEFTEGAZ 2027",
+  "id": "2e0d43b458",
+  "title": "НЕФТЕГАЗ-2027",
   "start": "2027-04-12",
   "end": "2027-04-15",
   "venue": "Крокус Экспо",
@@ -613,11 +627,11 @@
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "26 International Exhibition for Equipment and Technologies for Oil and Gas Industries · залов: 1"
+  "detail": "26-я международная выставка «Оборудование и технологии для нефтегазового комплекса» · залов: 1"
  },
  {
-  "id": "bfa64e569d",
-  "title": "TIRES & RUBBER 2027",
+  "id": "601c9ca109",
+  "title": "ШИНЫ, РТИ И КАУЧУКИ-2027",
   "start": "2027-04-12",
   "end": "2027-04-15",
   "venue": "Крокус Экспо",
@@ -626,22 +640,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "29th international exhibition for rubber goods, tires, their production, raw materials and equipment · залов: 2"
- },
- {
-  "id": "6de120603a",
-  "title": "SobMaExpo",
-  "start": "2027-04-13",
-  "end": "2027-04-14",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "14th International Exhibition for Contract Manufacturing and Private Label Market · залов: 1"
+  "url": "https://www.rubber-expo.ru",
+  "detail": "29-я международная специализированная выставка резинотехнических изделий, шин, технологий для их производства, сырья и оборудования · залов: 2"
  },
  {
   "id": "052e3f6680",
@@ -654,36 +654,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "29th International electronics exhibition · залов: 2"
- },
- {
-  "id": "4396f87a66",
-  "title": "MITT",
-  "start": "2027-04-13",
-  "end": "2027-04-15",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Travel & Hospitality Show · залов: 1"
- },
- {
-  "id": "d892a8ca90",
-  "title": "Retail Hub 2027",
-  "start": "2027-04-13",
-  "end": "2027-04-15",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Exhibition of technology and equipment for retail and HoReCa · залов: 1"
+  "url": "https://expoelectronica.ru",
+  "detail": "29-я международная выставка электроники · залов: 2"
  },
  {
   "id": "e02fba8dc5",
@@ -696,8 +668,50 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition for commercial real estate and retail · залов: 1"
+  "url": "https://www.natmall.ru",
+  "detail": "23-я выставка по развитию коммерческой недвижимости и масштабированию ритейла, точек питания, индустрии развлечений и сферы услуг · залов: 1"
+ },
+ {
+  "id": "6de120603a",
+  "title": "SobMaExpo",
+  "start": "2027-04-13",
+  "end": "2027-04-14",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://sobmaexpo.ru",
+  "detail": "14-я международная выставка контрактного производства и товаров, реализуемых под собственной торговой маркой · залов: 1"
+ },
+ {
+  "id": "4396f87a66",
+  "title": "MITT",
+  "start": "2027-04-13",
+  "end": "2027-04-15",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://mitt.ru",
+  "detail": "Международная выставка туризма и индустрии гостеприимства · залов: 1"
+ },
+ {
+  "id": "d892a8ca90",
+  "title": "Retail Hub 2027",
+  "start": "2027-04-13",
+  "end": "2027-04-15",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://natmall.ru",
+  "detail": "5-я cпециализированная выставка технологий, оборудования и решений для ритейла и сферы HoReCa · залов: 1"
  },
  {
   "id": "89f7b94547",
@@ -710,8 +724,22 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 29th International Exhibition of Ingredients, Raw Materials and Equipment for their Production · залов: 1"
+  "url": "https://new.ingred.ru",
+  "detail": "29-я международная выставка ингредиентов, сырья и оборудования для их производства · залов: 1"
+ },
+ {
+  "id": "22059c7aa5",
+  "title": "Аналитика Экспо",
+  "start": "2027-04-21",
+  "end": "2027-04-23",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 2,
+  "weight": 1.4,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://analitikaexpo.com",
+  "detail": "25-я международная выставка лабораторного оборудования и химических реактивов · залов: 1"
  },
  {
   "id": "1daffde82d",
@@ -724,26 +752,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "32nd Edition of the Leading B2B Exhibition for Security & Fire Protection · залов: 1"
+  "url": "https://securika-moscow.ru",
+  "detail": "32-я международная выставка технических средств охраны и оборудования для обеспечения безопасности и противопожарной защиты · залов: 1"
  },
  {
-  "id": "0880c07dad",
-  "title": "Analitika Expo",
-  "start": "2027-04-21",
-  "end": "2027-04-23",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "25th International exhibition of laboratory equipment and chemical reagents · залов: 1"
- },
- {
-  "id": "13f126ae4a",
-  "title": "DENTAL SALON 2027",
+  "id": "7441774130",
+  "title": "ДЕНТАЛ САЛОН 2027",
   "start": "2027-04-26",
   "end": "2027-04-29",
   "venue": "Крокус Экспо",
@@ -752,8 +766,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "61th Moscow international dental forum and exhibition · залов: 2"
+  "url": "https://dental-expo.com",
+  "detail": "61-й Московский международный стоматологический форум и выставка · залов: 2"
  },
  {
   "id": "90c524de3d",
@@ -766,12 +780,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "31st international exhibition of machines and equipment for mining, processing and transportation of minerals · залов: 4"
+  "url": "https://www.miningworld.ru",
+  "detail": "31-я международная выставка машин и оборудованя для добычи, обогащения и транспортрировки полезных ископаемых · залов: 4"
  },
  {
-  "id": "d376ed9cbf",
-  "title": "Metalloobrabotka-2027",
+  "id": "d94fddc647",
+  "title": "Металлообработка-2027",
   "start": "2027-05-11",
   "end": "2027-05-14",
   "venue": "Крокус Экспо",
@@ -780,12 +794,12 @@
   "weight": 4.9,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "27th International Exhibition for equipment, instruments and tools for the metalworking Industry · залов: 10"
+  "url": "https://www.metobr-expo.ru",
+  "detail": "27-я международная специализированная выставка оборудования, приборов и инструментов для металлообрабатывающей промышленности · залов: 10"
  },
  {
-  "id": "12b9fa7e72",
-  "title": "Logistika Expo",
+  "id": "7b3540172d",
+  "title": "Логистика Экспо",
   "start": "2027-05-25",
   "end": "2027-05-28",
   "venue": "Крокус Экспо",
@@ -794,12 +808,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade Fair for Logistics, Transport, Warehousing Technologies and Equipment · залов: 4"
+  "url": "https://logistika-expo.ru",
+  "detail": "Международная выставка логистики, транспорта, складской техники и оборудования · залов: 4"
  },
  {
-  "id": "8452727b29",
-  "title": "CTO Expo",
+  "id": "6704716275",
+  "title": "СТО Expo",
   "start": "2027-05-25",
   "end": "2027-05-28",
   "venue": "Крокус Экспо",
@@ -808,8 +822,8 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade Fair for Spare Parts, Automotive Aftersales Market and Service · залов: 4"
+  "url": "https://www.cto-expo.ru",
+  "detail": "Международная выставка запчастей, послепродажного обслуживания и сервиса · залов: 4"
  },
  {
   "id": "28396bfcf8",
@@ -822,12 +836,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade Fair for Commercial Vehicles and Technologies · залов: 4"
+  "url": "https://comvex.ru",
+  "detail": "Международная выставка коммерческого транспорта и технологий · залов: 4"
  },
  {
-  "id": "bfb997870f",
-  "title": "CTT Expo",
+  "id": "9ed614f36f",
+  "title": "СТТ Expo",
   "start": "2027-05-25",
   "end": "2027-05-28",
   "venue": "Крокус Экспо",
@@ -836,12 +850,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade Fair for Construction Equipment and Technologies · залов: 4"
+  "url": "https://www.ctt-expo.ru",
+  "detail": "Главная выставка строительной техники и технологий в России · залов: 4"
  },
  {
-  "id": "660efb9017",
-  "title": "ELEKTRO",
+  "id": "1ab971b9cb",
+  "title": "ЭЛЕКТРО",
   "start": "2027-06-08",
   "end": "2027-06-10",
   "venue": "Крокус Экспо",
@@ -850,8 +864,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "35th International Exhibition for Electrical Equipment, Lighting Engineering, Building Automation · залов: 2"
+  "url": "https://www.elektro-expo.ru",
+  "detail": "35-я международная выставка «Электрооборудование. Светотехника. Автоматизация зданий и сооружений» · залов: 2"
  },
  {
   "id": "c053b4a61b",
@@ -864,12 +878,12 @@
   "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "31st International exhibition for the packaging industry · залов: 5"
+  "url": "https://rosupack.com",
+  "detail": "31-я международная выставка упаковочной индустрии · залов: 5"
  },
  {
-  "id": "1d30961536",
-  "title": "STONE INDUSTRY",
+  "id": "5e19961820",
+  "title": "ИНДУСТРИЯ КАМНЯ",
   "start": "2027-06-22",
   "end": "2027-06-24",
   "venue": "Крокус Экспо",
@@ -878,12 +892,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition for natural stone quarrying, processing and application · залов: 1"
+  "url": "https://www.stonefair.ru",
+  "detail": "Международная выставка в области добычи, обработки и применения натурального камня · залов: 1"
  },
  {
-  "id": "6f1b80936d",
-  "title": "AutoBusExpo",
+  "id": "eb53277db9",
+  "title": "АвтобусЭкспо",
   "start": "2027-08-17",
   "end": "2027-08-20",
   "venue": "Крокус Экспо",
@@ -892,8 +906,8 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Bus & Coach Exhibition · залов: 4"
+  "url": "https://autobus-expo.ru",
+  "detail": "Международный автобусный салон · залов: 4"
  },
  {
   "id": "0ed4d4bf21",
@@ -906,12 +920,12 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Large-scale Test drive of commercial Vehicles · залов: 4"
+  "url": "https://comautotrans.moscow",
+  "detail": "Большой тест-драйв коммерческого транспорта · залов: 4"
  },
  {
-  "id": "e3a2d920b7",
-  "title": "InterAutoMechanica",
+  "id": "bc09738d90",
+  "title": "ИнтерАвтоМеханика",
   "start": "2027-08-17",
   "end": "2027-08-20",
   "venue": "Крокус Экспо",
@@ -920,8 +934,8 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Trade Fair for Automotive Industry · залов: 4"
+  "url": "https://interauto-mechanica.ru",
+  "detail": "Международная выставка автомобильной индустрии · залов: 4"
  },
  {
   "id": "3cb7aedd9b",
@@ -934,12 +948,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 42st International exhibition for promotional products and advertising technologies · залов: 1"
+  "url": "https://ipsa.ru",
+  "detail": "42-я международная выставка промопродукции, мерча, оборудования и технологий для рекламы · залов: 1"
  },
  {
-  "id": "cc4ffd0508",
-  "title": "FlowersExpo",
+  "id": "fb39367c3b",
+  "title": "ЦветыЭкспо",
   "start": "2027-09-06",
   "end": "2027-09-08",
   "venue": "Крокус Экспо",
@@ -948,12 +962,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The International Exhibition on Floruculture & Green Industry · залов: 2"
+  "url": "https://www.flowers-expo.ru",
+  "detail": "Международная выставка цветов, растений, техники и технологий для цветоводства и ландшафтного дизайна · залов: 2"
  },
  {
-  "id": "ba612d40c5",
-  "title": "WasteTech 2027",
+  "id": "c7ba088298",
+  "title": "ЭКВАТЭК 2027",
   "start": "2027-09-07",
   "end": "2027-09-09",
   "venue": "Крокус Экспо",
@@ -962,12 +976,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition for waste management, recycling and ecology · залов: 1"
+  "url": "https://www.ecwatech.ru",
+  "detail": "Международная выставка технологий и оборудования для коммунальной и промышленной водоподготовки, водоснабжения, водоотведения, очистки сточных вод, инженерных систем и насосного оборудования · залов: 1"
  },
  {
-  "id": "0d46cf0d32",
-  "title": "ECWATECH 2027",
+  "id": "42597d98d6",
+  "title": "ВэйстТэк 2027",
   "start": "2027-09-07",
   "end": "2027-09-09",
   "venue": "Крокус Экспо",
@@ -976,12 +990,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition of technologies and equipment for municipal and industrial water treatment, water supply, sewage, wastewater treatment, engineering systems and pumping equipment · залов: 1"
+  "url": "https://www.waste-tech.ru",
+  "detail": "Международная выставка по обращению с коммунальными, промышленными, строительными, сельскохозяйственными отходами, рециклингу и экологии · залов: 1"
  },
  {
-  "id": "be8fc386cd",
-  "title": "HouseHold Expo Autumn 2027",
+  "id": "fd04c04ac4",
+  "title": "HouseHold Expo Осень 2027",
   "start": "2027-09-07",
   "end": "2027-09-09",
   "venue": "Крокус Экспо",
@@ -990,8 +1004,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "39th International B2B exhibition of household goods and supplies · залов: 2"
+  "url": "https://hhexpo.ru",
+  "detail": "39-я международная В2В выставка товаров для дома · залов: 2"
  },
  {
   "id": "179f840189",
@@ -1004,8 +1018,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "36th International Autumn Food and Drink Exhibition · залов: 2"
+  "url": "https://world-food.ru",
+  "detail": "36-я международная осенняя выставка продуктов питания · залов: 2"
  },
  {
   "id": "6e28ee8a48",
@@ -1018,12 +1032,12 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "17th International exhibition of machinery, equipment, automation tools and robotics for warehouse and industrial logistics · залов: 3"
+  "url": "https://www.cemat-russia.ru",
+  "detail": "17-я международная выставка техники, оборудования, средств автоматизации и роботизации для складской и производственной логистики · залов: 3"
  },
  {
-  "id": "a30ad94899",
-  "title": "Mir Detstva - 2027",
+  "id": "821736a4e6",
+  "title": "Мир детства - 2027",
   "start": "2027-09-15",
   "end": "2027-09-17",
   "venue": "Крокус Экспо",
@@ -1032,12 +1046,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "32th International Exhibition for the Children’s Goods Industry · залов: 2"
+  "url": "https://www.mirdetstva-expo.ru",
+  "detail": "32-я международная выставка «Индустрия детских товаров» · залов: 2"
  },
  {
-  "id": "981bf5af83",
-  "title": "CJF – Child and Junior Fashion 2027. Autumn",
+  "id": "40b81af430",
+  "title": "CJF - ДЕТСКАЯ МОДА. Осень-2027",
   "start": "2027-09-15",
   "end": "2027-09-17",
   "venue": "Крокус Экспо",
@@ -1046,12 +1060,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "38th International Exhibition for Child and Junior Fashion · залов: 1"
+  "url": "https://www.cjf-expo.ru",
+  "detail": "38-я международная выставка \"Детская и юношеская мода\" · залов: 1"
  },
  {
-  "id": "8852263ddf",
-  "title": "DENTAL-EXPO 2027",
+  "id": "e99a252d6b",
+  "title": "ДЕНТАЛ-ЭКСПО 2027",
   "start": "2027-09-20",
   "end": "2027-09-23",
   "venue": "Крокус Экспо",
@@ -1060,12 +1074,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 62nd Moscow international dental forum and exhibition · залов: 2"
+  "url": "https://www.dental-expo.com",
+  "detail": "62-й Московский международный стоматологический форум и выставка · залов: 2"
  },
  {
-  "id": "f90268eb13",
-  "title": "ParkZoo 2027",
+  "id": "95bec7edf3",
+  "title": "ПаркЗоо 2027",
   "start": "2027-09-22",
   "end": "2027-09-24",
   "venue": "Крокус Экспо",
@@ -1074,12 +1088,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International ZooIndustry Exhibition · залов: 2"
+  "url": "https://www.parkzoo.ru",
+  "detail": "Международная выставка зооиндустрии · залов: 2"
  },
  {
-  "id": "1ad1383d8e",
-  "title": "AGROPRODMASH-2027",
+  "id": "b93eb5c531",
+  "title": "АГРОПРОДМАШ-2027",
   "start": "2027-09-28",
   "end": "2027-10-01",
   "venue": "Крокус Экспо",
@@ -1088,12 +1102,12 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "32th International Exhibition for Equipment, Technologies, Raw Materials and Ingredients for the Food Processing Industry · залов: 3"
+  "url": "https://www.agroprodmash-expo.ru",
+  "detail": "32-я международная выставка «Оборудование, технологии, сырье и ингредиенты для пищевой и перерабатывающей промышленности» · залов: 3"
  },
  {
-  "id": "8d2ced81c8",
-  "title": "Russian Diagnostic Summit",
+  "id": "d5a2f6777e",
+  "title": "Российский Диагностический Саммит",
   "start": "2027-09-29",
   "end": "2027-10-01",
   "venue": "Крокус Экспо",
@@ -1102,8 +1116,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "A scientific and educational event for specialists in the field of medical diagnostics featuring a specialized exhibition of diagnostic equipment and consumables, special software · залов: 2"
+  "url": "https://rdsummit.ru",
+  "detail": "Научно-образовательное мероприятие для специалистов в сфере медицинской диагностики со специализированной выставкой диагностического оборудования и расходных материалов, специального программного обеспечения · залов: 2"
  },
  {
   "id": "ebdfa55c05",
@@ -1116,8 +1130,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "26th International Exhibition of Materials, Equipment, and Technologies for Metal Welding and Cutting · залов: 1"
+  "url": "https://weldex.ru",
+  "detail": "26-я международная выставка материалов, оборудования и технологий для сварки и резки металла · залов: 1"
  },
  {
   "id": "95f1c1b7b7",
@@ -1130,8 +1144,8 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "34th International exhibition for perfumery and cosmetics industry · залов: 3"
+  "url": "https://www.intercharm.ru",
+  "detail": "34-я международная выставка парфюмерно-косметической отрасли · залов: 3"
  },
  {
   "id": "e6b2f116ba",
@@ -1140,16 +1154,16 @@
   "end": "2027-10-28",
   "venue": "Крокус Экспо",
   "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
+  "base_weight": 4,
+  "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Specialized exhibition for professionals of HoReCa and tourism · залов: 1"
+  "detail": "Международная специализированная выставка · залов: 3"
  },
  {
-  "id": "e7a3804a4c",
-  "title": "Reklama-2027",
+  "id": "2d72ba58a0",
+  "title": "Реклама-2027",
   "start": "2027-10-26",
   "end": "2027-10-28",
   "venue": "Крокус Экспо",
@@ -1158,8 +1172,8 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "34th International Specialized Exhibition for Advertising · залов: 1"
+  "url": "https://www.reklama-expo.ru",
+  "detail": "34-я международная специализированная выставка для производителей и заказчиков рекламы · залов: 1"
  },
  {
   "id": "63c8aae5d4",
@@ -1172,8 +1186,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 25th International exhibition of materials and equipment for surface treatment, coatings application and electroplating · залов: 2"
+  "url": "https://www.expocoating-moscow.ru",
+  "detail": "25-я международная выставка материалов и оборудования для обработки поверхности, нанесения покрытий и гальванических производств · залов: 2"
  },
  {
   "id": "0931dcf804",
@@ -1186,8 +1200,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 23rd International Exhibition of Fasteners · залов: 2"
+  "url": "https://www.fasttec.ru",
+  "detail": "23-я международная выставка крепежных изделий · залов: 2"
  },
  {
   "id": "2c421651da",
@@ -1200,8 +1214,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 12th International specialised exhibition of industrial boilers, heat exchange and power generation equipment · залов: 2"
+  "url": "https://www.heatpower-expo.ru",
+  "detail": "12-я международная выставка промышленного котельного, теплообменного и электрогенерирующего оборудования · залов: 2"
  },
  {
   "id": "b4bf9fc3c7",
@@ -1214,8 +1228,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 26th International exhibition of industrial pumps, compressors, valves, actuators and engines · залов: 2"
+  "url": "https://www.pcvexpo.ru",
+  "detail": "26-я международная выставка промышленных насосов, компрессоров и трубопроводной арматуры, приводов и двигателей · залов: 2"
  },
  {
   "id": "7786afaf45",
@@ -1228,8 +1242,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 27th International exhibition of equipment for non-destructive testing · залов: 2"
+  "url": "https://www.ndt-russia.ru",
+  "detail": "27-я международная выставка оборудования для неразрушающего контроля · залов: 2"
  },
  {
   "id": "8a9d579095",
@@ -1242,8 +1256,22 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "The 24th International Exhibition of Testing and Measuring Equipment · залов: 2"
+  "url": "https://www.testing-control.ru",
+  "detail": "24-я международная выставка испытательного и контрольно-измерительного оборудования · залов: 2"
+ },
+ {
+  "id": "32a0e991cf",
+  "title": "МИР КЛИМАТА 2027",
+  "start": "2027-11-09",
+  "end": "2027-11-12",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 6,
+  "weight": 4.2,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://www.climatexpo.ru",
+  "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 5"
  },
  {
   "id": "7cf3a218da",
@@ -1256,8 +1284,8 @@
   "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition for housing, utilities and construction · залов: 5"
+  "url": "https://utilicon.ru",
+  "detail": "Международная выставка услуг, технологий и материалов для ЖКХ и строительства · залов: 5"
  },
  {
   "id": "338ede4045",
@@ -1270,26 +1298,12 @@
   "weight": 4.2,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Moscow International Tool Expo · залов: 5"
+  "url": "https://www.mitexpo.ru",
+  "detail": "Международная выставка инcтрумента, оборудования и технологий · залов: 5"
  },
  {
-  "id": "a3ea30a9fe",
-  "title": "Climate Expo",
-  "start": "2027-11-09",
-  "end": "2027-11-12",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 6,
-  "weight": 4.2,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International Exhibition of Heating, Ventilation, Air Conditioning and Refrigeration · залов: 5"
- },
- {
-  "id": "0669ac9f17",
-  "title": "BIOT 2027",
+  "id": "f605835b21",
+  "title": "БИОТ 2027",
   "start": "2027-11-16",
   "end": "2027-11-18",
   "venue": "Крокус Экспо",
@@ -1298,8 +1312,8 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "XXXI International Specialised Exhibition and Forum · залов: 2"
+  "url": "https://biot-expo.ru",
+  "detail": "31-я международная специализированная выставка-форум · залов: 2"
  },
  {
   "id": "602a33f5b7",
@@ -1312,12 +1326,12 @@
   "weight": 1.4,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "29th International exhibition of equipment and products for professional cleaning, sanitary, hygiene, dry-cleaning and laundry · залов: 1"
+  "url": "https://www.cleanexpo-moscow.ru",
+  "detail": "29-я международная выставка оборудования и средств для профессиональной уборки, санитарии, гигиены, химической чистки и стирки · залов: 1"
  },
  {
-  "id": "6a38f7cbee",
-  "title": "MEBEL-2027",
+  "id": "e8b7e8a29d",
+  "title": "МЕБЕЛЬ-2027",
   "start": "2027-11-22",
   "end": "2027-11-25",
   "venue": "Крокус Экспо",
@@ -1326,8 +1340,8 @@
   "weight": 2.8,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "38th international exhibition for furniture, fittings and upholstery · залов: 3"
+  "url": "https://www.meb-expo.ru",
+  "detail": "38-я международная выставка «Мебель, фурнитура и обивочные материалы» · залов: 3"
  },
  {
   "id": "4de175b4ef",
@@ -1340,12 +1354,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "29th International exhibition of equipment, raw materials and technologies for pharmaceutical manufacturing · залов: 2"
+  "url": "https://pharmtech-expo.ru",
+  "detail": "29-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 2"
  },
  {
-  "id": "45b734f999",
-  "title": "Electronica Russia",
+  "id": "382aa3cacd",
+  "title": "Электроника России",
   "start": "2027-11-23",
   "end": "2027-11-25",
   "venue": "Крокус Экспо",
@@ -1355,7 +1369,7 @@
   "category": "выставка",
   "source": "crocus_expo",
   "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibition and forum · залов: 1"
+  "detail": "Международная выставка-форум · залов: 1"
  },
  {
   "id": "b6925f8562",
@@ -1368,12 +1382,12 @@
   "weight": 2.1,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "21st Annual International Exhibition of Equipment, Materials and Components for the Woodworking and Furniture Industries · залов: 2"
+  "url": "https://woodexpo.ru",
+  "detail": "21-я Ежегодная международная выставка оборудования, материалов и комплектующих для деревообрабатывающей и мебельной промышленности · залов: 2"
  },
  {
-  "id": "a5e4816bfe",
-  "title": "«Russian Healthcare Week\": Zdravookhraneniye, Healthy Lifestyle, MedTravelExpo. Clinics, Health and SPA resorts",
+  "id": "c4af138b38",
+  "title": "Международные выставки медицинской техники, изделий медицинского назначения, расходных материалов, средств реабилитации и профилактики, эстетической медицины, фармацевтики, медицинских и оздоровительных услуг, технологий оздоровления и лечения в России и за рубежом",
   "start": "2027-12-06",
   "end": "2027-12-09",
   "venue": "Крокус Экспо",
@@ -1382,7 +1396,7 @@
   "weight": 3.5,
   "category": "выставка",
   "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "International exhibitions of Medical Engineering, Products and Consumables. Rehabilitation and Preventive Treatment facilities, Medical aesthetics, Pharmaceuticals, Medical and Wellness Services, Health Improvements and medical Treatment · залов: 4"
+  "url": "https://www.zdravo-expo.ru",
+  "detail": "залов: 4"
  }
 ]

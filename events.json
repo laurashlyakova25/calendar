@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T21:48",
+ "generated_at": "2026-11-02T22:08",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -13,27 +13,25 @@
  "sources": {
   "crocus_expo": {
    "ok": true,
-   "count": 99
+   "count": 100
   },
-  "kudago": {
-   "ok": false,
-   "count": 0,
-   "error": "HTTP Error 403: Forbidden",
-   "from_cache": false
+  "concertinfo": {
+   "ok": true,
+   "count": 28
   },
   "holidays": {
    "ok": true,
-   "count": 122
+   "count": 120
   },
   "manual": {
    "ok": true,
-   "count": 2
+   "count": 16
   }
  },
  "events": [
   {
-   "id": "fe856fd952",
-   "title": "National Veterinary Conference",
+   "id": "63ca979b0b",
+   "title": "Национальная Ветеринарная Конференция",
    "start": "2026-11-02",
    "end": "2026-11-04",
    "venue": "Крокус Экспо",
@@ -42,8 +40,22 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Exhibition and conference · залов: 2"
+   "url": "https://nvc.moscow",
+   "detail": "Выставка и конференция · залов: 2"
+  },
+  {
+   "id": "050cabbafb",
+   "title": "Пелагея",
+   "start": "2026-11-04",
+   "end": "2026-11-04",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38784/",
+   "detail": "Live Арена"
   },
   {
    "id": "26f3cdbfb1",
@@ -71,7 +83,7 @@
    "weight": 3.0,
    "category": "выставка",
    "source": "manual",
-   "url": "",
+   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2026/eng/Expocentre_Calendar_2026_eng.pdf",
    "detail": "Организатор Экспоцентр"
   },
   {
@@ -85,8 +97,8 @@
    "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Moscow International Tool Expo · залов: 5"
+   "url": "https://www.mitexpo.ru",
+   "detail": "Международная выставка инcтрумента, оборудования и технологий · залов: 5"
   },
   {
    "id": "ccff34d381",
@@ -99,26 +111,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition for housing, utilities and construction · залов: 1"
+   "url": "https://utilicon.ru",
+   "detail": "Международная выставка услуг, технологий и материалов для ЖКХ и строительства · залов: 1"
   },
   {
-   "id": "7d1e2be233",
-   "title": "Lift Expo. Moscow",
-   "start": "2026-11-10",
-   "end": "2026-11-12",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Exhibition of Lifts, Lifting Equipment and Components · залов: 1"
-  },
-  {
-   "id": "c2a675e80f",
-   "title": "Climate Expo AUTUMN",
+   "id": "2b587dd4af",
+   "title": "Мир Климата",
    "start": "2026-11-10",
    "end": "2026-11-13",
    "venue": "Крокус Экспо",
@@ -127,12 +125,54 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Exhibition of Heating, Ventilation, Air Conditioning and Refrigeration · залов: 1"
+   "url": "https://www.climatexpo.ru",
+   "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 1"
   },
   {
-   "id": "048c4ed095",
-   "title": "National dog show «Eurasia 2026»",
+   "id": "22299e1b17",
+   "title": "Лифт Экспо. Москва",
+   "start": "2026-11-10",
+   "end": "2026-11-12",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://lift-expo.com",
+   "detail": "Международная выставка лифтов, подъемного оборудования и комплектующих · залов: 1"
+  },
+  {
+   "id": "0781d16946",
+   "title": "Сурганова и Оркестр",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38340/",
+   "detail": "Государственный Кремлёвский дворец"
+  },
+  {
+   "id": "85265e7b58",
+   "title": "Бонд с кнопкой",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/37700/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "7418c087ea",
+   "title": "Выставки собак всех пород «Евразия 2026»",
    "start": "2026-11-14",
    "end": "2026-11-15",
    "venue": "Крокус Экспо",
@@ -141,12 +181,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "National dog show · залов: 2"
+   "url": "https://eurasia.rkf.org.ru",
+   "detail": "Национальная выставка собак · залов: 2"
   },
   {
-   "id": "0fd4be36e4",
-   "title": "BIOT 2026",
+   "id": "c9e010f936",
+   "title": "БИОТ 2026",
    "start": "2026-11-17",
    "end": "2026-11-20",
    "venue": "Крокус Экспо",
@@ -155,8 +195,22 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "XXX International Specialised Exhibition and Forum · залов: 2"
+   "url": "https://biot-expo.ru",
+   "detail": "30-я международная специализированная выставка-форум · залов: 2"
+  },
+  {
+   "id": "8d53419116",
+   "title": "Форум «Электрические сети» (МФЭС-2026)",
+   "start": "2026-11-17",
+   "end": "2026-11-19",
+   "venue": "Тимирязев Центр",
+   "km": 8.3,
+   "base_weight": 2.0,
+   "weight": 2.0,
+   "category": "форум",
+   "source": "manual",
+   "url": "https://b2b.onetwotrip.com/blog/news/delovye-sobytiya-v-noyabre-2026-goda/",
+   "detail": ""
   },
   {
    "id": "5a909e6836",
@@ -169,12 +223,82 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "28th International exhibition of equipment and products for professional cleaning, sanitary, hygiene, dry-cleaning and laundry · залов: 1"
+   "url": "https://www.cleanexpo-moscow.ru",
+   "detail": "28-я международная выставка оборудования и средств для профессиональной уборки, санитарии, гигиены, химической чистки и стирки · залов: 1"
   },
   {
-   "id": "2b0710ea3c",
-   "title": "MEBEL-2026",
+   "id": "7100b16d85",
+   "title": "Pharaoh",
+   "start": "2026-11-18",
+   "end": "2026-11-18",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 4.0,
+   "weight": 4.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": "Стадион"
+  },
+  {
+   "id": "8de15a51a8",
+   "title": "Мукка",
+   "start": "2026-11-20",
+   "end": "2026-11-20",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38320/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "f841c3f936",
+   "title": "Юбилей Свердловского рок-клуба",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38137/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "8572a37ff5",
+   "title": "Танцы Минус",
+   "start": "2026-11-21",
+   "end": "2026-11-21",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39384/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "bff8e4356e",
+   "title": "Международный муниципальный форум",
+   "start": "2026-11-23",
+   "end": "2026-11-24",
+   "venue": "Национальный центр «Россия»",
+   "km": 3.6,
+   "base_weight": 4.0,
+   "weight": 4.0,
+   "category": "форум",
+   "source": "manual",
+   "url": "https://b2b.onetwotrip.com/blog/news/delovye-sobytiya-v-noyabre-2026-goda/",
+   "detail": ""
+  },
+  {
+   "id": "8397727ded",
+   "title": "МЕБЕЛЬ-2026",
    "start": "2026-11-23",
    "end": "2026-11-26",
    "venue": "Крокус Экспо",
@@ -183,8 +307,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "37th international exhibition for furniture, fittings and upholstery · залов: 3"
+   "url": "https://www.meb-expo.ru",
+   "detail": "37-я международная выставка «Мебель, фурнитура и обивочные материалы» · залов: 3"
   },
   {
    "id": "426ae71721",
@@ -197,12 +321,12 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "28th International exhibition of equipment, raw materials and technologies for pharmaceutical manufacturing · залов: 3"
+   "url": "https://pharmtech-expo.ru",
+   "detail": "28-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 3"
   },
   {
-   "id": "7bffbdfa18",
-   "title": "Electronica Russia",
+   "id": "914de62111",
+   "title": "Электроника России",
    "start": "2026-11-24",
    "end": "2026-11-26",
    "venue": "Крокус Экспо",
@@ -211,8 +335,64 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition and forum · залов: 1"
+   "url": "https://www.rus-elektronika.ru",
+   "detail": "Международная выставка-форум · залов: 1"
+  },
+  {
+   "id": "99cc9a2cf2",
+   "title": "The Hatters - 10 лет. Большие Шоу",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/37105/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "f5345e6324",
+   "title": "Гудтаймс",
+   "start": "2026-11-27",
+   "end": "2026-11-27",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2.0,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": ""
+  },
+  {
+   "id": "801273da5b",
+   "title": "The Hatters - 10 лет. Большие Шоу",
+   "start": "2026-11-28",
+   "end": "2026-11-28",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/37106/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "74ffe44742",
+   "title": "Radio Queen. Шоу Богемская рапсодия",
+   "start": "2026-11-29",
+   "end": "2026-11-29",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40204/",
+   "detail": "Государственный Кремлёвский дворец"
   },
   {
    "id": "b5f02b3af1",
@@ -225,12 +405,68 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "20th Annual International Exhibition of Equipment, Materials and Components for the Woodworking and Furniture Industries · залов: 2"
+   "url": "https://woodexpo.ru",
+   "detail": "20-я ежегодная Международная выставка оборудования, материалов и комплектующих для деревообрабатывающей и мебельной промышленности · залов: 2"
   },
   {
-   "id": "6287c1c422",
-   "title": "«Russian Healthcare Week\": Zdravookhraneniye, Healthy Lifestyle, MedTravelExpo. Clinics, Health and SPA resorts",
+   "id": "4fbfb69fe0",
+   "title": "Премия «Золотой граммофон»",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 4.0,
+   "weight": 4.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://www.kp.ru/afisha/msk/mesta/stadiony/vtb-arena-park/",
+   "detail": "Стадион"
+  },
+  {
+   "id": "7a3f1ea6b9",
+   "title": "Гарик Сукачёв",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38169/",
+   "detail": "Live Арена"
+  },
+  {
+   "id": "02d9afda63",
+   "title": "Сектор газа. 30 лет альбому Газовая атака",
+   "start": "2026-12-05",
+   "end": "2026-12-05",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/37897/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "50c7c955fc",
+   "title": "Русская филармония. Золотые хиты рока & Queen",
+   "start": "2026-12-06",
+   "end": "2026-12-06",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38547/",
+   "detail": "Государственный Кремлёвский дворец"
+  },
+  {
+   "id": "2d22b2e4a4",
+   "title": "Международные выставки медицинской техники, изделий медицинского назначения, расходных материалов, средств реабилитации и профилактики, эстетической медицины, фармацевтики, медицинских и оздоровительных услуг, технологий оздоровления и лечения в России и за рубежом",
    "start": "2026-12-07",
    "end": "2026-12-10",
    "venue": "Крокус Экспо",
@@ -239,8 +475,8 @@
    "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibitions of Medical Engineering, Products and Consumables. Rehabilitation and Preventive Treatment facilities, Medical aesthetics, Pharmaceuticals, Medical and Wellness Services, Health Improvements and medical Treatment · залов: 5"
+   "url": "https://www.zdravo-expo.ru",
+   "detail": "залов: 5"
   },
   {
    "id": "2e4c0b0aa5",
@@ -253,12 +489,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "manual",
-   "url": "",
+   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2026/eng/Expocentre_Calendar_2026_eng.pdf",
    "detail": "Удалить эту строку когда даты появятся на сайте Крокус Экспо"
   },
   {
-   "id": "63bb74502e",
-   "title": "XXX Russian Cancer Congresswith international participation",
+   "id": "de9a3314c3",
+   "title": "XXX Российский онкологический конгресс с международным участием",
    "start": "2026-12-10",
    "end": "2026-12-12",
    "venue": "Крокус Экспо",
@@ -267,8 +503,107 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Exhibition and conference · залов: 2"
+   "url": "https://rosoncoweb.ru",
+   "detail": "Выставка и конференция · залов: 2"
+  },
+  {
+   "id": "9e1c4b3bee",
+   "title": "NЮ",
+   "start": "2026-12-18",
+   "end": "2026-12-18",
+   "venue": "ЦСКА Арена",
+   "km": 5.5,
+   "base_weight": 3.0,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": ""
+  },
+  {
+   "id": "94b701b01a",
+   "title": "Пикник",
+   "start": "2026-12-19",
+   "end": "2026-12-19",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39547/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "f74a88a294",
+   "title": "Филипп Киркоров",
+   "start": "2026-12-19",
+   "end": "2026-12-20",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3.0,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": "Проверить год: на сайте кассы год не указан"
+  },
+  {
+   "id": "527a23bc6b",
+   "title": "Смешband",
+   "start": "2026-12-20",
+   "end": "2026-12-20",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39792/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "c4f9ce4783",
+   "title": "Алиса",
+   "start": "2026-12-25",
+   "end": "2026-12-25",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38764/",
+   "detail": "Live Арена"
+  },
+  {
+   "id": "f1e4865697",
+   "title": "Главная Metal Ёлка страны",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40529/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "71a9d198f4",
+   "title": "Длинные выходные (11 дн.)",
+   "start": "2026-12-31",
+   "end": "2027-01-10",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   },
   {
    "id": "bfd0111636",
@@ -280,21 +615,6 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "0fdc4af3f1",
-   "title": "Длинные выходные (10 дн.)",
-   "start": "2027-01-01",
-   "end": "2027-01-10",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -406,18 +726,18 @@
    "per_day": true
   },
   {
-   "id": "326401afeb",
-   "title": "AGRAVIA",
+   "id": "31cef5768d",
+   "title": "AGRAVIA (АГРАВИЯ)",
    "start": "2027-01-20",
    "end": "2027-01-22",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
+   "base_weight": 6,
+   "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Russia’s Premier Trade Fair for Production & Processing Technologies in Agriculture, Horticulture, Livestock and Poultry · залов: 1"
+   "detail": "Международная выставка технологий производства и переработки для профессионалов АПК · залов: 5"
   },
   {
    "id": "44a318e50d",
@@ -426,12 +746,12 @@
    "end": "2027-01-22",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
+   "base_weight": 6,
+   "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade-Show of Agri-Tech Innovations and Smart Farming Solutions · залов: 1"
+   "detail": "Международная выставка инноваций и высоких технологий для агропромышленного комплекса · залов: 5"
   },
   {
    "id": "82df427d29",
@@ -444,12 +764,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "25th Anniversary exhibition of equipment and technologies for milk and food processing · залов: 1"
+   "url": "https://dairytech-expo.ru",
+   "detail": "25-я Юбилейная международная выставка оборудования и технологий для молочной и пищевой промышленности · залов: 1"
   },
   {
    "id": "0fb2a2b280",
-   "title": "PROMEDIATECH",
+   "title": "ProMediaTech",
    "start": "2027-01-27",
    "end": "2027-01-28",
    "venue": "Крокус Экспо",
@@ -458,8 +778,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition of exhibition and event service, marketing and advertising · залов: 1"
+   "url": "https://www.pmtf.ru",
+   "detail": "Международная выставка выставочного и ивент-сервиса, маркетинга и рекламы · залов: 1"
   },
   {
    "id": "32fa595166",
@@ -472,8 +792,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "5th International Exhibition of Equipment, Technologies and Services for Ventilation, Air Conditioning and Refrigeration of Domestic, Industrial and Commercial Facilities · залов: 3"
+   "url": "https://airventmoscow.ru",
+   "detail": "5-я международная выставка оборудования, технологий и услуг для вентиляции, кондиционирования и холодоснабжения бытовых, промышленных и коммерческих объектов · залов: 3"
   },
   {
    "id": "5946aca70a",
@@ -486,12 +806,12 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "31st International Exhibition for domestic and industrial heating, water supply, engineering and plumbing systems, equipment for swimming pools, saunas and spas · залов: 3"
+   "url": "https://aquaflame-expo.ru",
+   "detail": "31-я международная выставка бытового и промышленного оборудования для отопления, водоснабжения, инженерно-сантехнических систем, бассейнов, саун и спа · залов: 3"
   },
   {
-   "id": "8ac7711e30",
-   "title": "NAIS",
+   "id": "970a642282",
+   "title": "ДРОНТЕХ",
    "start": "2027-02-10",
    "end": "2027-02-11",
    "venue": "Крокус Экспо",
@@ -500,12 +820,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "14th National Aviation Infrastructure Show · залов: 1"
+   "url": "https://dronetech-expo.ru",
+   "detail": "Выставка беспилотных, автономных и робототехнических комплексов · залов: 1"
   },
   {
-   "id": "a7dd9f2550",
-   "title": "DRONETECH",
+   "id": "f98493a9b5",
+   "title": "НАИС",
    "start": "2027-02-10",
    "end": "2027-02-11",
    "venue": "Крокус Экспо",
@@ -514,12 +834,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Exhibition of Unmanned, Autonomous & Robotic Systems · залов: 1"
+   "url": "https://www.naisrussia.ru",
+   "detail": "14-й Национальный авиационный инфраструктурный салон · залов: 1"
   },
   {
-   "id": "21f8f26382",
-   "title": "MOSCOW INTERNATIONAL OPTICAL FAIR (MIOF)",
+   "id": "fff5b184e1",
+   "title": "МОСКОВСКАЯ МЕЖДУНАРОДНАЯ ОПТИЧЕСКАЯ ВЫСТАВКА (MIOF)",
    "start": "2027-02-16",
    "end": "2027-02-18",
    "venue": "Крокус Экспо",
@@ -528,12 +848,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International specialized exhibition · залов: 1"
+   "url": "https://www.optica-expo.ru",
+   "detail": "Международная специализированная выставка · залов: 1"
   },
   {
-   "id": "d4494f5e81",
-   "title": "DIGITAL TECHNOLOGIES AND SECURITY (TB Forum)",
+   "id": "2780fd6ffa",
+   "title": "Технологии и безопасность (ТБ Форум)",
    "start": "2027-02-17",
    "end": "2027-02-19",
    "venue": "Крокус Экспо",
@@ -542,8 +862,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "XXXII International forum · залов: 1"
+   "url": "https://www.tbforum.ru",
+   "detail": "32-й международный форум · залов: 1"
   },
   {
    "id": "e99926e462",
@@ -556,12 +876,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Exhibition of furniture, Interior Solutions and Art · залов: 4"
+   "url": "https://artdom-design.ru",
+   "detail": "Международная выставка мебели, интерьерных решений и исскуства · залов: 4"
   },
   {
-   "id": "fee97c757e",
-   "title": "HUNTING AND FISHING WORLD",
+   "id": "2db16609be",
+   "title": "МИР Охоты и Рыбалки",
    "start": "2027-02-19",
    "end": "2027-02-22",
    "venue": "Крокус Экспо",
@@ -570,12 +890,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "INTERNATIONAL EXHIBITION · залов: 2"
+   "url": "https://www.huntfishexpo.ru",
+   "detail": "Международная выставка · залов: 2"
   },
   {
-   "id": "72f0aa57a6",
-   "title": "MOSCOW BOAT SHOW",
+   "id": "4f9651e01f",
+   "title": "Московское Боут Шоу",
    "start": "2027-02-19",
    "end": "2027-02-22",
    "venue": "Крокус Экспо",
@@ -584,8 +904,37 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "20th International exhibition of boats and yachts · залов: 2"
+   "url": "https://www.mosboatshow.ru",
+   "detail": "20-я международная выставка катеров и яхт · залов: 2"
+  },
+  {
+   "id": "0b8cd59a33",
+   "title": "Пилот",
+   "start": "2027-02-20",
+   "end": "2027-02-20",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39875/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "4342d48dc4",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-02-21",
+   "end": "2027-02-23",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   },
   {
    "id": "b86837fc2b",
@@ -603,8 +952,8 @@
    "per_day": true
   },
   {
-   "id": "106758e372",
-   "title": "PRODEXPO-2027",
+   "id": "d6a92f2f0c",
+   "title": "ПРОДЭКСПО-2027",
    "start": "2027-03-01",
    "end": "2027-03-04",
    "venue": "Крокус Экспо",
@@ -613,8 +962,8 @@
    "weight": 4.9,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "34rd International Exhibition for Food, Beverages and Food Raw Materials · залов: 11"
+   "url": "https://www.prod-expo.ru",
+   "detail": "34-я международная выставка продуктов питания, напитков и сырья для их производства · залов: 11"
   },
   {
    "id": "cd9dac28b8",
@@ -647,8 +996,8 @@
    "per_day": true
   },
   {
-   "id": "b448a2f7a1",
-   "title": "TEXTILLEGPRОM",
+   "id": "be576d3e46",
+   "title": "Текстильлегпром",
    "start": "2027-03-10",
    "end": "2027-03-12",
    "venue": "Крокус Экспо",
@@ -657,8 +1006,50 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "67th International exhibition of textile and light industry · залов: 1"
+   "url": "https://www.textilexpo.ru",
+   "detail": "67-я международная выставка текстильной и легкой промышленности · залов: 1"
+  },
+  {
+   "id": "a5c902675c",
+   "title": "ЛСП",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "venue": "ЦСКА Арена",
+   "km": 5.5,
+   "base_weight": 3.0,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": ""
+  },
+  {
+   "id": "2f10110602",
+   "title": "Владимир Пресняков",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 4.0,
+   "weight": 4.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://www.kp.ru/afisha/msk/mesta/stadiony/vtb-arena-park/",
+   "detail": "Стадион"
+  },
+  {
+   "id": "70e954e2f7",
+   "title": "Beautiful Boys",
+   "start": "2027-03-13",
+   "end": "2027-03-13",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40320/",
+   "detail": "VK Stadium"
   },
   {
    "id": "3db150ce06",
@@ -671,8 +1062,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "6-th Special Exposition for Warehouse and Handling Equipment, Automation Systems and Solutions · залов: 3"
+   "url": "https://transrussia.ru",
+   "detail": "6-я Специальная экспозиция складской техники, систем хранения, погрузо-разгрузочного оборудования и средств автоматизации склада · залов: 3"
   },
   {
    "id": "d5070b1797",
@@ -685,12 +1076,12 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "31th International exhibition for transport and logistics services, warehouse equipment and technologies · залов: 3"
+   "url": "https://transrussia.ru",
+   "detail": "31-я международная выставка транспортно-логистических услуг, складского оборудования и технологий · залов: 3"
   },
   {
-   "id": "3abe305795",
-   "title": "POLYURETHANEX 2027",
+   "id": "6aea3d9c9c",
+   "title": "КОМПОЗИТ-ЭКСПО 2027",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -700,11 +1091,11 @@
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "18th International specialized exhibition on on raw materials, equipment and technologies for polyurethane producing · залов: 2"
+   "detail": "19-я международная выставка: композитные материалы, технологии производства композитов, оборудование, изделия из композиционных материалов · залов: 2"
   },
   {
-   "id": "4d377e0750",
-   "title": "COMPOSITE-EXPO 2027",
+   "id": "6542becfe0",
+   "title": "Инновационные материалы и технологии",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -714,11 +1105,25 @@
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "19th International specialized exhibition on raw materials, equipment and technologies for composites' producing · залов: 2"
+   "detail": "Международный Форум · залов: 2"
   },
   {
-   "id": "c7b6167e03",
-   "title": "Resources for Growth. Chemistry for life: State and Business",
+   "id": "90a76c2ba9",
+   "title": "ПОЛИУРЕТАНЭКС 2027",
+   "start": "2027-03-16",
+   "end": "2027-03-18",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 3,
+   "weight": 2.1,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.crocus-expo.ru/exhibition/",
+   "detail": "18-я международная выставка: полиуретан, полиуретановые материалы, технологии производства полиуретанов, сферы использования · залов: 2"
+  },
+  {
+   "id": "db6545d151",
+   "title": "Игрушка Маркет 2027",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -727,12 +1132,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Industrial Forum · залов: 1"
+   "url": "https://igrushka-market.ru",
+   "detail": "Международная B2B-выставка · залов: 1"
   },
   {
-   "id": "45ac08e8c1",
-   "title": "Igrushka Market 2027",
+   "id": "5c1e0a3362",
+   "title": "Ресурсы роста. Химия для жизни: государство и бизнес",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -741,8 +1146,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International B2B exhibition · залов: 1"
+   "url": "https://форумресурсыроста.рф",
+   "detail": "Международный промышленный форум · залов: 1"
   },
   {
    "id": "a333eb078f",
@@ -755,8 +1160,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International specialized exposition of equipment, raw materials, ingredients and packaging for cosmetics, perfumery and household detergents manufacturing · залов: 1"
+   "url": "https://chemicos.ru",
+   "detail": "Международная специализированная выставка оборудования, химического сырья, ингредиентов и упаковочных решений для организации полного цикла производства готовой продукции из мало- и среднетоннажной химии · залов: 1"
   },
   {
    "id": "62d32d01c3",
@@ -769,12 +1174,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "12th international specialized exhibition of professional and household chemicals for retail chains and marketplaces · залов: 1"
+   "url": "https://chemicos.ru",
+   "detail": "12-я международная специализированная выставка готовой продукции из мало- и среднетоннажной химии для торговых сетей и маркетплейсов · залов: 1"
   },
   {
-   "id": "9f09d0d592",
-   "title": "ITF-2027. Spring",
+   "id": "04802261eb",
+   "title": "ITF-2027. Весна",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -783,12 +1188,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "21st International Textile Fair · залов: 1"
+   "url": "https://itfshow.ru",
+   "detail": "21-я международная текстильная выставка · залов: 1"
   },
   {
-   "id": "76e5d42c9e",
-   "title": "HouseHold Expo Spring 2027",
+   "id": "c58ee6ba72",
+   "title": "HouseHold Expo Весна 2027",
    "start": "2027-03-16",
    "end": "2027-03-18",
    "venue": "Крокус Экспо",
@@ -797,8 +1202,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "38th International B2B exhibition of household goods and supplies · залов: 1"
+   "url": "https://hhexpo.ru",
+   "detail": "38-я международная В2В выставка товаров для дома · залов: 1"
   },
   {
    "id": "4feb44489f",
@@ -811,12 +1216,26 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International B2B-exhibition · залов: 1"
+   "url": "https://christmasbox.ru",
+   "detail": "Международная B2B-выставка · залов: 1"
   },
   {
-   "id": "63edb8a42e",
-   "title": "R-BEAUTY by InterCHARM 2027",
+   "id": "0799de94d8",
+   "title": "Клава Кока",
+   "start": "2027-03-20",
+   "end": "2027-03-20",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 4.0,
+   "weight": 4.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": ""
+  },
+  {
+   "id": "250f06bf92",
+   "title": "R-BEAUTY от InterCHARM 2027",
    "start": "2027-03-23",
    "end": "2027-03-25",
    "venue": "Крокус Экспо",
@@ -825,8 +1244,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Off-season perfumery and cosmetics exhibition for Russian brands and manufacturers. · залов: 1"
+   "url": "https://rbeautyexpo.ru",
+   "detail": "Межсезонная парфюмерно-косметическая выставка для российских брендов и производителей · залов: 1"
   },
   {
    "id": "440ba85b20",
@@ -839,8 +1258,36 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Convention of Specialists in Cosmetology and Aesthetic Medicine · залов: 1"
+   "url": "https://beaunity-expo.ru",
+   "detail": "Международная конвенция специалистов в области косметологии и эстетической медицины · залов: 1"
+  },
+  {
+   "id": "029c9dbd1f",
+   "title": "Linkin Park, симфоническое шоу с голосом Честера Беннингтона",
+   "start": "2027-03-26",
+   "end": "2027-03-26",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39872/",
+   "detail": "Государственный Кремлёвский дворец"
+  },
+  {
+   "id": "246a625f9d",
+   "title": "Вадим Самойлов",
+   "start": "2027-03-27",
+   "end": "2027-03-27",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/38793/",
+   "detail": "Live Арена"
   },
   {
    "id": "ed7bee4312",
@@ -853,12 +1300,40 @@
    "weight": 4.9,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Building and Interiors Trade Show · залов: 9"
+   "url": "https://www.mosbuild.com",
+   "detail": "Международная специализированная выставка · залов: 9"
   },
   {
-   "id": "bfa64e569d",
-   "title": "TIRES & RUBBER 2027",
+   "id": "0caf095914",
+   "title": "Шоу. Симфонические рок-хиты. Крылья грифона: Concord Orchestra",
+   "start": "2027-04-02",
+   "end": "2027-04-02",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40833/",
+   "detail": "Государственный Кремлёвский дворец"
+  },
+  {
+   "id": "e69a2d1b79",
+   "title": "Парк Горького",
+   "start": "2027-04-08",
+   "end": "2027-04-08",
+   "venue": "Государственный Кремлёвский дворец",
+   "km": 1.7,
+   "base_weight": 1,
+   "weight": 1.5,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39545/",
+   "detail": "Государственный Кремлёвский дворец"
+  },
+  {
+   "id": "601c9ca109",
+   "title": "ШИНЫ, РТИ И КАУЧУКИ-2027",
    "start": "2027-04-12",
    "end": "2027-04-15",
    "venue": "Крокус Экспо",
@@ -867,12 +1342,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "29th international exhibition for rubber goods, tires, their production, raw materials and equipment · залов: 2"
+   "url": "https://www.rubber-expo.ru",
+   "detail": "29-я международная специализированная выставка резинотехнических изделий, шин, технологий для их производства, сырья и оборудования · залов: 2"
   },
   {
-   "id": "bd668a12f6",
-   "title": "NEFTEGAZ 2027",
+   "id": "2e0d43b458",
+   "title": "НЕФТЕГАЗ-2027",
    "start": "2027-04-12",
    "end": "2027-04-15",
    "venue": "Крокус Экспо",
@@ -882,7 +1357,7 @@
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "26 International Exhibition for Equipment and Technologies for Oil and Gas Industries · залов: 1"
+   "detail": "26-я международная выставка «Оборудование и технологии для нефтегазового комплекса» · залов: 1"
   },
   {
    "id": "052e3f6680",
@@ -895,50 +1370,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "29th International electronics exhibition · залов: 2"
-  },
-  {
-   "id": "6de120603a",
-   "title": "SobMaExpo",
-   "start": "2027-04-13",
-   "end": "2027-04-14",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "14th International Exhibition for Contract Manufacturing and Private Label Market · залов: 1"
-  },
-  {
-   "id": "4396f87a66",
-   "title": "MITT",
-   "start": "2027-04-13",
-   "end": "2027-04-15",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Travel & Hospitality Show · залов: 1"
-  },
-  {
-   "id": "d892a8ca90",
-   "title": "Retail Hub 2027",
-   "start": "2027-04-13",
-   "end": "2027-04-15",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Exhibition of technology and equipment for retail and HoReCa · залов: 1"
+   "url": "https://expoelectronica.ru",
+   "detail": "29-я международная выставка электроники · залов: 2"
   },
   {
    "id": "e02fba8dc5",
@@ -951,8 +1384,64 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition for commercial real estate and retail · залов: 1"
+   "url": "https://www.natmall.ru",
+   "detail": "23-я выставка по развитию коммерческой недвижимости и масштабированию ритейла, точек питания, индустрии развлечений и сферы услуг · залов: 1"
+  },
+  {
+   "id": "6de120603a",
+   "title": "SobMaExpo",
+   "start": "2027-04-13",
+   "end": "2027-04-14",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://sobmaexpo.ru",
+   "detail": "14-я международная выставка контрактного производства и товаров, реализуемых под собственной торговой маркой · залов: 1"
+  },
+  {
+   "id": "4396f87a66",
+   "title": "MITT",
+   "start": "2027-04-13",
+   "end": "2027-04-15",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://mitt.ru",
+   "detail": "Международная выставка туризма и индустрии гостеприимства · залов: 1"
+  },
+  {
+   "id": "d892a8ca90",
+   "title": "Retail Hub 2027",
+   "start": "2027-04-13",
+   "end": "2027-04-15",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://natmall.ru",
+   "detail": "5-я cпециализированная выставка технологий, оборудования и решений для ритейла и сферы HoReCa · залов: 1"
+  },
+  {
+   "id": "51870e126d",
+   "title": "Горшенев с симфоническим оркестром: Кукрыниксы. ХХХ ЛЕТ",
+   "start": "2027-04-17",
+   "end": "2027-04-17",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/39782/",
+   "detail": "VK Stadium"
   },
   {
    "id": "89f7b94547",
@@ -965,8 +1454,22 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 29th International Exhibition of Ingredients, Raw Materials and Equipment for their Production · залов: 1"
+   "url": "https://new.ingred.ru",
+   "detail": "29-я международная выставка ингредиентов, сырья и оборудования для их производства · залов: 1"
+  },
+  {
+   "id": "22059c7aa5",
+   "title": "Аналитика Экспо",
+   "start": "2027-04-21",
+   "end": "2027-04-23",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://analitikaexpo.com",
+   "detail": "25-я международная выставка лабораторного оборудования и химических реактивов · залов: 1"
   },
   {
    "id": "1daffde82d",
@@ -979,26 +1482,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "32nd Edition of the Leading B2B Exhibition for Security & Fire Protection · залов: 1"
+   "url": "https://securika-moscow.ru",
+   "detail": "32-я международная выставка технических средств охраны и оборудования для обеспечения безопасности и противопожарной защиты · залов: 1"
   },
   {
-   "id": "0880c07dad",
-   "title": "Analitika Expo",
-   "start": "2027-04-21",
-   "end": "2027-04-23",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "25th International exhibition of laboratory equipment and chemical reagents · залов: 1"
-  },
-  {
-   "id": "13f126ae4a",
-   "title": "DENTAL SALON 2027",
+   "id": "7441774130",
+   "title": "ДЕНТАЛ САЛОН 2027",
    "start": "2027-04-26",
    "end": "2027-04-29",
    "venue": "Крокус Экспо",
@@ -1007,8 +1496,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "61th Moscow international dental forum and exhibition · залов: 2"
+   "url": "https://dental-expo.com",
+   "detail": "61-й Московский международный стоматологический форум и выставка · залов: 2"
   },
   {
    "id": "90c524de3d",
@@ -1021,8 +1510,8 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "31st international exhibition of machines and equipment for mining, processing and transportation of minerals · залов: 4"
+   "url": "https://www.miningworld.ru",
+   "detail": "31-я международная выставка машин и оборудованя для добычи, обогащения и транспортрировки полезных ископаемых · залов: 4"
   },
   {
    "id": "6a3d661803",
@@ -1034,6 +1523,36 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "74e921d7f9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-01",
+   "end": "2027-05-03",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "85843fe2d9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-08",
+   "end": "2027-05-10",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -1055,8 +1574,8 @@
    "per_day": true
   },
   {
-   "id": "d376ed9cbf",
-   "title": "Metalloobrabotka-2027",
+   "id": "d94fddc647",
+   "title": "Металлообработка-2027",
    "start": "2027-05-11",
    "end": "2027-05-14",
    "venue": "Крокус Экспо",
@@ -1065,12 +1584,26 @@
    "weight": 4.9,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "27th International Exhibition for equipment, instruments and tools for the metalworking Industry · залов: 10"
+   "url": "https://www.metobr-expo.ru",
+   "detail": "27-я международная специализированная выставка оборудования, приборов и инструментов для металлообрабатывающей промышленности · залов: 10"
   },
   {
-   "id": "12b9fa7e72",
-   "title": "Logistika Expo",
+   "id": "9653836b27",
+   "title": "Rock Privet",
+   "start": "2027-05-14",
+   "end": "2027-05-14",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40359/",
+   "detail": "VK Stadium"
+  },
+  {
+   "id": "7b3540172d",
+   "title": "Логистика Экспо",
    "start": "2027-05-25",
    "end": "2027-05-28",
    "venue": "Крокус Экспо",
@@ -1079,12 +1612,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade Fair for Logistics, Transport, Warehousing Technologies and Equipment · залов: 4"
+   "url": "https://logistika-expo.ru",
+   "detail": "Международная выставка логистики, транспорта, складской техники и оборудования · залов: 4"
   },
   {
-   "id": "8452727b29",
-   "title": "CTO Expo",
+   "id": "6704716275",
+   "title": "СТО Expo",
    "start": "2027-05-25",
    "end": "2027-05-28",
    "venue": "Крокус Экспо",
@@ -1093,8 +1626,8 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade Fair for Spare Parts, Automotive Aftersales Market and Service · залов: 4"
+   "url": "https://www.cto-expo.ru",
+   "detail": "Международная выставка запчастей, послепродажного обслуживания и сервиса · залов: 4"
   },
   {
    "id": "28396bfcf8",
@@ -1107,12 +1640,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade Fair for Commercial Vehicles and Technologies · залов: 4"
+   "url": "https://comvex.ru",
+   "detail": "Международная выставка коммерческого транспорта и технологий · залов: 4"
   },
   {
-   "id": "bfb997870f",
-   "title": "CTT Expo",
+   "id": "9ed614f36f",
+   "title": "СТТ Expo",
    "start": "2027-05-25",
    "end": "2027-05-28",
    "venue": "Крокус Экспо",
@@ -1121,12 +1654,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade Fair for Construction Equipment and Technologies · залов: 4"
+   "url": "https://www.ctt-expo.ru",
+   "detail": "Главная выставка строительной техники и технологий в России · залов: 4"
   },
   {
-   "id": "660efb9017",
-   "title": "ELEKTRO",
+   "id": "1ab971b9cb",
+   "title": "ЭЛЕКТРО",
    "start": "2027-06-08",
    "end": "2027-06-10",
    "venue": "Крокус Экспо",
@@ -1135,8 +1668,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "35th International Exhibition for Electrical Equipment, Lighting Engineering, Building Automation · залов: 2"
+   "url": "https://www.elektro-expo.ru",
+   "detail": "35-я международная выставка «Электрооборудование. Светотехника. Автоматизация зданий и сооружений» · залов: 2"
   },
   {
    "id": "8f8f18e6d4",
@@ -1154,6 +1687,21 @@
    "per_day": true
   },
   {
+   "id": "9e1c0136fb",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-06-12",
+   "end": "2027-06-14",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
    "id": "c053b4a61b",
    "title": "RosUpack",
    "start": "2027-06-15",
@@ -1164,12 +1712,12 @@
    "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "31st International exhibition for the packaging industry · залов: 5"
+   "url": "https://rosupack.com",
+   "detail": "31-я международная выставка упаковочной индустрии · залов: 5"
   },
   {
-   "id": "1d30961536",
-   "title": "STONE INDUSTRY",
+   "id": "5e19961820",
+   "title": "ИНДУСТРИЯ КАМНЯ",
    "start": "2027-06-22",
    "end": "2027-06-24",
    "venue": "Крокус Экспо",
@@ -1178,12 +1726,96 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition for natural stone quarrying, processing and application · залов: 1"
+   "url": "https://www.stonefair.ru",
+   "detail": "Международная выставка в области добычи, обработки и применения натурального камня · залов: 1"
   },
   {
-   "id": "6f1b80936d",
-   "title": "AutoBusExpo",
+   "id": "3eac60b77c",
+   "title": "Дима Билан",
+   "start": "2027-06-26",
+   "end": "2027-06-26",
+   "venue": "Лужники",
+   "km": 6.4,
+   "base_weight": 7.0,
+   "weight": 7.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": "Стадион"
+  },
+  {
+   "id": "ee7afe0a8a",
+   "title": "Ленинград",
+   "start": "2027-06-26",
+   "end": "2027-06-26",
+   "venue": "Лукойл Арена",
+   "km": 11.8,
+   "base_weight": 3,
+   "weight": 2.1,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40604/",
+   "detail": "Лукойл Арена"
+  },
+  {
+   "id": "125dfe29d2",
+   "title": "Баста — два концерта",
+   "start": "2027-07-02",
+   "end": "2027-07-03",
+   "venue": "Лужники",
+   "km": 6.4,
+   "base_weight": 7.0,
+   "weight": 7.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://basta.events/events/285903",
+   "detail": "Стадион; даты уточнить у организатора"
+  },
+  {
+   "id": "cf47d6c037",
+   "title": "Арбенина",
+   "start": "2027-07-10",
+   "end": "2027-07-10",
+   "venue": "ВТБ Арена",
+   "km": 4.0,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40068/",
+   "detail": "ВТБ Арена"
+  },
+  {
+   "id": "5615578125",
+   "title": "Zivert",
+   "start": "2027-07-11",
+   "end": "2027-07-11",
+   "venue": "Лужники",
+   "km": 6.4,
+   "base_weight": 7.0,
+   "weight": 7.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
+   "detail": "Стадион"
+  },
+  {
+   "id": "ef0928ce22",
+   "title": "Руки Вверх!",
+   "start": "2027-07-24",
+   "end": "2027-07-24",
+   "venue": "Лужники",
+   "km": 6.4,
+   "base_weight": 7.0,
+   "weight": 7.0,
+   "category": "концерт/шоу",
+   "source": "manual",
+   "url": "https://redkassa.ru/events/bilety_na_concert_ruki_vverh_luzhniki",
+   "detail": "Стадион"
+  },
+  {
+   "id": "eb53277db9",
+   "title": "АвтобусЭкспо",
    "start": "2027-08-17",
    "end": "2027-08-20",
    "venue": "Крокус Экспо",
@@ -1192,8 +1824,8 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Bus & Coach Exhibition · залов: 4"
+   "url": "https://autobus-expo.ru",
+   "detail": "Международный автобусный салон · залов: 4"
   },
   {
    "id": "0ed4d4bf21",
@@ -1206,12 +1838,12 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Large-scale Test drive of commercial Vehicles · залов: 4"
+   "url": "https://comautotrans.moscow",
+   "detail": "Большой тест-драйв коммерческого транспорта · залов: 4"
   },
   {
-   "id": "e3a2d920b7",
-   "title": "InterAutoMechanica",
+   "id": "bc09738d90",
+   "title": "ИнтерАвтоМеханика",
    "start": "2027-08-17",
    "end": "2027-08-20",
    "venue": "Крокус Экспо",
@@ -1220,8 +1852,8 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Trade Fair for Automotive Industry · залов: 4"
+   "url": "https://interauto-mechanica.ru",
+   "detail": "Международная выставка автомобильной индустрии · залов: 4"
   },
   {
    "id": "3cb7aedd9b",
@@ -1234,12 +1866,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 42st International exhibition for promotional products and advertising technologies · залов: 1"
+   "url": "https://ipsa.ru",
+   "detail": "42-я международная выставка промопродукции, мерча, оборудования и технологий для рекламы · залов: 1"
   },
   {
-   "id": "cc4ffd0508",
-   "title": "FlowersExpo",
+   "id": "fb39367c3b",
+   "title": "ЦветыЭкспо",
    "start": "2027-09-06",
    "end": "2027-09-08",
    "venue": "Крокус Экспо",
@@ -1248,12 +1880,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The International Exhibition on Floruculture & Green Industry · залов: 2"
+   "url": "https://www.flowers-expo.ru",
+   "detail": "Международная выставка цветов, растений, техники и технологий для цветоводства и ландшафтного дизайна · залов: 2"
   },
   {
-   "id": "be8fc386cd",
-   "title": "HouseHold Expo Autumn 2027",
+   "id": "fd04c04ac4",
+   "title": "HouseHold Expo Осень 2027",
    "start": "2027-09-07",
    "end": "2027-09-09",
    "venue": "Крокус Экспо",
@@ -1262,12 +1894,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "39th International B2B exhibition of household goods and supplies · залов: 2"
+   "url": "https://hhexpo.ru",
+   "detail": "39-я международная В2В выставка товаров для дома · залов: 2"
   },
   {
-   "id": "ba612d40c5",
-   "title": "WasteTech 2027",
+   "id": "c7ba088298",
+   "title": "ЭКВАТЭК 2027",
    "start": "2027-09-07",
    "end": "2027-09-09",
    "venue": "Крокус Экспо",
@@ -1276,12 +1908,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition for waste management, recycling and ecology · залов: 1"
+   "url": "https://www.ecwatech.ru",
+   "detail": "Международная выставка технологий и оборудования для коммунальной и промышленной водоподготовки, водоснабжения, водоотведения, очистки сточных вод, инженерных систем и насосного оборудования · залов: 1"
   },
   {
-   "id": "0d46cf0d32",
-   "title": "ECWATECH 2027",
+   "id": "42597d98d6",
+   "title": "ВэйстТэк 2027",
    "start": "2027-09-07",
    "end": "2027-09-09",
    "venue": "Крокус Экспо",
@@ -1290,8 +1922,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition of technologies and equipment for municipal and industrial water treatment, water supply, sewage, wastewater treatment, engineering systems and pumping equipment · залов: 1"
+   "url": "https://www.waste-tech.ru",
+   "detail": "Международная выставка по обращению с коммунальными, промышленными, строительными, сельскохозяйственными отходами, рециклингу и экологии · залов: 1"
   },
   {
    "id": "6e28ee8a48",
@@ -1304,8 +1936,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "17th International exhibition of machinery, equipment, automation tools and robotics for warehouse and industrial logistics · залов: 3"
+   "url": "https://www.cemat-russia.ru",
+   "detail": "17-я международная выставка техники, оборудования, средств автоматизации и роботизации для складской и производственной логистики · залов: 3"
   },
   {
    "id": "179f840189",
@@ -1318,12 +1950,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "36th International Autumn Food and Drink Exhibition · залов: 2"
+   "url": "https://world-food.ru",
+   "detail": "36-я международная осенняя выставка продуктов питания · залов: 2"
   },
   {
-   "id": "a30ad94899",
-   "title": "Mir Detstva - 2027",
+   "id": "821736a4e6",
+   "title": "Мир детства - 2027",
    "start": "2027-09-15",
    "end": "2027-09-17",
    "venue": "Крокус Экспо",
@@ -1332,12 +1964,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "32th International Exhibition for the Children’s Goods Industry · залов: 2"
+   "url": "https://www.mirdetstva-expo.ru",
+   "detail": "32-я международная выставка «Индустрия детских товаров» · залов: 2"
   },
   {
-   "id": "981bf5af83",
-   "title": "CJF – Child and Junior Fashion 2027. Autumn",
+   "id": "40b81af430",
+   "title": "CJF - ДЕТСКАЯ МОДА. Осень-2027",
    "start": "2027-09-15",
    "end": "2027-09-17",
    "venue": "Крокус Экспо",
@@ -1346,12 +1978,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "38th International Exhibition for Child and Junior Fashion · залов: 1"
+   "url": "https://www.cjf-expo.ru",
+   "detail": "38-я международная выставка \"Детская и юношеская мода\" · залов: 1"
   },
   {
-   "id": "8852263ddf",
-   "title": "DENTAL-EXPO 2027",
+   "id": "e99a252d6b",
+   "title": "ДЕНТАЛ-ЭКСПО 2027",
    "start": "2027-09-20",
    "end": "2027-09-23",
    "venue": "Крокус Экспо",
@@ -1360,12 +1992,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 62nd Moscow international dental forum and exhibition · залов: 2"
+   "url": "https://www.dental-expo.com",
+   "detail": "62-й Московский международный стоматологический форум и выставка · залов: 2"
   },
   {
-   "id": "f90268eb13",
-   "title": "ParkZoo 2027",
+   "id": "95bec7edf3",
+   "title": "ПаркЗоо 2027",
    "start": "2027-09-22",
    "end": "2027-09-24",
    "venue": "Крокус Экспо",
@@ -1374,12 +2006,26 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International ZooIndustry Exhibition · залов: 2"
+   "url": "https://www.parkzoo.ru",
+   "detail": "Международная выставка зооиндустрии · залов: 2"
   },
   {
-   "id": "1ad1383d8e",
-   "title": "AGROPRODMASH-2027",
+   "id": "e4573f40dc",
+   "title": "Ария",
+   "start": "2027-09-25",
+   "end": "2027-09-25",
+   "venue": "Live Арена",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40829/",
+   "detail": "Live Арена"
+  },
+  {
+   "id": "b93eb5c531",
+   "title": "АГРОПРОДМАШ-2027",
    "start": "2027-09-28",
    "end": "2027-10-01",
    "venue": "Крокус Экспо",
@@ -1388,12 +2034,12 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "32th International Exhibition for Equipment, Technologies, Raw Materials and Ingredients for the Food Processing Industry · залов: 3"
+   "url": "https://www.agroprodmash-expo.ru",
+   "detail": "32-я международная выставка «Оборудование, технологии, сырье и ингредиенты для пищевой и перерабатывающей промышленности» · залов: 3"
   },
   {
-   "id": "8d2ced81c8",
-   "title": "Russian Diagnostic Summit",
+   "id": "d5a2f6777e",
+   "title": "Российский Диагностический Саммит",
    "start": "2027-09-29",
    "end": "2027-10-01",
    "venue": "Крокус Экспо",
@@ -1402,8 +2048,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "A scientific and educational event for specialists in the field of medical diagnostics featuring a specialized exhibition of diagnostic equipment and consumables, special software · залов: 2"
+   "url": "https://rdsummit.ru",
+   "detail": "Научно-образовательное мероприятие для специалистов в сфере медицинской диагностики со специализированной выставкой диагностического оборудования и расходных материалов, специального программного обеспечения · залов: 2"
   },
   {
    "id": "ebdfa55c05",
@@ -1416,8 +2062,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "26th International Exhibition of Materials, Equipment, and Technologies for Metal Welding and Cutting · залов: 1"
+   "url": "https://weldex.ru",
+   "detail": "26-я международная выставка материалов, оборудования и технологий для сварки и резки металла · залов: 1"
   },
   {
    "id": "95f1c1b7b7",
@@ -1430,8 +2076,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "34th International exhibition for perfumery and cosmetics industry · залов: 3"
+   "url": "https://www.intercharm.ru",
+   "detail": "34-я международная выставка парфюмерно-косметической отрасли · залов: 3"
   },
   {
    "id": "e6b2f116ba",
@@ -1440,12 +2086,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Specialized exhibition for professionals of HoReCa and tourism · залов: 1"
+   "detail": "Международная специализированная выставка · залов: 3"
   },
   {
    "id": "63c8aae5d4",
@@ -1458,8 +2104,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 25th International exhibition of materials and equipment for surface treatment, coatings application and electroplating · залов: 2"
+   "url": "https://www.expocoating-moscow.ru",
+   "detail": "25-я международная выставка материалов и оборудования для обработки поверхности, нанесения покрытий и гальванических производств · залов: 2"
   },
   {
    "id": "0931dcf804",
@@ -1472,8 +2118,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 23rd International Exhibition of Fasteners · залов: 2"
+   "url": "https://www.fasttec.ru",
+   "detail": "23-я международная выставка крепежных изделий · залов: 2"
   },
   {
    "id": "2c421651da",
@@ -1486,8 +2132,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 12th International specialised exhibition of industrial boilers, heat exchange and power generation equipment · залов: 2"
+   "url": "https://www.heatpower-expo.ru",
+   "detail": "12-я международная выставка промышленного котельного, теплообменного и электрогенерирующего оборудования · залов: 2"
   },
   {
    "id": "b4bf9fc3c7",
@@ -1500,8 +2146,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 26th International exhibition of industrial pumps, compressors, valves, actuators and engines · залов: 2"
+   "url": "https://www.pcvexpo.ru",
+   "detail": "26-я международная выставка промышленных насосов, компрессоров и трубопроводной арматуры, приводов и двигателей · залов: 2"
   },
   {
    "id": "7786afaf45",
@@ -1514,8 +2160,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 27th International exhibition of equipment for non-destructive testing · залов: 2"
+   "url": "https://www.ndt-russia.ru",
+   "detail": "27-я международная выставка оборудования для неразрушающего контроля · залов: 2"
   },
   {
    "id": "8a9d579095",
@@ -1528,12 +2174,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "The 24th International Exhibition of Testing and Measuring Equipment · залов: 2"
+   "url": "https://www.testing-control.ru",
+   "detail": "24-я международная выставка испытательного и контрольно-измерительного оборудования · залов: 2"
   },
   {
-   "id": "e7a3804a4c",
-   "title": "Reklama-2027",
+   "id": "2d72ba58a0",
+   "title": "Реклама-2027",
    "start": "2027-10-26",
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
@@ -1542,8 +2188,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "34th International Specialized Exhibition for Advertising · залов: 1"
+   "url": "https://www.reklama-expo.ru",
+   "detail": "34-я международная специализированная выставка для производителей и заказчиков рекламы · залов: 1"
   },
   {
    "id": "4955f3e502",
@@ -1561,6 +2207,35 @@
    "per_day": true
   },
   {
+   "id": "6aacbaf865",
+   "title": "Длинные выходные (4 дн.)",
+   "start": "2027-11-04",
+   "end": "2027-11-07",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "32a0e991cf",
+   "title": "МИР КЛИМАТА 2027",
+   "start": "2027-11-09",
+   "end": "2027-11-12",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 6,
+   "weight": 4.2,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.climatexpo.ru",
+   "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 5"
+  },
+  {
    "id": "7cf3a218da",
    "title": "UtiliCon-2027",
    "start": "2027-11-09",
@@ -1571,8 +2246,8 @@
    "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition for housing, utilities and construction · залов: 5"
+   "url": "https://utilicon.ru",
+   "detail": "Международная выставка услуг, технологий и материалов для ЖКХ и строительства · залов: 5"
   },
   {
    "id": "338ede4045",
@@ -1585,26 +2260,12 @@
    "weight": 4.2,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Moscow International Tool Expo · залов: 5"
+   "url": "https://www.mitexpo.ru",
+   "detail": "Международная выставка инcтрумента, оборудования и технологий · залов: 5"
   },
   {
-   "id": "a3ea30a9fe",
-   "title": "Climate Expo",
-   "start": "2027-11-09",
-   "end": "2027-11-12",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 6,
-   "weight": 4.2,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International Exhibition of Heating, Ventilation, Air Conditioning and Refrigeration · залов: 5"
-  },
-  {
-   "id": "0669ac9f17",
-   "title": "BIOT 2027",
+   "id": "f605835b21",
+   "title": "БИОТ 2027",
    "start": "2027-11-16",
    "end": "2027-11-18",
    "venue": "Крокус Экспо",
@@ -1613,8 +2274,8 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "XXXI International Specialised Exhibition and Forum · залов: 2"
+   "url": "https://biot-expo.ru",
+   "detail": "31-я международная специализированная выставка-форум · залов: 2"
   },
   {
    "id": "602a33f5b7",
@@ -1627,12 +2288,12 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "29th International exhibition of equipment and products for professional cleaning, sanitary, hygiene, dry-cleaning and laundry · залов: 1"
+   "url": "https://www.cleanexpo-moscow.ru",
+   "detail": "29-я международная выставка оборудования и средств для профессиональной уборки, санитарии, гигиены, химической чистки и стирки · залов: 1"
   },
   {
-   "id": "6a38f7cbee",
-   "title": "MEBEL-2027",
+   "id": "e8b7e8a29d",
+   "title": "МЕБЕЛЬ-2027",
    "start": "2027-11-22",
    "end": "2027-11-25",
    "venue": "Крокус Экспо",
@@ -1641,8 +2302,8 @@
    "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "38th international exhibition for furniture, fittings and upholstery · залов: 3"
+   "url": "https://www.meb-expo.ru",
+   "detail": "38-я международная выставка «Мебель, фурнитура и обивочные материалы» · залов: 3"
   },
   {
    "id": "4de175b4ef",
@@ -1655,12 +2316,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "29th International exhibition of equipment, raw materials and technologies for pharmaceutical manufacturing · залов: 2"
+   "url": "https://pharmtech-expo.ru",
+   "detail": "29-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 2"
   },
   {
-   "id": "45b734f999",
-   "title": "Electronica Russia",
+   "id": "382aa3cacd",
+   "title": "Электроника России",
    "start": "2027-11-23",
    "end": "2027-11-25",
    "venue": "Крокус Экспо",
@@ -1670,7 +2331,7 @@
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibition and forum · залов: 1"
+   "detail": "Международная выставка-форум · залов: 1"
   },
   {
    "id": "b6925f8562",
@@ -1683,12 +2344,12 @@
    "weight": 2.1,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "21st Annual International Exhibition of Equipment, Materials and Components for the Woodworking and Furniture Industries · залов: 2"
+   "url": "https://woodexpo.ru",
+   "detail": "21-я Ежегодная международная выставка оборудования, материалов и комплектующих для деревообрабатывающей и мебельной промышленности · залов: 2"
   },
   {
-   "id": "a5e4816bfe",
-   "title": "«Russian Healthcare Week\": Zdravookhraneniye, Healthy Lifestyle, MedTravelExpo. Clinics, Health and SPA resorts",
+   "id": "c4af138b38",
+   "title": "Международные выставки медицинской техники, изделий медицинского назначения, расходных материалов, средств реабилитации и профилактики, эстетической медицины, фармацевтики, медицинских и оздоровительных услуг, технологий оздоровления и лечения в России и за рубежом",
    "start": "2027-12-06",
    "end": "2027-12-09",
    "venue": "Крокус Экспо",
@@ -1697,32 +2358,33 @@
    "weight": 3.5,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "International exhibitions of Medical Engineering, Products and Consumables. Rehabilitation and Preventive Treatment facilities, Medical aesthetics, Pharmaceuticals, Medical and Wellness Services, Health Improvements and medical Treatment · залов: 4"
+   "url": "https://www.zdravo-expo.ru",
+   "detail": "залов: 4"
   }
  ],
  "days": {
   "2026-11-02": {
    "score": 2.1,
    "events": [
-    "fe856fd952"
+    "63ca979b0b"
    ],
    "level": "low"
   },
   "2026-11-03": {
    "score": 2.1,
    "events": [
-    "fe856fd952"
+    "63ca979b0b"
    ],
    "level": "low"
   },
   "2026-11-04": {
-   "score": 3.6,
+   "score": 6.6,
    "events": [
-    "fe856fd952",
+    "63ca979b0b",
+    "050cabbafb",
     "26f3cdbfb1"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2026-11-07": {
    "score": 1.0,
@@ -1742,8 +2404,8 @@
     "0081e90ccd",
     "8d93826f9c",
     "ccff34d381",
-    "7d1e2be233",
-    "c2a675e80f"
+    "2b587dd4af",
+    "22299e1b17"
    ],
    "level": "medium"
   },
@@ -1753,8 +2415,8 @@
     "0081e90ccd",
     "8d93826f9c",
     "ccff34d381",
-    "7d1e2be233",
-    "c2a675e80f"
+    "2b587dd4af",
+    "22299e1b17"
    ],
    "level": "high"
   },
@@ -1764,148 +2426,168 @@
     "0081e90ccd",
     "8d93826f9c",
     "ccff34d381",
-    "7d1e2be233",
-    "c2a675e80f"
+    "2b587dd4af",
+    "22299e1b17"
    ],
    "level": "high"
   },
   "2026-11-12": {
-   "score": 8.3,
+   "score": 9.8,
    "events": [
     "0081e90ccd",
     "8d93826f9c",
     "ccff34d381",
-    "7d1e2be233",
-    "c2a675e80f"
+    "2b587dd4af",
+    "22299e1b17",
+    "0781d16946"
    ],
-   "level": "medium"
+   "level": "high"
   },
   "2026-11-13": {
    "score": 3.6,
    "events": [
     "8d93826f9c",
     "ccff34d381",
-    "c2a675e80f",
-    "048c4ed095"
+    "2b587dd4af",
+    "7418c087ea"
    ],
    "level": "low"
   },
   "2026-11-14": {
-   "score": 3.1,
+   "score": 6.1,
    "events": [
-    "048c4ed095"
+    "85265e7b58",
+    "7418c087ea"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2026-11-15": {
    "score": 1.6,
    "events": [
-    "048c4ed095"
+    "7418c087ea"
    ],
    "level": "low"
   },
   "2026-11-16": {
-   "score": 2.4,
+   "score": 3.9,
    "events": [
-    "0fd4be36e4",
+    "c9e010f936",
+    "8d53419116",
     "5a909e6836"
    ],
    "level": "low"
   },
   "2026-11-17": {
-   "score": 3.5,
+   "score": 5.5,
    "events": [
-    "0fd4be36e4",
+    "c9e010f936",
+    "8d53419116",
     "5a909e6836"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2026-11-18": {
-   "score": 3.5,
+   "score": 9.5,
    "events": [
-    "0fd4be36e4",
-    "5a909e6836"
+    "c9e010f936",
+    "8d53419116",
+    "5a909e6836",
+    "7100b16d85"
    ],
-   "level": "low"
+   "level": "high"
   },
   "2026-11-19": {
-   "score": 2.5,
+   "score": 3.1,
    "events": [
-    "0fd4be36e4",
+    "c9e010f936",
+    "8d53419116",
     "5a909e6836"
    ],
    "level": "low"
   },
   "2026-11-20": {
-   "score": 0.6,
+   "score": 2.6,
    "events": [
-    "0fd4be36e4"
+    "c9e010f936",
+    "8de15a51a8"
    ],
    "level": "low"
   },
   "2026-11-21": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2026-11-22": {
-   "score": 3.0,
+   "score": 6.0,
    "events": [
-    "2b0710ea3c"
-   ],
-   "level": "low"
-  },
-  "2026-11-23": {
-   "score": 5.7,
-   "events": [
-    "2b0710ea3c",
-    "426ae71721",
-    "7bffbdfa18"
+    "f841c3f936",
+    "8572a37ff5"
    ],
    "level": "medium"
   },
-  "2026-11-24": {
-   "score": 7.0,
+  "2026-11-22": {
+   "score": 5.8,
    "events": [
-    "2b0710ea3c",
+    "bff8e4356e",
+    "8397727ded"
+   ],
+   "level": "medium"
+  },
+  "2026-11-23": {
+   "score": 9.7,
+   "events": [
+    "bff8e4356e",
+    "8397727ded",
     "426ae71721",
-    "7bffbdfa18"
+    "914de62111"
+   ],
+   "level": "high"
+  },
+  "2026-11-24": {
+   "score": 8.2,
+   "events": [
+    "bff8e4356e",
+    "8397727ded",
+    "426ae71721",
+    "914de62111"
    ],
    "level": "medium"
   },
   "2026-11-25": {
    "score": 7.0,
    "events": [
-    "2b0710ea3c",
+    "8397727ded",
     "426ae71721",
-    "7bffbdfa18"
+    "914de62111"
    ],
    "level": "medium"
   },
   "2026-11-26": {
    "score": 4.1,
    "events": [
-    "2b0710ea3c",
+    "8397727ded",
     "426ae71721",
-    "7bffbdfa18"
+    "914de62111"
    ],
    "level": "medium"
   },
   "2026-11-27": {
-   "score": 0.8,
+   "score": 5.8,
    "events": [
-    "426ae71721"
+    "426ae71721",
+    "99cc9a2cf2",
+    "f5345e6324"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2026-11-28": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 4.0,
+   "events": [
+    "801273da5b"
+   ],
+   "level": "medium"
   },
   "2026-11-29": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.5,
+   "events": [
+    "74ffe44742"
+   ],
    "level": "low"
   },
   "2026-11-30": {
@@ -1944,14 +2626,19 @@
    "level": "low"
   },
   "2026-12-05": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 10.0,
+   "events": [
+    "4fbfb69fe0",
+    "7a3f1ea6b9",
+    "02d9afda63"
+   ],
+   "level": "high"
   },
   "2026-12-06": {
-   "score": 6.4,
+   "score": 7.9,
    "events": [
-    "6287c1c422",
+    "50c7c955fc",
+    "2d22b2e4a4",
     "2e4c0b0aa5"
    ],
    "level": "medium"
@@ -1959,7 +2646,7 @@
   "2026-12-07": {
    "score": 7.7,
    "events": [
-    "6287c1c422",
+    "2d22b2e4a4",
     "2e4c0b0aa5"
    ],
    "level": "medium"
@@ -1967,7 +2654,7 @@
   "2026-12-08": {
    "score": 7.7,
    "events": [
-    "6287c1c422",
+    "2d22b2e4a4",
     "2e4c0b0aa5"
    ],
    "level": "medium"
@@ -1975,32 +2662,32 @@
   "2026-12-09": {
    "score": 9.2,
    "events": [
-    "6287c1c422",
+    "2d22b2e4a4",
     "2e4c0b0aa5",
-    "63bb74502e"
+    "de9a3314c3"
    ],
    "level": "high"
   },
   "2026-12-10": {
    "score": 4.4,
    "events": [
-    "6287c1c422",
+    "2d22b2e4a4",
     "2e4c0b0aa5",
-    "63bb74502e"
+    "de9a3314c3"
    ],
    "level": "medium"
   },
   "2026-12-11": {
    "score": 2.1,
    "events": [
-    "63bb74502e"
+    "de9a3314c3"
    ],
    "level": "low"
   },
   "2026-12-12": {
    "score": 1.6,
    "events": [
-    "63bb74502e"
+    "de9a3314c3"
    ],
    "level": "low"
   },
@@ -2009,14 +2696,35 @@
    "events": [],
    "level": "low"
   },
+  "2026-12-18": {
+   "score": 5.1,
+   "events": [
+    "9e1c4b3bee",
+    "f74a88a294"
+   ],
+   "level": "medium"
+  },
   "2026-12-19": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 7.0,
+   "events": [
+    "94b701b01a",
+    "f74a88a294"
+   ],
+   "level": "medium"
   },
   "2026-12-20": {
-   "score": 1.0,
-   "events": [],
+   "score": 3.9,
+   "events": [
+    "f74a88a294",
+    "527a23bc6b"
+   ],
+   "level": "low"
+  },
+  "2026-12-25": {
+   "score": 3.0,
+   "events": [
+    "c4f9ce4783"
+   ],
    "level": "low"
   },
   "2026-12-26": {
@@ -2029,18 +2737,26 @@
    "events": [],
    "level": "low"
   },
+  "2026-12-31": {
+   "score": 4.0,
+   "events": [
+    "f1e4865697",
+    "71a9d198f4"
+   ],
+   "level": "medium"
+  },
   "2027-01-01": {
    "score": 5.0,
    "events": [
-    "bfd0111636",
-    "0fdc4af3f1"
+    "71a9d198f4",
+    "bfd0111636"
    ],
    "level": "medium"
   },
   "2027-01-02": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "3ae8fc4347"
    ],
    "level": "medium"
@@ -2048,7 +2764,7 @@
   "2027-01-03": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "bd54c3554f"
    ],
    "level": "medium"
@@ -2056,7 +2772,7 @@
   "2027-01-04": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "42a4c6dcdc"
    ],
    "level": "medium"
@@ -2064,7 +2780,7 @@
   "2027-01-05": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "d38ac4417c"
    ],
    "level": "medium"
@@ -2072,7 +2788,7 @@
   "2027-01-06": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "d9a2436634"
    ],
    "level": "medium"
@@ -2080,7 +2796,7 @@
   "2027-01-07": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "9441908f86"
    ],
    "level": "medium"
@@ -2088,7 +2804,7 @@
   "2027-01-08": {
    "score": 5.0,
    "events": [
-    "0fdc4af3f1",
+    "71a9d198f4",
     "45c601bf43"
    ],
    "level": "medium"
@@ -2096,14 +2812,14 @@
   "2027-01-09": {
    "score": 2.0,
    "events": [
-    "0fdc4af3f1"
+    "71a9d198f4"
    ],
    "level": "low"
   },
   "2027-01-10": {
    "score": 2.0,
    "events": [
-    "0fdc4af3f1"
+    "71a9d198f4"
    ],
    "level": "low"
   },
@@ -2118,33 +2834,33 @@
    "level": "low"
   },
   "2027-01-19": {
-   "score": 2.0,
+   "score": 5.9,
    "events": [
-    "326401afeb",
+    "31cef5768d",
     "44a318e50d"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-01-20": {
-   "score": 2.8,
+   "score": 8.4,
    "events": [
-    "326401afeb",
+    "31cef5768d",
     "44a318e50d"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-01-21": {
-   "score": 2.8,
+   "score": 8.4,
    "events": [
-    "326401afeb",
+    "31cef5768d",
     "44a318e50d"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-01-22": {
-   "score": 0.8,
+   "score": 2.5,
    "events": [
-    "326401afeb",
+    "31cef5768d",
     "44a318e50d"
    ],
    "level": "low"
@@ -2248,24 +2964,24 @@
   "2027-02-09": {
    "score": 2.0,
    "events": [
-    "8ac7711e30",
-    "a7dd9f2550"
+    "970a642282",
+    "f98493a9b5"
    ],
    "level": "low"
   },
   "2027-02-10": {
    "score": 2.8,
    "events": [
-    "8ac7711e30",
-    "a7dd9f2550"
+    "970a642282",
+    "f98493a9b5"
    ],
    "level": "low"
   },
   "2027-02-11": {
    "score": 0.8,
    "events": [
-    "8ac7711e30",
-    "a7dd9f2550"
+    "970a642282",
+    "f98493a9b5"
    ],
    "level": "low"
   },
@@ -2282,23 +2998,23 @@
   "2027-02-15": {
    "score": 1.0,
    "events": [
-    "21f8f26382"
+    "fff5b184e1"
    ],
    "level": "low"
   },
   "2027-02-16": {
    "score": 2.4,
    "events": [
-    "21f8f26382",
-    "d4494f5e81"
+    "fff5b184e1",
+    "2780fd6ffa"
    ],
    "level": "low"
   },
   "2027-02-17": {
    "score": 5.2,
    "events": [
-    "21f8f26382",
-    "d4494f5e81",
+    "fff5b184e1",
+    "2780fd6ffa",
     "e99926e462"
    ],
    "level": "medium"
@@ -2306,55 +3022,59 @@
   "2027-02-18": {
    "score": 8.3,
    "events": [
-    "21f8f26382",
-    "d4494f5e81",
+    "fff5b184e1",
+    "2780fd6ffa",
     "e99926e462",
-    "fee97c757e",
-    "72f0aa57a6"
+    "2db16609be",
+    "4f9651e01f"
    ],
    "level": "medium"
   },
   "2027-02-19": {
    "score": 8.1,
    "events": [
-    "d4494f5e81",
+    "2780fd6ffa",
     "e99926e462",
-    "fee97c757e",
-    "72f0aa57a6"
+    "2db16609be",
+    "4f9651e01f"
    ],
    "level": "medium"
   },
   "2027-02-20": {
-   "score": 6.2,
+   "score": 7.2,
    "events": [
     "e99926e462",
-    "fee97c757e",
-    "72f0aa57a6"
+    "2db16609be",
+    "4f9651e01f",
+    "0b8cd59a33"
    ],
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 5.2,
+   "score": 6.2,
    "events": [
-    "fee97c757e",
-    "72f0aa57a6"
+    "2db16609be",
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 1.3,
+   "score": 3.3,
    "events": [
-    "fee97c757e",
-    "72f0aa57a6"
+    "2db16609be",
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "low"
   },
   "2027-02-23": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "4342d48dc4",
     "b86837fc2b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-02-27": {
    "score": 1.0,
@@ -2364,35 +3084,35 @@
   "2027-02-28": {
    "score": 4.4,
    "events": [
-    "106758e372"
+    "d6a92f2f0c"
    ],
    "level": "medium"
   },
   "2027-03-01": {
    "score": 4.9,
    "events": [
-    "106758e372"
+    "d6a92f2f0c"
    ],
    "level": "medium"
   },
   "2027-03-02": {
    "score": 4.9,
    "events": [
-    "106758e372"
+    "d6a92f2f0c"
    ],
    "level": "medium"
   },
   "2027-03-03": {
    "score": 4.9,
    "events": [
-    "106758e372"
+    "d6a92f2f0c"
    ],
    "level": "medium"
   },
   "2027-03-04": {
    "score": 1.5,
    "events": [
-    "106758e372"
+    "d6a92f2f0c"
    ],
    "level": "low"
   },
@@ -2421,35 +3141,39 @@
   "2027-03-09": {
    "score": 1.0,
    "events": [
-    "b448a2f7a1"
+    "be576d3e46"
    ],
    "level": "low"
   },
   "2027-03-10": {
    "score": 1.4,
    "events": [
-    "b448a2f7a1"
+    "be576d3e46"
    ],
    "level": "low"
   },
   "2027-03-11": {
    "score": 1.4,
    "events": [
-    "b448a2f7a1"
+    "be576d3e46"
    ],
    "level": "low"
   },
   "2027-03-12": {
-   "score": 0.4,
+   "score": 3.4,
    "events": [
-    "b448a2f7a1"
+    "be576d3e46",
+    "a5c902675c"
    ],
    "level": "low"
   },
   "2027-03-13": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 7.0,
+   "events": [
+    "2f10110602",
+    "70e954e2f7"
+   ],
+   "level": "medium"
   },
   "2027-03-14": {
    "score": 1.0,
@@ -2457,77 +3181,83 @@
    "level": "low"
   },
   "2027-03-15": {
-   "score": 13.7,
+   "score": 15.2,
    "events": [
     "3db150ce06",
     "d5070b1797",
-    "3abe305795",
-    "4d377e0750",
-    "c7b6167e03",
-    "45ac08e8c1",
+    "6aea3d9c9c",
+    "6542becfe0",
+    "90a76c2ba9",
+    "db6545d151",
+    "5c1e0a3362",
     "a333eb078f",
     "62d32d01c3",
-    "9f09d0d592",
-    "76e5d42c9e",
+    "04802261eb",
+    "c58ee6ba72",
     "4feb44489f"
    ],
    "level": "high"
   },
   "2027-03-16": {
-   "score": 19.6,
+   "score": 21.7,
    "events": [
     "3db150ce06",
     "d5070b1797",
-    "3abe305795",
-    "4d377e0750",
-    "c7b6167e03",
-    "45ac08e8c1",
+    "6aea3d9c9c",
+    "6542becfe0",
+    "90a76c2ba9",
+    "db6545d151",
+    "5c1e0a3362",
     "a333eb078f",
     "62d32d01c3",
-    "9f09d0d592",
-    "76e5d42c9e",
+    "04802261eb",
+    "c58ee6ba72",
     "4feb44489f"
    ],
    "level": "high"
   },
   "2027-03-17": {
-   "score": 19.6,
+   "score": 21.7,
    "events": [
     "3db150ce06",
     "d5070b1797",
-    "3abe305795",
-    "4d377e0750",
-    "c7b6167e03",
-    "45ac08e8c1",
+    "6aea3d9c9c",
+    "6542becfe0",
+    "90a76c2ba9",
+    "db6545d151",
+    "5c1e0a3362",
     "a333eb078f",
     "62d32d01c3",
-    "9f09d0d592",
-    "76e5d42c9e",
+    "04802261eb",
+    "c58ee6ba72",
     "4feb44489f"
    ],
    "level": "high"
   },
   "2027-03-18": {
-   "score": 5.9,
+   "score": 6.5,
    "events": [
     "3db150ce06",
     "d5070b1797",
-    "3abe305795",
-    "4d377e0750",
-    "c7b6167e03",
-    "45ac08e8c1",
+    "6aea3d9c9c",
+    "6542becfe0",
+    "90a76c2ba9",
+    "db6545d151",
+    "5c1e0a3362",
     "a333eb078f",
     "62d32d01c3",
-    "9f09d0d592",
-    "76e5d42c9e",
+    "04802261eb",
+    "c58ee6ba72",
     "4feb44489f"
    ],
    "level": "medium"
   },
   "2027-03-20": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 5.0,
+   "events": [
+    "0799de94d8"
+   ],
+   "level": "medium"
   },
   "2027-03-21": {
    "score": 1.0,
@@ -2537,7 +3267,7 @@
   "2027-03-22": {
    "score": 2.0,
    "events": [
-    "63edb8a42e",
+    "250f06bf92",
     "440ba85b20"
    ],
    "level": "low"
@@ -2545,7 +3275,7 @@
   "2027-03-23": {
    "score": 2.8,
    "events": [
-    "63edb8a42e",
+    "250f06bf92",
     "440ba85b20"
    ],
    "level": "low"
@@ -2553,7 +3283,7 @@
   "2027-03-24": {
    "score": 2.8,
    "events": [
-    "63edb8a42e",
+    "250f06bf92",
     "440ba85b20"
    ],
    "level": "low"
@@ -2561,15 +3291,24 @@
   "2027-03-25": {
    "score": 0.8,
    "events": [
-    "63edb8a42e",
+    "250f06bf92",
     "440ba85b20"
    ],
    "level": "low"
   },
-  "2027-03-27": {
-   "score": 1.0,
-   "events": [],
+  "2027-03-26": {
+   "score": 1.5,
+   "events": [
+    "029c9dbd1f"
+   ],
    "level": "low"
+  },
+  "2027-03-27": {
+   "score": 4.0,
+   "events": [
+    "246a625f9d"
+   ],
+   "level": "medium"
   },
   "2027-03-28": {
    "score": 1.0,
@@ -2605,9 +3344,10 @@
    "level": "medium"
   },
   "2027-04-02": {
-   "score": 1.5,
+   "score": 3.0,
    "events": [
-    "ed7bee4312"
+    "ed7bee4312",
+    "0caf095914"
    ],
    "level": "low"
   },
@@ -2621,6 +3361,13 @@
    "events": [],
    "level": "low"
   },
+  "2027-04-08": {
+   "score": 1.5,
+   "events": [
+    "e69a2d1b79"
+   ],
+   "level": "low"
+  },
   "2027-04-10": {
    "score": 1.0,
    "events": [],
@@ -2629,65 +3376,67 @@
   "2027-04-11": {
    "score": 3.4,
    "events": [
-    "bfa64e569d",
-    "bd668a12f6"
+    "601c9ca109",
+    "2e0d43b458"
    ],
    "level": "low"
   },
   "2027-04-12": {
    "score": 8.9,
    "events": [
-    "bfa64e569d",
-    "bd668a12f6",
+    "601c9ca109",
+    "2e0d43b458",
     "052e3f6680",
+    "e02fba8dc5",
     "6de120603a",
     "4396f87a66",
-    "d892a8ca90",
-    "e02fba8dc5"
+    "d892a8ca90"
    ],
    "level": "medium"
   },
   "2027-04-13": {
    "score": 11.2,
    "events": [
-    "bfa64e569d",
-    "bd668a12f6",
+    "601c9ca109",
+    "2e0d43b458",
     "052e3f6680",
+    "e02fba8dc5",
     "6de120603a",
     "4396f87a66",
-    "d892a8ca90",
-    "e02fba8dc5"
+    "d892a8ca90"
    ],
    "level": "high"
   },
   "2027-04-14": {
    "score": 10.2,
    "events": [
-    "bfa64e569d",
-    "bd668a12f6",
+    "601c9ca109",
+    "2e0d43b458",
     "052e3f6680",
+    "e02fba8dc5",
     "6de120603a",
     "4396f87a66",
-    "d892a8ca90",
-    "e02fba8dc5"
+    "d892a8ca90"
    ],
    "level": "high"
   },
   "2027-04-15": {
    "score": 2.9,
    "events": [
-    "bfa64e569d",
-    "bd668a12f6",
+    "601c9ca109",
+    "2e0d43b458",
     "052e3f6680",
+    "e02fba8dc5",
     "4396f87a66",
-    "d892a8ca90",
-    "e02fba8dc5"
+    "d892a8ca90"
    ],
    "level": "low"
   },
   "2027-04-17": {
-   "score": 1.0,
-   "events": [],
+   "score": 3.0,
+   "events": [
+    "51870e126d"
+   ],
    "level": "low"
   },
   "2027-04-18": {
@@ -2699,8 +3448,8 @@
    "score": 2.9,
    "events": [
     "89f7b94547",
-    "1daffde82d",
-    "0880c07dad"
+    "22059c7aa5",
+    "1daffde82d"
    ],
    "level": "low"
   },
@@ -2708,8 +3457,8 @@
    "score": 4.2,
    "events": [
     "89f7b94547",
-    "1daffde82d",
-    "0880c07dad"
+    "22059c7aa5",
+    "1daffde82d"
    ],
    "level": "medium"
   },
@@ -2717,8 +3466,8 @@
    "score": 4.2,
    "events": [
     "89f7b94547",
-    "1daffde82d",
-    "0880c07dad"
+    "22059c7aa5",
+    "1daffde82d"
    ],
    "level": "medium"
   },
@@ -2726,8 +3475,8 @@
    "score": 1.3,
    "events": [
     "89f7b94547",
-    "1daffde82d",
-    "0880c07dad"
+    "22059c7aa5",
+    "1daffde82d"
    ],
    "level": "low"
   },
@@ -2739,14 +3488,14 @@
   "2027-04-25": {
    "score": 2.5,
    "events": [
-    "13f126ae4a"
+    "7441774130"
    ],
    "level": "low"
   },
   "2027-04-26": {
    "score": 4.5,
    "events": [
-    "13f126ae4a",
+    "7441774130",
     "90c524de3d"
    ],
    "level": "medium"
@@ -2754,7 +3503,7 @@
   "2027-04-27": {
    "score": 5.6,
    "events": [
-    "13f126ae4a",
+    "7441774130",
     "90c524de3d"
    ],
    "level": "medium"
@@ -2762,7 +3511,7 @@
   "2027-04-28": {
    "score": 5.6,
    "events": [
-    "13f126ae4a",
+    "7441774130",
     "90c524de3d"
    ],
    "level": "medium"
@@ -2770,67 +3519,82 @@
   "2027-04-29": {
    "score": 1.7,
    "events": [
-    "13f126ae4a",
+    "7441774130",
     "90c524de3d"
    ],
    "level": "low"
   },
   "2027-05-01": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "6a3d661803"
+    "6a3d661803",
+    "74e921d7f9"
+   ],
+   "level": "medium"
+  },
+  "2027-05-02": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
    ],
    "level": "low"
   },
-  "2027-05-02": {
-   "score": 1.0,
-   "events": [],
+  "2027-05-03": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
+   ],
    "level": "low"
   },
   "2027-05-08": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "85843fe2d9"
+   ],
    "level": "low"
   },
   "2027-05-09": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "85843fe2d9",
     "be88b741a5"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-10": {
-   "score": 3.4,
+   "score": 5.4,
    "events": [
-    "d376ed9cbf"
+    "85843fe2d9",
+    "d94fddc647"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-11": {
    "score": 4.9,
    "events": [
-    "d376ed9cbf"
+    "d94fddc647"
    ],
    "level": "medium"
   },
   "2027-05-12": {
    "score": 4.9,
    "events": [
-    "d376ed9cbf"
+    "d94fddc647"
    ],
    "level": "medium"
   },
   "2027-05-13": {
    "score": 4.9,
    "events": [
-    "d376ed9cbf"
+    "d94fddc647"
    ],
    "level": "medium"
   },
   "2027-05-14": {
-   "score": 1.5,
+   "score": 3.5,
    "events": [
-    "d376ed9cbf"
+    "d94fddc647",
+    "9653836b27"
    ],
    "level": "low"
   },
@@ -2857,50 +3621,50 @@
   "2027-05-24": {
    "score": 9.8,
    "events": [
-    "12b9fa7e72",
-    "8452727b29",
+    "7b3540172d",
+    "6704716275",
     "28396bfcf8",
-    "bfb997870f"
+    "9ed614f36f"
    ],
    "level": "high"
   },
   "2027-05-25": {
    "score": 14.0,
    "events": [
-    "12b9fa7e72",
-    "8452727b29",
+    "7b3540172d",
+    "6704716275",
     "28396bfcf8",
-    "bfb997870f"
+    "9ed614f36f"
    ],
    "level": "high"
   },
   "2027-05-26": {
    "score": 14.0,
    "events": [
-    "12b9fa7e72",
-    "8452727b29",
+    "7b3540172d",
+    "6704716275",
     "28396bfcf8",
-    "bfb997870f"
+    "9ed614f36f"
    ],
    "level": "high"
   },
   "2027-05-27": {
    "score": 14.0,
    "events": [
-    "12b9fa7e72",
-    "8452727b29",
+    "7b3540172d",
+    "6704716275",
     "28396bfcf8",
-    "bfb997870f"
+    "9ed614f36f"
    ],
    "level": "high"
   },
   "2027-05-28": {
    "score": 4.2,
    "events": [
-    "12b9fa7e72",
-    "8452727b29",
+    "7b3540172d",
+    "6704716275",
     "28396bfcf8",
-    "bfb997870f"
+    "9ed614f36f"
    ],
    "level": "medium"
   },
@@ -2927,49 +3691,53 @@
   "2027-06-07": {
    "score": 1.5,
    "events": [
-    "660efb9017"
+    "1ab971b9cb"
    ],
    "level": "low"
   },
   "2027-06-08": {
    "score": 2.1,
    "events": [
-    "660efb9017"
+    "1ab971b9cb"
    ],
    "level": "low"
   },
   "2027-06-09": {
    "score": 2.1,
    "events": [
-    "660efb9017"
+    "1ab971b9cb"
    ],
    "level": "low"
   },
   "2027-06-10": {
    "score": 0.6,
    "events": [
-    "660efb9017"
+    "1ab971b9cb"
    ],
    "level": "low"
   },
   "2027-06-12": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "8f8f18e6d4"
+    "8f8f18e6d4",
+    "9e1c0136fb"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-13": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "9e1c0136fb"
+   ],
    "level": "low"
   },
   "2027-06-14": {
-   "score": 2.9,
+   "score": 4.9,
    "events": [
+    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -3012,44 +3780,63 @@
   "2027-06-21": {
    "score": 1.0,
    "events": [
-    "1d30961536"
+    "5e19961820"
    ],
    "level": "low"
   },
   "2027-06-22": {
    "score": 1.4,
    "events": [
-    "1d30961536"
+    "5e19961820"
    ],
    "level": "low"
   },
   "2027-06-23": {
    "score": 1.4,
    "events": [
-    "1d30961536"
+    "5e19961820"
    ],
    "level": "low"
   },
   "2027-06-24": {
    "score": 0.4,
    "events": [
-    "1d30961536"
+    "5e19961820"
    ],
    "level": "low"
   },
   "2027-06-26": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 10.1,
+   "events": [
+    "3eac60b77c",
+    "ee7afe0a8a"
+   ],
+   "level": "high"
   },
   "2027-06-27": {
    "score": 1.0,
    "events": [],
    "level": "low"
   },
+  "2027-07-01": {
+   "score": 4.9,
+   "events": [
+    "125dfe29d2"
+   ],
+   "level": "medium"
+  },
+  "2027-07-02": {
+   "score": 7.0,
+   "events": [
+    "125dfe29d2"
+   ],
+   "level": "medium"
+  },
   "2027-07-03": {
-   "score": 1.0,
-   "events": [],
+   "score": 3.1,
+   "events": [
+    "125dfe29d2"
+   ],
    "level": "low"
   },
   "2027-07-04": {
@@ -3058,14 +3845,18 @@
    "level": "low"
   },
   "2027-07-10": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 4.0,
+   "events": [
+    "cf47d6c037"
+   ],
+   "level": "medium"
   },
   "2027-07-11": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 8.0,
+   "events": [
+    "5615578125"
+   ],
+   "level": "medium"
   },
   "2027-07-17": {
    "score": 1.0,
@@ -3078,9 +3869,11 @@
    "level": "low"
   },
   "2027-07-24": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 8.0,
+   "events": [
+    "ef0928ce22"
+   ],
+   "level": "medium"
   },
   "2027-07-25": {
    "score": 1.0,
@@ -3120,45 +3913,45 @@
   "2027-08-16": {
    "score": 7.3,
    "events": [
-    "6f1b80936d",
+    "eb53277db9",
     "0ed4d4bf21",
-    "e3a2d920b7"
+    "bc09738d90"
    ],
    "level": "medium"
   },
   "2027-08-17": {
    "score": 10.5,
    "events": [
-    "6f1b80936d",
+    "eb53277db9",
     "0ed4d4bf21",
-    "e3a2d920b7"
+    "bc09738d90"
    ],
    "level": "high"
   },
   "2027-08-18": {
    "score": 10.5,
    "events": [
-    "6f1b80936d",
+    "eb53277db9",
     "0ed4d4bf21",
-    "e3a2d920b7"
+    "bc09738d90"
    ],
    "level": "high"
   },
   "2027-08-19": {
    "score": 10.5,
    "events": [
-    "6f1b80936d",
+    "eb53277db9",
     "0ed4d4bf21",
-    "e3a2d920b7"
+    "bc09738d90"
    ],
    "level": "high"
   },
   "2027-08-20": {
    "score": 3.2,
    "events": [
-    "6f1b80936d",
+    "eb53277db9",
     "0ed4d4bf21",
-    "e3a2d920b7"
+    "bc09738d90"
    ],
    "level": "low"
   },
@@ -3211,46 +4004,46 @@
   "2027-09-05": {
    "score": 2.5,
    "events": [
-    "cc4ffd0508"
+    "fb39367c3b"
    ],
    "level": "low"
   },
   "2027-09-06": {
    "score": 5.5,
    "events": [
-    "cc4ffd0508",
-    "be8fc386cd",
-    "ba612d40c5",
-    "0d46cf0d32"
+    "fb39367c3b",
+    "fd04c04ac4",
+    "c7ba088298",
+    "42597d98d6"
    ],
    "level": "medium"
   },
   "2027-09-07": {
    "score": 7.0,
    "events": [
-    "cc4ffd0508",
-    "be8fc386cd",
-    "ba612d40c5",
-    "0d46cf0d32"
+    "fb39367c3b",
+    "fd04c04ac4",
+    "c7ba088298",
+    "42597d98d6"
    ],
    "level": "medium"
   },
   "2027-09-08": {
    "score": 5.5,
    "events": [
-    "cc4ffd0508",
-    "be8fc386cd",
-    "ba612d40c5",
-    "0d46cf0d32"
+    "fb39367c3b",
+    "fd04c04ac4",
+    "c7ba088298",
+    "42597d98d6"
    ],
    "level": "medium"
   },
   "2027-09-09": {
    "score": 1.5,
    "events": [
-    "be8fc386cd",
-    "ba612d40c5",
-    "0d46cf0d32"
+    "fd04c04ac4",
+    "c7ba088298",
+    "42597d98d6"
    ],
    "level": "low"
   },
@@ -3277,8 +4070,8 @@
    "events": [
     "6e28ee8a48",
     "179f840189",
-    "a30ad94899",
-    "981bf5af83"
+    "821736a4e6",
+    "40b81af430"
    ],
    "level": "medium"
   },
@@ -3287,8 +4080,8 @@
    "events": [
     "6e28ee8a48",
     "179f840189",
-    "a30ad94899",
-    "981bf5af83"
+    "821736a4e6",
+    "40b81af430"
    ],
    "level": "medium"
   },
@@ -3297,8 +4090,8 @@
    "events": [
     "6e28ee8a48",
     "179f840189",
-    "a30ad94899",
-    "981bf5af83"
+    "821736a4e6",
+    "40b81af430"
    ],
    "level": "medium"
   },
@@ -3306,8 +4099,8 @@
    "score": 1.7,
    "events": [
     "179f840189",
-    "a30ad94899",
-    "981bf5af83"
+    "821736a4e6",
+    "40b81af430"
    ],
    "level": "low"
   },
@@ -3319,52 +4112,54 @@
   "2027-09-19": {
    "score": 2.5,
    "events": [
-    "8852263ddf"
+    "e99a252d6b"
    ],
    "level": "low"
   },
   "2027-09-20": {
    "score": 2.1,
    "events": [
-    "8852263ddf"
+    "e99a252d6b"
    ],
    "level": "low"
   },
   "2027-09-21": {
    "score": 3.6,
    "events": [
-    "8852263ddf",
-    "f90268eb13"
+    "e99a252d6b",
+    "95bec7edf3"
    ],
    "level": "low"
   },
   "2027-09-22": {
    "score": 4.2,
    "events": [
-    "8852263ddf",
-    "f90268eb13"
+    "e99a252d6b",
+    "95bec7edf3"
    ],
    "level": "medium"
   },
   "2027-09-23": {
    "score": 2.7,
    "events": [
-    "8852263ddf",
-    "f90268eb13"
+    "e99a252d6b",
+    "95bec7edf3"
    ],
    "level": "low"
   },
   "2027-09-24": {
    "score": 0.6,
    "events": [
-    "f90268eb13"
+    "95bec7edf3"
    ],
    "level": "low"
   },
   "2027-09-25": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
+   "score": 4.0,
+   "events": [
+    "e4573f40dc"
+   ],
+   "level": "medium"
   },
   "2027-09-26": {
    "score": 1.0,
@@ -3374,39 +4169,39 @@
   "2027-09-27": {
    "score": 2.0,
    "events": [
-    "1ad1383d8e"
+    "b93eb5c531"
    ],
    "level": "low"
   },
   "2027-09-28": {
    "score": 4.3,
    "events": [
-    "1ad1383d8e",
-    "8d2ced81c8"
+    "b93eb5c531",
+    "d5a2f6777e"
    ],
    "level": "medium"
   },
   "2027-09-29": {
    "score": 4.9,
    "events": [
-    "1ad1383d8e",
-    "8d2ced81c8"
+    "b93eb5c531",
+    "d5a2f6777e"
    ],
    "level": "medium"
   },
   "2027-09-30": {
    "score": 4.9,
    "events": [
-    "1ad1383d8e",
-    "8d2ced81c8"
+    "b93eb5c531",
+    "d5a2f6777e"
    ],
    "level": "medium"
   },
   "2027-10-01": {
    "score": 1.5,
    "events": [
-    "1ad1383d8e",
-    "8d2ced81c8"
+    "b93eb5c531",
+    "d5a2f6777e"
    ],
    "level": "low"
   },
@@ -3487,14 +4282,14 @@
    "level": "low"
   },
   "2027-10-24": {
-   "score": 2.0,
+   "score": 3.0,
    "events": [
     "e6b2f116ba"
    ],
    "level": "low"
   },
   "2027-10-25": {
-   "score": 11.2,
+   "score": 12.6,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -3503,12 +4298,12 @@
     "b4bf9fc3c7",
     "7786afaf45",
     "8a9d579095",
-    "e7a3804a4c"
+    "2d72ba58a0"
    ],
    "level": "high"
   },
   "2027-10-26": {
-   "score": 15.4,
+   "score": 16.8,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -3517,12 +4312,12 @@
     "b4bf9fc3c7",
     "7786afaf45",
     "8a9d579095",
-    "e7a3804a4c"
+    "2d72ba58a0"
    ],
    "level": "high"
   },
   "2027-10-27": {
-   "score": 15.4,
+   "score": 16.8,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -3531,12 +4326,12 @@
     "b4bf9fc3c7",
     "7786afaf45",
     "8a9d579095",
-    "e7a3804a4c"
+    "2d72ba58a0"
    ],
    "level": "high"
   },
   "2027-10-28": {
-   "score": 4.6,
+   "score": 5.0,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -3545,7 +4340,7 @@
     "b4bf9fc3c7",
     "7786afaf45",
     "8a9d579095",
-    "e7a3804a4c"
+    "2d72ba58a0"
    ],
    "level": "medium"
   },
@@ -3560,64 +4355,76 @@
    "level": "low"
   },
   "2027-11-04": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "4955f3e502"
+    "4955f3e502",
+    "6aacbaf865"
+   ],
+   "level": "medium"
+  },
+  "2027-11-05": {
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
    ],
    "level": "low"
   },
   "2027-11-06": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-07": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-08": {
    "score": 8.8,
    "events": [
+    "32a0e991cf",
     "7cf3a218da",
-    "338ede4045",
-    "a3ea30a9fe"
+    "338ede4045"
    ],
    "level": "medium"
   },
   "2027-11-09": {
    "score": 12.6,
    "events": [
+    "32a0e991cf",
     "7cf3a218da",
-    "338ede4045",
-    "a3ea30a9fe"
+    "338ede4045"
    ],
    "level": "high"
   },
   "2027-11-10": {
    "score": 12.6,
    "events": [
+    "32a0e991cf",
     "7cf3a218da",
-    "338ede4045",
-    "a3ea30a9fe"
+    "338ede4045"
    ],
    "level": "high"
   },
   "2027-11-11": {
    "score": 12.6,
    "events": [
+    "32a0e991cf",
     "7cf3a218da",
-    "338ede4045",
-    "a3ea30a9fe"
+    "338ede4045"
    ],
    "level": "high"
   },
   "2027-11-12": {
    "score": 3.8,
    "events": [
+    "32a0e991cf",
     "7cf3a218da",
-    "338ede4045",
-    "a3ea30a9fe"
+    "338ede4045"
    ],
    "level": "low"
   },
@@ -3634,7 +4441,7 @@
   "2027-11-15": {
    "score": 2.4,
    "events": [
-    "0669ac9f17",
+    "f605835b21",
     "602a33f5b7"
    ],
    "level": "low"
@@ -3642,7 +4449,7 @@
   "2027-11-16": {
    "score": 3.5,
    "events": [
-    "0669ac9f17",
+    "f605835b21",
     "602a33f5b7"
    ],
    "level": "low"
@@ -3650,7 +4457,7 @@
   "2027-11-17": {
    "score": 3.5,
    "events": [
-    "0669ac9f17",
+    "f605835b21",
     "602a33f5b7"
    ],
    "level": "low"
@@ -3658,7 +4465,7 @@
   "2027-11-18": {
    "score": 1.1,
    "events": [
-    "0669ac9f17",
+    "f605835b21",
     "602a33f5b7"
    ],
    "level": "low"
@@ -3671,43 +4478,43 @@
   "2027-11-21": {
    "score": 3.0,
    "events": [
-    "6a38f7cbee"
+    "e8b7e8a29d"
    ],
    "level": "low"
   },
   "2027-11-22": {
    "score": 5.2,
    "events": [
-    "6a38f7cbee",
+    "e8b7e8a29d",
     "4de175b4ef",
-    "45b734f999"
+    "382aa3cacd"
    ],
    "level": "medium"
   },
   "2027-11-23": {
    "score": 6.3,
    "events": [
-    "6a38f7cbee",
+    "e8b7e8a29d",
     "4de175b4ef",
-    "45b734f999"
+    "382aa3cacd"
    ],
    "level": "medium"
   },
   "2027-11-24": {
    "score": 6.3,
    "events": [
-    "6a38f7cbee",
+    "e8b7e8a29d",
     "4de175b4ef",
-    "45b734f999"
+    "382aa3cacd"
    ],
    "level": "medium"
   },
   "2027-11-25": {
    "score": 3.4,
    "events": [
-    "6a38f7cbee",
+    "e8b7e8a29d",
     "4de175b4ef",
-    "45b734f999"
+    "382aa3cacd"
    ],
    "level": "low"
   },
@@ -3771,21 +4578,21 @@
   "2027-12-05": {
    "score": 3.4,
    "events": [
-    "a5e4816bfe"
+    "c4af138b38"
    ],
    "level": "low"
   },
   "2027-12-06": {
    "score": 3.5,
    "events": [
-    "a5e4816bfe"
+    "c4af138b38"
    ],
    "level": "low"
   },
   "2027-12-07": {
    "score": 3.5,
    "events": [
-    "a5e4816bfe"
+    "c4af138b38"
    ],
    "level": "low"
   }
