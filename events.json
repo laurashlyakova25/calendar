@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T22:24",
+ "generated_at": "2026-11-03T06:57",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -21,7 +21,8 @@
   },
   "holidays": {
    "ok": true,
-   "count": 121
+   "count": 123,
+   "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
    "ok": true,
@@ -923,21 +924,6 @@
    "detail": "VK Stadium"
   },
   {
-   "id": "4342d48dc4",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-02-21",
-   "end": "2027-02-23",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "b86837fc2b",
    "title": "Государственный праздник",
    "start": "2027-02-23",
@@ -1530,36 +1516,6 @@
    "per_day": true
   },
   {
-   "id": "74e921d7f9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-01",
-   "end": "2027-05-03",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "85843fe2d9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-08",
-   "end": "2027-05-10",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "be88b741a5",
    "title": "Государственный праздник",
    "start": "2027-05-09",
@@ -1682,21 +1638,6 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "9e1c0136fb",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-06-12",
-   "end": "2027-06-14",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -2208,21 +2149,6 @@
    "per_day": true
   },
   {
-   "id": "6aacbaf865",
-   "title": "Длинные выходные (4 дн.)",
-   "start": "2027-11-04",
-   "end": "2027-11-07",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "32a0e991cf",
    "title": "МИР КЛИМАТА 2027",
    "start": "2027-11-09",
@@ -2364,13 +2290,6 @@
   }
  ],
  "days": {
-  "2026-11-02": {
-   "score": 2.1,
-   "events": [
-    "63ca979b0b"
-   ],
-   "level": "low"
-  },
   "2026-11-03": {
    "score": 2.1,
    "events": [
@@ -3038,7 +2957,7 @@
    "level": "medium"
   },
   "2027-02-20": {
-   "score": 7.2,
+   "score": 8.2,
    "events": [
     "e99926e462",
     "2db16609be",
@@ -3048,30 +2967,27 @@
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 6.2,
+   "score": 5.2,
    "events": [
     "2db16609be",
-    "4f9651e01f",
-    "4342d48dc4"
+    "4f9651e01f"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 3.3,
+   "score": 1.3,
    "events": [
     "2db16609be",
-    "4f9651e01f",
-    "4342d48dc4"
+    "4f9651e01f"
    ],
    "level": "low"
   },
   "2027-02-23": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "4342d48dc4",
     "b86837fc2b"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-02-27": {
    "score": 1.0,
@@ -3522,49 +3438,35 @@
    "level": "low"
   },
   "2027-05-01": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "6a3d661803",
-    "74e921d7f9"
-   ],
-   "level": "medium"
-  },
-  "2027-05-02": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
+    "6a3d661803"
    ],
    "level": "low"
   },
-  "2027-05-03": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
-   ],
+  "2027-05-02": {
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-05-08": {
-   "score": 2.0,
-   "events": [
-    "85843fe2d9"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-05-09": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "85843fe2d9",
     "be88b741a5"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-05-10": {
-   "score": 5.4,
+   "score": 3.4,
    "events": [
-    "85843fe2d9",
     "d94fddc647"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-05-11": {
    "score": 4.9,
@@ -3714,27 +3616,23 @@
    "level": "low"
   },
   "2027-06-12": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "8f8f18e6d4",
-    "9e1c0136fb"
-   ],
-   "level": "medium"
-  },
-  "2027-06-13": {
-   "score": 2.0,
-   "events": [
-    "9e1c0136fb"
+    "8f8f18e6d4"
    ],
    "level": "low"
   },
+  "2027-06-13": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
   "2027-06-14": {
-   "score": 4.9,
+   "score": 2.9,
    "events": [
-    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -4352,32 +4250,20 @@
    "level": "low"
   },
   "2027-11-04": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "4955f3e502",
-    "6aacbaf865"
-   ],
-   "level": "medium"
-  },
-  "2027-11-05": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
+    "4955f3e502"
    ],
    "level": "low"
   },
   "2027-11-06": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-11-07": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-11-08": {
@@ -4587,6 +4473,13 @@
    "level": "low"
   },
   "2027-12-07": {
+   "score": 3.5,
+   "events": [
+    "c4af138b38"
+   ],
+   "level": "low"
+  },
+  "2027-12-08": {
    "score": 3.5,
    "events": [
     "c4af138b38"
