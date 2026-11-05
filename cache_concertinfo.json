@@ -84,20 +84,6 @@
   "detail": "ВТБ Арена"
  },
  {
-  "id": "050cabbafb",
-  "title": "Пелагея",
-  "start": "2026-11-04",
-  "end": "2026-11-04",
-  "venue": "Live Арена",
-  "km": null,
-  "base_weight": 3,
-  "weight": 3.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/38784/",
-  "detail": "Live Арена"
- },
- {
   "id": "7a3f1ea6b9",
   "title": "Гарик Сукачёв",
   "start": "2026-12-05",
