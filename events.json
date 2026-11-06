@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T07:00",
+ "generated_at": "2026-11-06T06:57",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -13,7 +13,7 @@
  "sources": {
   "crocus_expo": {
    "ok": true,
-   "count": 100
+   "count": 102
   },
   "concertinfo": {
    "ok": true,
@@ -21,8 +21,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 122,
-   "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
+   "count": 121
   },
   "manual": {
    "ok": true,
@@ -881,6 +880,21 @@
    "detail": "VK Stadium"
   },
   {
+   "id": "4342d48dc4",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-02-21",
+   "end": "2027-02-23",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
    "id": "b86837fc2b",
    "title": "Государственный праздник",
    "start": "2027-02-23",
@@ -1473,6 +1487,36 @@
    "per_day": true
   },
   {
+   "id": "74e921d7f9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-01",
+   "end": "2027-05-03",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "85843fe2d9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-08",
+   "end": "2027-05-10",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
    "id": "be88b741a5",
    "title": "Государственный праздник",
    "start": "2027-05-09",
@@ -1595,6 +1639,21 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "9e1c0136fb",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-06-12",
+   "end": "2027-06-14",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -1895,6 +1954,34 @@
    "detail": "62-й Московский международный стоматологический форум и выставка · залов: 2"
   },
   {
+   "id": "c483ff9182",
+   "title": "Криоген-Экспо. Промышленные газы",
+   "start": "2027-09-21",
+   "end": "2027-09-23",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.crocus-expo.ru/exhibition/",
+   "detail": "24-я Международная специализированная выставка · залов: 1"
+  },
+  {
+   "id": "127612c178",
+   "title": "Термообработка",
+   "start": "2027-09-21",
+   "end": "2027-09-23",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.crocus-expo.ru/exhibition/",
+   "detail": "20-я Международная специализированная выставка · залов: 1"
+  },
+  {
    "id": "95bec7edf3",
    "title": "ПаркЗоо 2027",
    "start": "2027-09-22",
@@ -2100,6 +2187,21 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "6aacbaf865",
+   "title": "Длинные выходные (4 дн.)",
+   "start": "2027-11-04",
+   "end": "2027-11-07",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -2898,7 +3000,7 @@
    "level": "medium"
   },
   "2027-02-20": {
-   "score": 8.2,
+   "score": 7.2,
    "events": [
     "e99926e462",
     "2db16609be",
@@ -2908,27 +3010,30 @@
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 5.2,
+   "score": 6.2,
    "events": [
     "2db16609be",
-    "4f9651e01f"
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 1.3,
+   "score": 3.3,
    "events": [
     "2db16609be",
-    "4f9651e01f"
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "low"
   },
   "2027-02-23": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "4342d48dc4",
     "b86837fc2b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-02-27": {
    "score": 1.0,
@@ -3379,35 +3484,49 @@
    "level": "low"
   },
   "2027-05-01": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "6a3d661803"
+    "6a3d661803",
+    "74e921d7f9"
+   ],
+   "level": "medium"
+  },
+  "2027-05-02": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
    ],
    "level": "low"
   },
-  "2027-05-02": {
-   "score": 1.0,
-   "events": [],
+  "2027-05-03": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
+   ],
    "level": "low"
   },
   "2027-05-08": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "85843fe2d9"
+   ],
    "level": "low"
   },
   "2027-05-09": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "85843fe2d9",
     "be88b741a5"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-10": {
-   "score": 3.4,
+   "score": 5.4,
    "events": [
+    "85843fe2d9",
     "d94fddc647"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-11": {
    "score": 4.9,
@@ -3557,23 +3676,27 @@
    "level": "low"
   },
   "2027-06-12": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "8f8f18e6d4"
+    "8f8f18e6d4",
+    "9e1c0136fb"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-13": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "9e1c0136fb"
+   ],
    "level": "low"
   },
   "2027-06-14": {
-   "score": 2.9,
+   "score": 4.9,
    "events": [
+    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -3953,32 +4076,40 @@
    "level": "low"
   },
   "2027-09-20": {
-   "score": 2.1,
+   "score": 4.1,
    "events": [
-    "e99a252d6b"
+    "e99a252d6b",
+    "c483ff9182",
+    "127612c178"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-09-21": {
-   "score": 3.6,
+   "score": 6.4,
    "events": [
     "e99a252d6b",
+    "c483ff9182",
+    "127612c178",
     "95bec7edf3"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-09-22": {
-   "score": 4.2,
+   "score": 7.0,
    "events": [
     "e99a252d6b",
+    "c483ff9182",
+    "127612c178",
     "95bec7edf3"
    ],
    "level": "medium"
   },
   "2027-09-23": {
-   "score": 2.7,
+   "score": 3.6,
    "events": [
     "e99a252d6b",
+    "c483ff9182",
+    "127612c178",
     "95bec7edf3"
    ],
    "level": "low"
@@ -4191,20 +4322,32 @@
    "level": "low"
   },
   "2027-11-04": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "4955f3e502"
+    "4955f3e502",
+    "6aacbaf865"
+   ],
+   "level": "medium"
+  },
+  "2027-11-05": {
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
    ],
    "level": "low"
   },
   "2027-11-06": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-07": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-08": {
@@ -4432,6 +4575,11 @@
    "events": [
     "c4af138b38"
    ],
+   "level": "low"
+  },
+  "2027-12-11": {
+   "score": 1.0,
+   "events": [],
    "level": "low"
   }
  }
