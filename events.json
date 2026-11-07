@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T06:57",
+ "generated_at": "2026-11-07T06:54",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -21,7 +21,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 121
+   "count": 122
   },
   "manual": {
    "ok": true,
@@ -1063,7 +1063,7 @@
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "Международный Форум · залов: 2"
+   "detail": "Международный форум · залов: 2"
   },
   {
    "id": "90a76c2ba9",
@@ -1954,8 +1954,8 @@
    "detail": "62-й Московский международный стоматологический форум и выставка · залов: 2"
   },
   {
-   "id": "c483ff9182",
-   "title": "Криоген-Экспо. Промышленные газы",
+   "id": "e5d0fcfda4",
+   "title": "Криоген-Экспо. Промышленные газы-2027",
    "start": "2027-09-21",
    "end": "2027-09-23",
    "venue": "Крокус Экспо",
@@ -1964,8 +1964,8 @@
    "weight": 1.4,
    "category": "выставка",
    "source": "crocus_expo",
-   "url": "https://www.crocus-expo.ru/exhibition/",
-   "detail": "24-я Международная специализированная выставка · залов: 1"
+   "url": "https://www.cryogen-expo.ru",
+   "detail": "24-я международная выставка · залов: 1"
   },
   {
    "id": "127612c178",
@@ -4079,7 +4079,7 @@
    "score": 4.1,
    "events": [
     "e99a252d6b",
-    "c483ff9182",
+    "e5d0fcfda4",
     "127612c178"
    ],
    "level": "medium"
@@ -4088,7 +4088,7 @@
    "score": 6.4,
    "events": [
     "e99a252d6b",
-    "c483ff9182",
+    "e5d0fcfda4",
     "127612c178",
     "95bec7edf3"
    ],
@@ -4098,7 +4098,7 @@
    "score": 7.0,
    "events": [
     "e99a252d6b",
-    "c483ff9182",
+    "e5d0fcfda4",
     "127612c178",
     "95bec7edf3"
    ],
@@ -4108,7 +4108,7 @@
    "score": 3.6,
    "events": [
     "e99a252d6b",
-    "c483ff9182",
+    "e5d0fcfda4",
     "127612c178",
     "95bec7edf3"
    ],
@@ -4578,6 +4578,11 @@
    "level": "low"
   },
   "2027-12-11": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
+  "2027-12-12": {
    "score": 1.0,
    "events": [],
    "level": "low"
