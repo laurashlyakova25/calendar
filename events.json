@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-08T06:58",
+ "generated_at": "2026-11-09T07:00",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -21,7 +21,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 123,
+   "count": 122,
    "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
@@ -2275,13 +2275,6 @@
   }
  ],
  "days": {
-  "2026-11-08": {
-   "score": 3.1,
-   "events": [
-    "0081e90ccd"
-   ],
-   "level": "low"
-  },
   "2026-11-09": {
    "score": 8.9,
    "events": [
