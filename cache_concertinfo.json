@@ -322,6 +322,20 @@
   "detail": "VK Stadium"
  },
  {
+  "id": "800ecfa5e1",
+  "title": "КняZz",
+  "start": "2027-01-30",
+  "end": "2027-01-30",
+  "venue": "VK Stadium",
+  "km": 7.3,
+  "base_weight": 2,
+  "weight": 2.0,
+  "category": "концерт/шоу",
+  "source": "concertinfo",
+  "url": "https://concertinfo.ru/gig/40935/",
+  "detail": "VK Stadium"
+ },
+ {
   "id": "0b8cd59a33",
   "title": "Пилот",
   "start": "2027-02-20",
@@ -361,6 +375,20 @@
   "category": "концерт/шоу",
   "source": "concertinfo",
   "url": "https://concertinfo.ru/gig/39782/",
+  "detail": "VK Stadium"
+ },
+ {
+  "id": "ac6d1c1866",
+  "title": "Горшенев с оркестром: Кукрыниксы. ХХХ лет",
+  "start": "2027-04-18",
+  "end": "2027-04-18",
+  "venue": "VK Stadium",
+  "km": 7.3,
+  "base_weight": 2,
+  "weight": 2.0,
+  "category": "концерт/шоу",
+  "source": "concertinfo",
+  "url": "https://concertinfo.ru/gig/40946/",
   "detail": "VK Stadium"
  },
  {

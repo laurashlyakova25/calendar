@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T07:00",
+ "generated_at": "2026-11-10T06:56",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -17,12 +17,11 @@
   },
   "concertinfo": {
    "ok": true,
-   "count": 27
+   "count": 29
   },
   "holidays": {
    "ok": true,
-   "count": 122,
-   "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
+   "count": 120
   },
   "manual": {
    "ok": true,
@@ -741,6 +740,20 @@
    "detail": "Международная выставка выставочного и ивент-сервиса, маркетинга и рекламы · залов: 1"
   },
   {
+   "id": "800ecfa5e1",
+   "title": "КняZz",
+   "start": "2027-01-30",
+   "end": "2027-01-30",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40935/",
+   "detail": "VK Stadium"
+  },
+  {
    "id": "32fa595166",
    "title": "AIRVent",
    "start": "2027-02-01",
@@ -811,8 +824,8 @@
    "detail": "Международная специализированная выставка · залов: 1"
   },
   {
-   "id": "2780fd6ffa",
-   "title": "Технологии и безопасность (ТБ Форум)",
+   "id": "dd201aab0c",
+   "title": "ТБ Форум 2027 (Форум «Технологии и безопасность»)",
    "start": "2027-02-17",
    "end": "2027-02-19",
    "venue": "Крокус Экспо",
@@ -879,6 +892,21 @@
    "source": "concertinfo",
    "url": "https://concertinfo.ru/gig/39875/",
    "detail": "VK Stadium"
+  },
+  {
+   "id": "4342d48dc4",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-02-21",
+   "end": "2027-02-23",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   },
   {
    "id": "b86837fc2b",
@@ -1388,6 +1416,20 @@
    "detail": "VK Stadium"
   },
   {
+   "id": "ac6d1c1866",
+   "title": "Горшенев с оркестром: Кукрыниксы. ХХХ лет",
+   "start": "2027-04-18",
+   "end": "2027-04-18",
+   "venue": "VK Stadium",
+   "km": 7.3,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "концерт/шоу",
+   "source": "concertinfo",
+   "url": "https://concertinfo.ru/gig/40946/",
+   "detail": "VK Stadium"
+  },
+  {
    "id": "89f7b94547",
    "title": "Global Ingredients Show",
    "start": "2027-04-21",
@@ -1467,6 +1509,36 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "74e921d7f9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-01",
+   "end": "2027-05-03",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "85843fe2d9",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-05-08",
+   "end": "2027-05-10",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -1595,6 +1667,21 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "9e1c0136fb",
+   "title": "Длинные выходные (3 дн.)",
+   "start": "2027-06-12",
+   "end": "2027-06-14",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -2134,6 +2221,21 @@
    "per_day": true
   },
   {
+   "id": "6aacbaf865",
+   "title": "Длинные выходные (4 дн.)",
+   "start": "2027-11-04",
+   "end": "2027-11-07",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
    "id": "32a0e991cf",
    "title": "МИР КЛИМАТА 2027",
    "start": "2027-11-09",
@@ -2275,17 +2377,6 @@
   }
  ],
  "days": {
-  "2026-11-09": {
-   "score": 8.9,
-   "events": [
-    "0081e90ccd",
-    "8d93826f9c",
-    "ccff34d381",
-    "2b587dd4af",
-    "22299e1b17"
-   ],
-   "level": "medium"
-  },
   "2026-11-10": {
    "score": 11.4,
    "events": [
@@ -2780,8 +2871,10 @@
    "level": "low"
   },
   "2027-01-30": {
-   "score": 1.0,
-   "events": [],
+   "score": 3.0,
+   "events": [
+    "800ecfa5e1"
+   ],
    "level": "low"
   },
   "2027-01-31": {
@@ -2879,7 +2972,7 @@
    "score": 2.4,
    "events": [
     "fff5b184e1",
-    "2780fd6ffa"
+    "dd201aab0c"
    ],
    "level": "low"
   },
@@ -2887,7 +2980,7 @@
    "score": 5.2,
    "events": [
     "fff5b184e1",
-    "2780fd6ffa",
+    "dd201aab0c",
     "e99926e462"
    ],
    "level": "medium"
@@ -2896,7 +2989,7 @@
    "score": 8.3,
    "events": [
     "fff5b184e1",
-    "2780fd6ffa",
+    "dd201aab0c",
     "e99926e462",
     "2db16609be",
     "4f9651e01f"
@@ -2906,7 +2999,7 @@
   "2027-02-19": {
    "score": 8.1,
    "events": [
-    "2780fd6ffa",
+    "dd201aab0c",
     "e99926e462",
     "2db16609be",
     "4f9651e01f"
@@ -2914,7 +3007,7 @@
    "level": "medium"
   },
   "2027-02-20": {
-   "score": 8.2,
+   "score": 7.2,
    "events": [
     "e99926e462",
     "2db16609be",
@@ -2924,27 +3017,30 @@
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 5.2,
+   "score": 6.2,
    "events": [
     "2db16609be",
-    "4f9651e01f"
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 1.3,
+   "score": 3.3,
    "events": [
     "2db16609be",
-    "4f9651e01f"
+    "4f9651e01f",
+    "4342d48dc4"
    ],
    "level": "low"
   },
   "2027-02-23": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "4342d48dc4",
     "b86837fc2b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-02-27": {
    "score": 1.0,
@@ -3310,8 +3406,10 @@
    "level": "low"
   },
   "2027-04-18": {
-   "score": 1.0,
-   "events": [],
+   "score": 3.0,
+   "events": [
+    "ac6d1c1866"
+   ],
    "level": "low"
   },
   "2027-04-20": {
@@ -3395,35 +3493,49 @@
    "level": "low"
   },
   "2027-05-01": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "6a3d661803"
+    "6a3d661803",
+    "74e921d7f9"
+   ],
+   "level": "medium"
+  },
+  "2027-05-02": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
    ],
    "level": "low"
   },
-  "2027-05-02": {
-   "score": 1.0,
-   "events": [],
+  "2027-05-03": {
+   "score": 2.0,
+   "events": [
+    "74e921d7f9"
+   ],
    "level": "low"
   },
   "2027-05-08": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "85843fe2d9"
+   ],
    "level": "low"
   },
   "2027-05-09": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
+    "85843fe2d9",
     "be88b741a5"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-10": {
-   "score": 3.4,
+   "score": 5.4,
    "events": [
+    "85843fe2d9",
     "d94fddc647"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-05-11": {
    "score": 4.9,
@@ -3573,23 +3685,27 @@
    "level": "low"
   },
   "2027-06-12": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "8f8f18e6d4"
+    "8f8f18e6d4",
+    "9e1c0136fb"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-13": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "9e1c0136fb"
+   ],
    "level": "low"
   },
   "2027-06-14": {
-   "score": 2.9,
+   "score": 4.9,
    "events": [
+    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -4215,20 +4331,32 @@
    "level": "low"
   },
   "2027-11-04": {
-   "score": 3.0,
+   "score": 5.0,
    "events": [
-    "4955f3e502"
+    "4955f3e502",
+    "6aacbaf865"
+   ],
+   "level": "medium"
+  },
+  "2027-11-05": {
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
    ],
    "level": "low"
   },
   "2027-11-06": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-07": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.0,
+   "events": [
+    "6aacbaf865"
+   ],
    "level": "low"
   },
   "2027-11-08": {
