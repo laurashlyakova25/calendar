@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T06:59",
+ "generated_at": "2026-11-13T06:58",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -17,11 +17,11 @@
   },
   "concertinfo": {
    "ok": true,
-   "count": 29
+   "count": 28
   },
   "holidays": {
    "ok": true,
-   "count": 120
+   "count": 121
   },
   "manual": {
    "ok": true,
@@ -29,20 +29,6 @@
   }
  },
  "events": [
-  {
-   "id": "0081e90ccd",
-   "title": "Химия-2026",
-   "start": "2026-11-09",
-   "end": "2026-11-12",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3.0,
-   "weight": 3.0,
-   "category": "выставка",
-   "source": "manual",
-   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2026/eng/Expocentre_Calendar_2026_eng.pdf",
-   "detail": "Организатор Экспоцентр"
-  },
   {
    "id": "8d93826f9c",
    "title": "MITEX",
@@ -84,34 +70,6 @@
    "source": "crocus_expo",
    "url": "https://www.climatexpo.ru",
    "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 1"
-  },
-  {
-   "id": "22299e1b17",
-   "title": "Лифт Экспо. Москва",
-   "start": "2026-11-10",
-   "end": "2026-11-12",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://lift-expo.com",
-   "detail": "Международная выставка лифтов, подъемного оборудования и комплектующих · залов: 1"
-  },
-  {
-   "id": "0781d16946",
-   "title": "Сурганова и Оркестр",
-   "start": "2026-11-12",
-   "end": "2026-11-12",
-   "venue": "Государственный Кремлёвский дворец",
-   "km": 1.7,
-   "base_weight": 1,
-   "weight": 1.5,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/38340/",
-   "detail": "Государственный Кремлёвский дворец"
   },
   {
    "id": "85265e7b58",
@@ -2391,18 +2349,6 @@
   }
  ],
  "days": {
-  "2026-11-12": {
-   "score": 9.8,
-   "events": [
-    "0081e90ccd",
-    "8d93826f9c",
-    "ccff34d381",
-    "2b587dd4af",
-    "22299e1b17",
-    "0781d16946"
-   ],
-   "level": "high"
-  },
   "2026-11-13": {
    "score": 3.6,
    "events": [
@@ -4587,6 +4533,11 @@
    "level": "low"
   },
   "2027-12-12": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
+  "2027-12-18": {
    "score": 1.0,
    "events": [],
    "level": "low"
