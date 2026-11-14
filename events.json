@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T06:58",
+ "generated_at": "2026-11-14T06:57",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -21,7 +21,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 121
+   "count": 122
   },
   "manual": {
    "ok": true,
@@ -29,48 +29,6 @@
   }
  },
  "events": [
-  {
-   "id": "8d93826f9c",
-   "title": "MITEX",
-   "start": "2026-11-10",
-   "end": "2026-11-13",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 6,
-   "weight": 4.2,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.mitexpo.ru",
-   "detail": "Международная выставка инcтрумента, оборудования и технологий · залов: 5"
-  },
-  {
-   "id": "ccff34d381",
-   "title": "UtiliCon",
-   "start": "2026-11-10",
-   "end": "2026-11-13",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://utilicon.ru",
-   "detail": "Международная выставка услуг, технологий и материалов для ЖКХ и строительства · залов: 1"
-  },
-  {
-   "id": "2b587dd4af",
-   "title": "Мир Климата",
-   "start": "2026-11-10",
-   "end": "2026-11-13",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.climatexpo.ru",
-   "detail": "Международная выставка оборудования для систем кондиционирования, вентиляции, отопления и холодоснабжения · залов: 1"
-  },
   {
    "id": "85265e7b58",
    "title": "Бонд с кнопкой",
@@ -2349,16 +2307,6 @@
   }
  ],
  "days": {
-  "2026-11-13": {
-   "score": 3.6,
-   "events": [
-    "8d93826f9c",
-    "ccff34d381",
-    "2b587dd4af",
-    "7418c087ea"
-   ],
-   "level": "low"
-  },
   "2026-11-14": {
    "score": 6.1,
    "events": [
@@ -4538,6 +4486,11 @@
    "level": "low"
   },
   "2027-12-18": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
+  "2027-12-19": {
    "score": 1.0,
    "events": [],
    "level": "low"
