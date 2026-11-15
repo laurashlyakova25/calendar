@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T06:57",
+ "generated_at": "2026-11-15T06:58",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -17,11 +17,11 @@
   },
   "concertinfo": {
    "ok": true,
-   "count": 28
+   "count": 27
   },
   "holidays": {
    "ok": true,
-   "count": 122
+   "count": 121
   },
   "manual": {
    "ok": true,
@@ -29,20 +29,6 @@
   }
  },
  "events": [
-  {
-   "id": "85265e7b58",
-   "title": "Бонд с кнопкой",
-   "start": "2026-11-14",
-   "end": "2026-11-14",
-   "venue": "ВТБ Арена",
-   "km": 4.0,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/37700/",
-   "detail": "ВТБ Арена"
-  },
   {
    "id": "7418c087ea",
    "title": "Выставки собак всех пород «Евразия 2026»",
@@ -2307,14 +2293,6 @@
   }
  ],
  "days": {
-  "2026-11-14": {
-   "score": 6.1,
-   "events": [
-    "85265e7b58",
-    "7418c087ea"
-   ],
-   "level": "medium"
-  },
   "2026-11-15": {
    "score": 1.6,
    "events": [

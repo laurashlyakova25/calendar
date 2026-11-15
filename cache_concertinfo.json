@@ -1,19 +1,5 @@
 [
  {
-  "id": "85265e7b58",
-  "title": "Бонд с кнопкой",
-  "start": "2026-11-14",
-  "end": "2026-11-14",
-  "venue": "ВТБ Арена",
-  "km": 4.0,
-  "base_weight": 3,
-  "weight": 3.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/37700/",
-  "detail": "ВТБ Арена"
- },
- {
   "id": "f841c3f936",
   "title": "Юбилей Свердловского рок-клуба",
   "start": "2026-11-21",
