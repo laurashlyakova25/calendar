@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T22:47",
+ "generated_at": "2026-11-16T22:53",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,16 +12,20 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": true,
-   "count": 104
+   "ok": false,
+   "count": 104,
+   "error": "Крокус Экспо не ответил ни на один запрос",
+   "from_cache": true
   },
   "concertinfo": {
    "ok": true,
    "count": 27
   },
   "vdnh_expo": {
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "count": 8,
+   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
+   "from_cache": true
   },
   "timiryazev": {
    "ok": true,
@@ -68,20 +72,6 @@
    "source": "crocus_expo",
    "url": "https://biot-expo.ru",
    "detail": "30-я международная специализированная выставка-форум · залов: 2"
-  },
-  {
-   "id": "8d53419116",
-   "title": "Форум «Электрические сети» (МФЭС-2026)",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 2.0,
-   "weight": 2.0,
-   "category": "форум",
-   "source": "manual",
-   "url": "https://b2b.onetwotrip.com/blog/news/delovye-sobytiya-v-noyabre-2026-goda/",
-   "detail": ""
   },
   {
    "id": "5a909e6836",
@@ -1582,20 +1572,6 @@
    "detail": "Тимирязев Центр"
   },
   {
-   "id": "f0b29aae1a",
-   "title": "«Фотоника. Мир лазеров иоптики»",
-   "start": "2027-03-30",
-   "end": "2027-04-01",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "expocentr",
-   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2027/rus/Expocentre_Calendar_2027_rus.pdf",
-   "detail": "Календарь АО «Экспоцентр» · Тимирязев Центр"
-  },
-  {
    "id": "0caf095914",
    "title": "Шоу. Симфонические рок-хиты. Крылья грифона: Concord Orchestra",
    "start": "2027-04-02",
@@ -2796,32 +2772,29 @@
  ],
  "days": {
   "2026-11-16": {
-   "score": 5.9,
+   "score": 4.5,
    "events": [
     "9e4ca43c4b",
     "c9e010f936",
-    "8d53419116",
     "5a909e6836"
    ],
    "level": "medium"
   },
   "2026-11-17": {
-   "score": 9.9,
+   "score": 7.9,
    "events": [
     "9e4ca43c4b",
     "c9e010f936",
-    "8d53419116",
     "5a909e6836",
     "232c7bc4b0"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-11-18": {
-   "score": 14.5,
+   "score": 12.5,
    "events": [
     "9e4ca43c4b",
     "c9e010f936",
-    "8d53419116",
     "5a909e6836",
     "7100b16d85",
     "232c7bc4b0"
@@ -2829,11 +2802,10 @@
    "level": "high"
   },
   "2026-11-19": {
-   "score": 6.0,
+   "score": 5.4,
    "events": [
     "9e4ca43c4b",
     "c9e010f936",
-    "8d53419116",
     "5a909e6836",
     "232c7bc4b0"
    ],
@@ -3797,46 +3769,42 @@
    "level": "low"
   },
   "2027-03-29": {
-   "score": 11.8,
+   "score": 9.7,
    "events": [
     "ed7bee4312",
     "8518041fbc",
     "5569795946",
-    "4b29dae8f2",
-    "f0b29aae1a"
+    "4b29dae8f2"
    ],
    "level": "high"
   },
   "2027-03-30": {
-   "score": 16.9,
+   "score": 13.9,
    "events": [
     "ed7bee4312",
     "8518041fbc",
     "5569795946",
-    "4b29dae8f2",
-    "f0b29aae1a"
+    "4b29dae8f2"
    ],
    "level": "high"
   },
   "2027-03-31": {
-   "score": 16.9,
+   "score": 13.9,
    "events": [
     "ed7bee4312",
     "8518041fbc",
     "5569795946",
-    "4b29dae8f2",
-    "f0b29aae1a"
+    "4b29dae8f2"
    ],
    "level": "high"
   },
   "2027-04-01": {
-   "score": 8.5,
+   "score": 7.6,
    "events": [
     "ed7bee4312",
     "8518041fbc",
     "5569795946",
-    "4b29dae8f2",
-    "f0b29aae1a"
+    "4b29dae8f2"
    ],
    "level": "medium"
   },
