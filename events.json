@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T07:20",
+ "generated_at": "2026-11-16T21:49",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -13,11 +13,17 @@
  "sources": {
   "crocus_expo": {
    "ok": true,
-   "count": 103
+   "count": 104
   },
   "concertinfo": {
    "ok": true,
    "count": 27
+  },
+  "timepad": {
+   "ok": false,
+   "count": 0,
+   "error": "HTTP Error 403: Forbidden",
+   "from_cache": false
   },
   "holidays": {
    "ok": true,
@@ -420,6 +426,20 @@
    "source": "concertinfo",
    "url": "https://concertinfo.ru/gig/38764/",
    "detail": "Live Арена"
+  },
+  {
+   "id": "6b06841ff0",
+   "title": "Новогодняя Шоу-выставка чемпионов",
+   "start": "2026-12-26",
+   "end": "2026-12-27",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://brdgroomers.ru",
+   "detail": "Региональная выставка собак · залов: 1"
   },
   {
    "id": "53077082e1",
@@ -2530,20 +2550,25 @@
    "level": "low"
   },
   "2026-12-25": {
-   "score": 3.0,
+   "score": 4.0,
    "events": [
-    "c4f9ce4783"
+    "c4f9ce4783",
+    "6b06841ff0"
+   ],
+   "level": "medium"
+  },
+  "2026-12-26": {
+   "score": 2.4,
+   "events": [
+    "6b06841ff0"
    ],
    "level": "low"
   },
-  "2026-12-26": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2026-12-27": {
-   "score": 1.0,
-   "events": [],
+   "score": 1.4,
+   "events": [
+    "6b06841ff0"
+   ],
    "level": "low"
   },
   "2026-12-31": {
