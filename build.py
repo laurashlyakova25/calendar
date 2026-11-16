@@ -15,6 +15,7 @@
 Для чтения официального PDF-календаря Экспоцентра используется pypdf из requirements.txt.
 """
 import csv
+import concurrent.futures
 import datetime as dt
 import hashlib
 import html
@@ -356,28 +357,35 @@ def src_vdnh_expo():
     page = fetch(root + "/events/", timeout=15)
     urls = list(dict.fromkeys(root + path for path in
                               re.findall(r"(?:https?://expo\.vdnh\.ru)?(/events/\d+)(?:[/\"?#]|$)", page)))
-    out, failures = [], 0
-    for url in urls[:80]:
+    def parse_card(url):
         try:
-            card = fetch(url, timeout=10)
+            card = fetch(url, timeout=8)
             h1 = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", card)
             if not h1:
                 h1 = re.search(r'(?is)<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)', card)
             title = clean_event_title(h1.group(1)) if h1 else ""
             dates = next((d for line in html_to_lines(card) if (d := parse_ru_date(line))), None)
             if not title or not dates:
-                continue
+                return None
             start, end = dates
             if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
-                continue
+                return None
             venue = find_venue("ВДНХ ЭКСПО")
             if not venue:
                 raise RuntimeError("площадка ВДНХ не настроена в config.json")
-            out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
-                          "vdnh_expo", url=url, detail="ВДНХ ЭКСПО"))
+            return ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                      "vdnh_expo", url=url, detail="ВДНХ ЭКСПО")
         except Exception as e:  # noqa
-            failures += 1
-            log(f"  ВДНХ ЭКСПО карточка {url}: {e}")
+            return (url, str(e))
+
+    out, failures = [], 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+        for result in pool.map(parse_card, urls[:80]):
+            if isinstance(result, tuple):
+                failures += 1
+                log(f"  ВДНХ ЭКСПО карточка {result[0]}: {result[1]}")
+            elif result:
+                out.append(result)
     if not urls or not out:
         raise RuntimeError(f"не удалось разобрать карточки ВДНХ ЭКСПО (ссылок: {len(urls)}, ошибок: {failures})")
     log(f"  vdnh_expo: просмотрено карточек {min(len(urls), 80)}, найдено предстоящих событий {len(out)}")
