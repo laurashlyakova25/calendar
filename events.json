@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T22:30",
+ "generated_at": "2026-11-16T22:36",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,20 +12,24 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": true,
-   "count": 104
+   "ok": false,
+   "count": 104,
+   "error": "Крокус Экспо не ответил ни на один запрос",
+   "from_cache": true
   },
   "concertinfo": {
    "ok": true,
    "count": 27
   },
   "vdnh_expo": {
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "count": 8,
+   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
+   "from_cache": true
   },
   "timiryazev": {
    "ok": true,
-   "count": 54
+   "count": 18
   },
   "expocentr": {
    "ok": true,
@@ -41,34 +45,6 @@
   }
  },
  "events": [
-  {
-   "id": "b0324cd2d9",
-   "title": "[VALUE_SORT] =>",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "68fc3e65fd",
-   "title": "[DESCRIPTION] =>",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
   {
    "id": "980c897fc7",
    "title": "Химия",
@@ -378,34 +354,6 @@
    "detail": "ВДНХ ЭКСПО"
   },
   {
-   "id": "6cfe1e0f87",
-   "title": "[VALUE_SORT] =>",
-   "start": "2026-12-03",
-   "end": "2026-12-06",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "cfb71db756",
-   "title": "[DESCRIPTION] =>",
-   "start": "2026-12-03",
-   "end": "2026-12-06",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "cda458256f",
    "title": "ЭЛЕКТРИЧЕСКИЕ СЕТИ",
    "start": "2026-12-03",
@@ -530,34 +478,6 @@
    "source": "vdnh_expo",
    "url": "https://expo.vdnh.ru/events/34",
    "detail": "ВДНХ ЭКСПО"
-  },
-  {
-   "id": "d19ae2023d",
-   "title": "[VALUE_SORT] =>",
-   "start": "2026-12-16",
-   "end": "2026-12-20",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "8ee8a71715",
-   "title": "[DESCRIPTION] =>",
-   "start": "2026-12-16",
-   "end": "2026-12-20",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
   },
   {
    "id": "ed3efb6663",
@@ -962,34 +882,6 @@
    "detail": "14-й Национальный авиационный инфраструктурный салон · залов: 1"
   },
   {
-   "id": "47f31fc7f2",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-02-16",
-   "end": "2027-02-18",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "3c38900b35",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-02-16",
-   "end": "2027-02-18",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "723b2c5b8d",
    "title": "Ладья. Зимняя сказка-2026",
    "start": "2027-02-16",
@@ -1146,34 +1038,6 @@
    "detail": "ВДНХ ЭКСПО"
   },
   {
-   "id": "63cb9d270b",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-02-24",
-   "end": "2027-02-26",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "b6c7deebb2",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-02-24",
-   "end": "2027-02-26",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "ea10455699",
    "title": "Скрепка Экспо",
    "start": "2027-02-24",
@@ -1242,34 +1106,6 @@
    "source": "crocus_expo",
    "url": "https://www.prod-expo.ru",
    "detail": "34-я международная выставка продуктов питания, напитков и сырья для их производства · залов: 11"
-  },
-  {
-   "id": "119a35a6f4",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-03-02",
-   "end": "2027-03-04",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "67950ce7d2",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-03-02",
-   "end": "2027-03-04",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
   },
   {
    "id": "731276a2ed",
@@ -1568,34 +1404,6 @@
    "detail": ""
   },
   {
-   "id": "c9ed8ec7e1",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-03-23",
-   "end": "2027-03-25",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "cd31d79ee6",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-03-23",
-   "end": "2027-03-25",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "3bfbf50411",
    "title": "Cabex",
    "start": "2027-03-23",
@@ -1734,34 +1542,6 @@
    "source": "crocus_expo",
    "url": "https://www.mosbuild.com",
    "detail": "Международная специализированная выставка · залов: 9"
-  },
-  {
-   "id": "d7ae2d5f1d",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-03-30",
-   "end": "2027-04-01",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "ea5b079937",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-03-30",
-   "end": "2027-04-01",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
   },
   {
    "id": "391a7ce7de",
@@ -1988,34 +1768,6 @@
    "detail": "5-я cпециализированная выставка технологий, оборудования и решений для ритейла и сферы HoReCa · залов: 1"
   },
   {
-   "id": "b56ffbd62b",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-04-14",
-   "end": "2027-04-15",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "7cf68efa1a",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-04-14",
-   "end": "2027-04-15",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "394361194e",
    "title": "СПТО.Краны",
    "start": "2027-04-14",
@@ -2086,34 +1838,6 @@
    "detail": "32-я международная выставка технических средств охраны и оборудования для обеспечения безопасности и противопожарной защиты · залов: 1"
   },
   {
-   "id": "b20d7fcb88",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-04-22",
-   "end": "2027-04-23",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "5b43bf11f0",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-04-22",
-   "end": "2027-04-23",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
    "id": "713870db25",
    "title": "CAFEX 2027",
    "start": "2027-04-22",
@@ -2154,34 +1878,6 @@
    "source": "crocus_expo",
    "url": "https://www.miningworld.ru",
    "detail": "31-я международная выставка машин и оборудованя для добычи, обогащения и транспортрировки полезных ископаемых · залов: 4"
-  },
-  {
-   "id": "a4ab2f7150",
-   "title": "[VALUE_SORT] =>",
-   "start": "2027-04-27",
-   "end": "2027-04-29",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "0e46a70503",
-   "title": "[DESCRIPTION] =>",
-   "start": "2027-04-27",
-   "end": "2027-04-29",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/",
-   "detail": "Тимирязев Центр"
   },
   {
    "id": "fa4b1e318f",
@@ -3118,22 +2814,18 @@
  ],
  "days": {
   "2026-11-16": {
-   "score": 10.1,
+   "score": 5.9,
    "events": [
-    "b0324cd2d9",
-    "68fc3e65fd",
     "980c897fc7",
     "c9e010f936",
     "8d53419116",
     "5a909e6836"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-11-17": {
-   "score": 15.9,
+   "score": 9.9,
    "events": [
-    "b0324cd2d9",
-    "68fc3e65fd",
     "980c897fc7",
     "c9e010f936",
     "8d53419116",
@@ -3143,10 +2835,8 @@
    "level": "high"
   },
   "2026-11-18": {
-   "score": 20.5,
+   "score": 14.5,
    "events": [
-    "b0324cd2d9",
-    "68fc3e65fd",
     "980c897fc7",
     "c9e010f936",
     "8d53419116",
@@ -3157,10 +2847,8 @@
    "level": "high"
   },
   "2026-11-19": {
-   "score": 7.8,
+   "score": 6.0,
    "events": [
-    "b0324cd2d9",
-    "68fc3e65fd",
     "980c897fc7",
     "c9e010f936",
     "8d53419116",
@@ -3282,42 +2970,34 @@
    "level": "medium"
   },
   "2026-12-02": {
-   "score": 10.4,
+   "score": 6.2,
    "events": [
     "b5f02b3af1",
     "a4f4f1f276",
-    "6cfe1e0f87",
-    "cfb71db756",
     "cda458256f"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-12-03": {
-   "score": 11.7,
+   "score": 5.7,
    "events": [
     "b5f02b3af1",
     "a4f4f1f276",
-    "6cfe1e0f87",
-    "cfb71db756",
     "cda458256f"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-12-04": {
-   "score": 9.6,
+   "score": 3.6,
    "events": [
     "b5f02b3af1",
-    "6cfe1e0f87",
-    "cfb71db756",
     "cda458256f"
    ],
-   "level": "high"
+   "level": "low"
   },
   "2026-12-05": {
-   "score": 19.0,
+   "score": 13.0,
    "events": [
-    "6cfe1e0f87",
-    "cfb71db756",
     "cda458256f",
     "4fbfb69fe0",
     "7a3f1ea6b9",
@@ -3326,16 +3006,14 @@
    "level": "high"
   },
   "2026-12-06": {
-   "score": 9.6,
+   "score": 7.8,
    "events": [
-    "6cfe1e0f87",
-    "cfb71db756",
     "cda458256f",
     "50c7c955fc",
     "2d22b2e4a4",
     "054020982a"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-12-07": {
    "score": 6.3,
@@ -3395,48 +3073,38 @@
    "level": "low"
   },
   "2026-12-15": {
-   "score": 6.3,
+   "score": 2.1,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2026-12-16": {
-   "score": 9.0,
+   "score": 3.0,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663"
    ],
-   "level": "high"
+   "level": "low"
   },
   "2026-12-17": {
-   "score": 9.0,
+   "score": 3.0,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663"
    ],
-   "level": "high"
+   "level": "low"
   },
   "2026-12-18": {
-   "score": 14.1,
+   "score": 8.1,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663",
     "9e1c4b3bee",
     "f74a88a294"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2026-12-19": {
-   "score": 16.0,
+   "score": 10.0,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663",
     "94b701b01a",
     "f74a88a294"
@@ -3444,10 +3112,8 @@
    "level": "high"
   },
   "2026-12-20": {
-   "score": 6.6,
+   "score": 4.8,
    "events": [
-    "d19ae2023d",
-    "8ee8a71715",
     "ed3efb6663",
     "f74a88a294",
     "527a23bc6b"
@@ -3749,33 +3415,27 @@
    "level": "low"
   },
   "2027-02-15": {
-   "score": 9.4,
+   "score": 5.2,
    "events": [
-    "47f31fc7f2",
-    "3c38900b35",
     "723b2c5b8d",
     "c991d7d8b7",
     "fff5b184e1"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2027-02-16": {
-   "score": 14.4,
+   "score": 8.4,
    "events": [
-    "47f31fc7f2",
-    "3c38900b35",
     "723b2c5b8d",
     "c991d7d8b7",
     "fff5b184e1",
     "dd201aab0c"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2027-02-17": {
-   "score": 17.2,
+   "score": 11.2,
    "events": [
-    "47f31fc7f2",
-    "3c38900b35",
     "723b2c5b8d",
     "c991d7d8b7",
     "fff5b184e1",
@@ -3785,10 +3445,8 @@
    "level": "high"
   },
   "2027-02-18": {
-   "score": 11.9,
+   "score": 10.1,
    "events": [
-    "47f31fc7f2",
-    "3c38900b35",
     "723b2c5b8d",
     "c991d7d8b7",
     "fff5b184e1",
@@ -3839,13 +3497,11 @@
    "level": "medium"
   },
   "2027-02-23": {
-   "score": 18.9,
+   "score": 14.7,
    "events": [
     "4342d48dc4",
     "b86837fc2b",
     "fd716fe61d",
-    "63cb9d270b",
-    "b6c7deebb2",
     "ea10455699",
     "fbe2149e3c",
     "350b0c405e",
@@ -3854,11 +3510,9 @@
    "level": "high"
   },
   "2027-02-24": {
-   "score": 19.0,
+   "score": 13.0,
    "events": [
     "fd716fe61d",
-    "63cb9d270b",
-    "b6c7deebb2",
     "ea10455699",
     "fbe2149e3c",
     "350b0c405e",
@@ -3867,11 +3521,9 @@
    "level": "high"
   },
   "2027-02-25": {
-   "score": 19.0,
+   "score": 13.0,
    "events": [
     "fd716fe61d",
-    "63cb9d270b",
-    "b6c7deebb2",
     "ea10455699",
     "fbe2149e3c",
     "350b0c405e",
@@ -3880,17 +3532,15 @@
    "level": "high"
   },
   "2027-02-26": {
-   "score": 5.7,
+   "score": 3.9,
    "events": [
     "fd716fe61d",
-    "63cb9d270b",
-    "b6c7deebb2",
     "ea10455699",
     "fbe2149e3c",
     "350b0c405e",
     "bb653ff00c"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-02-27": {
    "score": 1.0,
@@ -3905,44 +3555,36 @@
    "level": "medium"
   },
   "2027-03-01": {
-   "score": 11.2,
+   "score": 7.0,
    "events": [
     "d6a92f2f0c",
-    "119a35a6f4",
-    "67950ce7d2",
-    "731276a2ed"
-   ],
-   "level": "high"
-  },
-  "2027-03-02": {
-   "score": 13.9,
-   "events": [
-    "d6a92f2f0c",
-    "119a35a6f4",
-    "67950ce7d2",
-    "731276a2ed"
-   ],
-   "level": "high"
-  },
-  "2027-03-03": {
-   "score": 13.9,
-   "events": [
-    "d6a92f2f0c",
-    "119a35a6f4",
-    "67950ce7d2",
-    "731276a2ed"
-   ],
-   "level": "high"
-  },
-  "2027-03-04": {
-   "score": 4.2,
-   "events": [
-    "d6a92f2f0c",
-    "119a35a6f4",
-    "67950ce7d2",
     "731276a2ed"
    ],
    "level": "medium"
+  },
+  "2027-03-02": {
+   "score": 7.9,
+   "events": [
+    "d6a92f2f0c",
+    "731276a2ed"
+   ],
+   "level": "medium"
+  },
+  "2027-03-03": {
+   "score": 7.9,
+   "events": [
+    "d6a92f2f0c",
+    "731276a2ed"
+   ],
+   "level": "medium"
+  },
+  "2027-03-04": {
+   "score": 2.4,
+   "events": [
+    "d6a92f2f0c",
+    "731276a2ed"
+   ],
+   "level": "low"
   },
   "2027-03-06": {
    "score": 2.0,
@@ -4099,10 +3741,8 @@
    "level": "low"
   },
   "2027-03-22": {
-   "score": 16.0,
+   "score": 11.8,
    "events": [
-    "c9ed8ec7e1",
-    "cd31d79ee6",
     "3bfbf50411",
     "0479b80628",
     "3082192f3f",
@@ -4114,10 +3754,8 @@
    "level": "high"
   },
   "2027-03-23": {
-   "score": 22.8,
+   "score": 16.8,
    "events": [
-    "c9ed8ec7e1",
-    "cd31d79ee6",
     "3bfbf50411",
     "0479b80628",
     "3082192f3f",
@@ -4129,10 +3767,8 @@
    "level": "high"
   },
   "2027-03-24": {
-   "score": 22.8,
+   "score": 16.8,
    "events": [
-    "c9ed8ec7e1",
-    "cd31d79ee6",
     "3bfbf50411",
     "0479b80628",
     "3082192f3f",
@@ -4144,10 +3780,8 @@
    "level": "high"
   },
   "2027-03-25": {
-   "score": 13.1,
+   "score": 11.3,
    "events": [
-    "c9ed8ec7e1",
-    "cd31d79ee6",
     "3bfbf50411",
     "0479b80628",
     "3082192f3f",
@@ -4181,11 +3815,9 @@
    "level": "low"
   },
   "2027-03-29": {
-   "score": 16.0,
+   "score": 11.8,
    "events": [
     "ed7bee4312",
-    "d7ae2d5f1d",
-    "ea5b079937",
     "391a7ce7de",
     "8518041fbc",
     "5569795946",
@@ -4194,11 +3826,9 @@
    "level": "high"
   },
   "2027-03-30": {
-   "score": 22.9,
+   "score": 16.9,
    "events": [
     "ed7bee4312",
-    "d7ae2d5f1d",
-    "ea5b079937",
     "391a7ce7de",
     "8518041fbc",
     "5569795946",
@@ -4207,11 +3837,9 @@
    "level": "high"
   },
   "2027-03-31": {
-   "score": 22.9,
+   "score": 16.9,
    "events": [
     "ed7bee4312",
-    "d7ae2d5f1d",
-    "ea5b079937",
     "391a7ce7de",
     "8518041fbc",
     "5569795946",
@@ -4220,17 +3848,15 @@
    "level": "high"
   },
   "2027-04-01": {
-   "score": 10.3,
+   "score": 8.5,
    "events": [
     "ed7bee4312",
-    "d7ae2d5f1d",
-    "ea5b079937",
     "391a7ce7de",
     "8518041fbc",
     "5569795946",
     "f0b29aae1a"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2027-04-02": {
    "score": 3.0,
@@ -4319,7 +3945,7 @@
    "level": "high"
   },
   "2027-04-13": {
-   "score": 18.9,
+   "score": 14.7,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -4329,14 +3955,12 @@
     "6de120603a",
     "4396f87a66",
     "d892a8ca90",
-    "b56ffbd62b",
-    "7cf68efa1a",
     "394361194e"
    ],
    "level": "high"
   },
   "2027-04-14": {
-   "score": 20.6,
+   "score": 14.6,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -4346,14 +3970,12 @@
     "6de120603a",
     "4396f87a66",
     "d892a8ca90",
-    "b56ffbd62b",
-    "7cf68efa1a",
     "394361194e"
    ],
    "level": "high"
   },
   "2027-04-15": {
-   "score": 6.1,
+   "score": 4.3,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -4362,8 +3984,6 @@
     "e02fba8dc5",
     "4396f87a66",
     "d892a8ca90",
-    "b56ffbd62b",
-    "7cf68efa1a",
     "394361194e"
    ],
    "level": "medium"
@@ -4391,34 +4011,28 @@
    "level": "low"
   },
   "2027-04-21": {
-   "score": 9.1,
+   "score": 4.9,
    "events": [
     "22059c7aa5",
     "1daffde82d",
-    "b20d7fcb88",
-    "5b43bf11f0",
     "713870db25"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2027-04-22": {
-   "score": 11.8,
+   "score": 5.8,
    "events": [
     "22059c7aa5",
     "1daffde82d",
-    "b20d7fcb88",
-    "5b43bf11f0",
     "713870db25"
    ],
-   "level": "high"
+   "level": "medium"
   },
   "2027-04-23": {
-   "score": 3.5,
+   "score": 1.7,
    "events": [
     "22059c7aa5",
     "1daffde82d",
-    "b20d7fcb88",
-    "5b43bf11f0",
     "713870db25"
    ],
    "level": "low"
@@ -4436,48 +4050,40 @@
    "level": "low"
   },
   "2027-04-26": {
-   "score": 10.8,
+   "score": 6.6,
    "events": [
     "7441774130",
     "90c524de3d",
-    "a4ab2f7150",
-    "0e46a70503",
-    "fa4b1e318f"
-   ],
-   "level": "high"
-  },
-  "2027-04-27": {
-   "score": 14.6,
-   "events": [
-    "7441774130",
-    "90c524de3d",
-    "a4ab2f7150",
-    "0e46a70503",
-    "fa4b1e318f"
-   ],
-   "level": "high"
-  },
-  "2027-04-28": {
-   "score": 14.6,
-   "events": [
-    "7441774130",
-    "90c524de3d",
-    "a4ab2f7150",
-    "0e46a70503",
-    "fa4b1e318f"
-   ],
-   "level": "high"
-  },
-  "2027-04-29": {
-   "score": 4.4,
-   "events": [
-    "7441774130",
-    "90c524de3d",
-    "a4ab2f7150",
-    "0e46a70503",
     "fa4b1e318f"
    ],
    "level": "medium"
+  },
+  "2027-04-27": {
+   "score": 8.6,
+   "events": [
+    "7441774130",
+    "90c524de3d",
+    "fa4b1e318f"
+   ],
+   "level": "medium"
+  },
+  "2027-04-28": {
+   "score": 8.6,
+   "events": [
+    "7441774130",
+    "90c524de3d",
+    "fa4b1e318f"
+   ],
+   "level": "medium"
+  },
+  "2027-04-29": {
+   "score": 2.6,
+   "events": [
+    "7441774130",
+    "90c524de3d",
+    "fa4b1e318f"
+   ],
+   "level": "low"
   },
   "2027-05-01": {
    "score": 5.0,
