@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T22:53",
+ "generated_at": "2026-11-16T23:00",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -14,7 +14,7 @@
   "crocus_expo": {
    "ok": false,
    "count": 104,
-   "error": "Крокус Экспо не ответил ни на один запрос",
+   "error": "Крокус Экспо за 2026 год не загрузился: The read operation timed out",
    "from_cache": true
   },
   "concertinfo": {
