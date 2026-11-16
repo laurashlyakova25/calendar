@@ -6,8 +6,8 @@
          python build.py --offline  (без интернета, только кэш и ручные события)
 
 Что делает:
-  1. Собирает события из источников (Крокус Экспо, KudaGo, производственный календарь,
-     ручной файл manual_events.csv).
+  1. Собирает события из источников (Крокус Экспо, Concertinfo, TimePad,
+     производственный календарь и необязательный файл manual_events.csv).
   2. Если источник не ответил, берёт его прошлые данные из cache_<источник>.json,
      чтобы календарь не «пустел» из-за сбоя одного сайта.
   3. Считает баллы спроса по дням и пишет events.json, который читает index.html.
@@ -22,6 +22,7 @@ import json
 import math
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -254,6 +255,65 @@ def src_concertinfo():
     return events
 
 
+def src_timepad():
+    """Собирает публичные события TimePad в Москве на настроенных крупных площадках."""
+    horizon = TODAY + dt.timedelta(days=CONFIG["horizon_days"])
+    out, skip, total = [], 0, None
+    page_size, pages = 100, 0
+    while pages < 10 and (total is None or skip < total):
+        params = {
+            "limit": page_size,
+            "skip": skip,
+            "cities": "Москва",
+            "starts_at_min": TODAY.isoformat() + "T00:00:00",
+            "starts_at_max": horizon.isoformat() + "T23:59:59",
+            "fields": "location,categories",
+            "sort": "+starts_at",
+        }
+        url = "https://api.timepad.ru/v1/events.json?" + urllib.parse.urlencode(params)
+        data = json.loads(fetch(url))
+        if not isinstance(data, dict) or not isinstance(data.get("values"), list):
+            raise RuntimeError("TimePad вернул неожиданный формат списка событий")
+        values = data.get("values") or []
+        if total is None:
+            total = int(data.get("total") or 0)
+        for item in values:
+            location = item.get("location") or {}
+            address = str(location.get("address") or "")
+            venue = find_venue(address)
+            if not venue:
+                continue
+            try:
+                start = dt.date.fromisoformat(str(item["starts_at"])[:10])
+                end = dt.date.fromisoformat(str(item.get("ends_at") or item["starts_at"])[:10])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if end < start:
+                end = start
+            if end < TODAY or start > horizon:
+                continue
+            raw_categories = item.get("categories") or []
+            if not isinstance(raw_categories, list):
+                raw_categories = []
+            categories = " ".join(c.get("name", "") for c in raw_categories if isinstance(c, dict))
+            if re.search(r"концерт|музык|шоу|спектак|матч|спорт", categories, re.I):
+                category = "концерт/шоу"
+            elif re.search(r"форум|конференц|выстав", categories, re.I):
+                category = "форум"
+            else:
+                category = "событие"
+            out.append(ev(
+                item.get("name") or "Событие TimePad", start, end, venue["name"], venue["weight"],
+                category, "timepad", url=item.get("url", ""), detail=address,
+            ))
+        pages += 1
+        if not values:
+            break
+        skip += len(values)
+    log(f"  timepad: просмотрено страниц {pages}, найдено событий на крупных площадках {len(out)}")
+    return out
+
+
 FIXED_HOLIDAYS = {(1, d) for d in range(1, 9)} | {(2, 23), (3, 8), (5, 1), (5, 9), (6, 12), (11, 4)}
 
 
@@ -355,6 +415,7 @@ def src_manual():
 SOURCES = {
     "crocus_expo": src_crocus_expo,
     "concertinfo": src_concertinfo,
+    "timepad": src_timepad,
     "kudago": src_kudago,
     "holidays": src_holidays,
     "manual": src_manual,
@@ -393,7 +454,7 @@ def main():
         cache = DATA / f"cache_{name}.json"
         try:
             items = fn()
-            if name in ("crocus_expo", "kudago", "concertinfo"):
+            if name in ("crocus_expo", "kudago", "concertinfo", "timepad"):
                 cache.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
             status[name] = {"ok": True, "count": len(items)}
             if name == "holidays" and HOLIDAY_FALLBACK_YEARS:
@@ -411,6 +472,12 @@ def main():
     manual_keys = {(e["start"], e["venue"]) for e in all_events if e["source"] == "manual" and e["venue"]}
     all_events = [e for e in all_events
                   if not (e["source"] in ("concertinfo", "kudago") and (e["start"], e["venue"]) in manual_keys)]
+    other_event_keys = {
+        (re.sub(r"[^0-9a-zа-яё]+", "", e["title"].casefold()), e["start"], e["venue"])
+        for e in all_events if e["source"] != "timepad"
+    }
+    all_events = [e for e in all_events if e["source"] != "timepad" or
+                  (re.sub(r"[^0-9a-zа-яё]+", "", e["title"].casefold()), e["start"], e["venue"]) not in other_event_keys]
     seen, events = set(), []
     for e in all_events:
         if dt.date.fromisoformat(e["end"]) < TODAY or dt.date.fromisoformat(e["start"]) > horizon:

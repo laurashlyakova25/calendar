@@ -38,6 +38,9 @@
     "concertinfo": {
       "enabled": true
     },
+    "timepad": {
+      "enabled": true
+    },
     "kudago": {
       "enabled": false,
       "_note": "KudaGo блокирует серверы GitHub (ошибка 403)"
