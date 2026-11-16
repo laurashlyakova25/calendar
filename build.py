@@ -357,10 +357,53 @@ def clean_event_title(value):
     return re.sub(r"\s*[|—–-]\s*(ВДНХ ЭКСПО|ВК\s*[«\"]?Тимирязев Центр).*?$", "", value, flags=re.I).strip()
 
 
+def parse_vdnh_listing(page, page_url):
+    """Разбирает карточки событий ВДНХ ЭКСПО из текстового списка."""
+    out = []
+    venue = find_venue("ВДНХ ЭКСПО")
+    for line in html_to_lines(page):
+        if "открыть страницу события" not in line.casefold():
+            continue
+        dates = parse_ru_date(line)
+        if not dates:
+            continue
+        start, end = dates
+        if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
+            continue
+        tail = line[RU_DATE_RE.search(line.replace("ё", "е").lower()).end():]
+        title = re.split(r"ВДНХ\s+ЭКСПО", tail, maxsplit=1, flags=re.I)[0]
+        title = clean_event_title(re.sub(r"(?i)открыть страницу события.*$", "", title))
+        if not title or len(title) > 160:
+            continue
+        out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                      "vdnh_expo", url=page_url, detail="ВДНХ ЭКСПО · каталог деловых мероприятий Raido"))
+    return out
+
+
+def src_vdnh_raido():
+    """Резервный список ВДНХ ЭКСПО из независимого каталога, сверяющего данные с площадками."""
+    out = []
+    pages = ["https://go.raido.moscow/vdnh-ekspo/"]
+    pages += [f"https://go.raido.moscow/events/vystavki-{year}/"
+              for year in range(TODAY.year, (TODAY + dt.timedelta(days=CONFIG["horizon_days"])).year + 1)]
+    for url in pages:
+        try:
+            out.extend(parse_vdnh_listing(fetch(url, timeout=12), url))
+        except Exception as e:  # noqa
+            log(f"  резервный каталог ВДНХ {url}: {e}")
+    if not out:
+        raise RuntimeError("официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны")
+    return out
+
+
 def src_vdnh_expo():
     """Собирает события ВДНХ ЭКСПО из официального списка и карточек мероприятий."""
     root = "https://expo.vdnh.ru"
-    page = fetch(root + "/events", timeout=15)
+    try:
+        page = fetch(root + "/events", timeout=15)
+    except Exception as e:  # noqa
+        log(f"  официальный календарь ВДНХ ЭКСПО: {e}; пробую резервный каталог")
+        return src_vdnh_raido()
     urls = list(dict.fromkeys(root + path for path in
                               re.findall(r"(?:https?://expo\.vdnh\.ru)?(/events/\d+)(?:[/\"?#]|$)", page)))
     def parse_card(url):
@@ -393,7 +436,8 @@ def src_vdnh_expo():
             elif result:
                 out.append(result)
     if not urls or not out:
-        raise RuntimeError(f"не удалось разобрать карточки ВДНХ ЭКСПО (ссылок: {len(urls)}, ошибок: {failures})")
+        log(f"  официальный список ВДНХ ЭКСПО не дал событий (ссылок: {len(urls)}, ошибок: {failures}); пробую резервный каталог")
+        return src_vdnh_raido()
     log(f"  vdnh_expo: просмотрено карточек {min(len(urls), 80)}, найдено предстоящих событий {len(out)}")
     return out
 
