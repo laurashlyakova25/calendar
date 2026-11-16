@@ -192,11 +192,16 @@ fetch("events.json?"+Date.now()).then(r => r.json()).then(d => {
   const generated = new Date(stampWithZone);
   const ageHours = (Date.now() - generated.getTime()) / 36e5;
   const failed = Object.entries(d.sources || {}).filter(([, source]) => !source.ok).map(([name]) => SRC_RU[name] || name);
+  const notes = Object.entries(d.sources || {}).filter(([, source]) => source.note).map(([name, source]) => `${SRC_RU[name] || name}: ${source.note}`);
   const updated = Number.isFinite(generated.getTime()) ? generated.toLocaleString("ru-RU", {day:"numeric", month:"long", hour:"2-digit", minute:"2-digit", timeZone:"Europe/Moscow"}) + " МСК" : rawStamp.replace("T", " ");
   const status = document.getElementById("update-status");
   if (failed.length) {
     status.classList.add("warn");
     status.textContent = `Данные собраны ${updated}, но источник${failed.length>1?"и":""} недоступ${failed.length>1?"ны":"ен"}: ${failed.join(", ")}. Для них показан сохранённый результат.`;
+    if (notes.length) status.textContent += " " + notes.join(" ");
+  } else if (notes.length) {
+    status.classList.add("warn");
+    status.textContent = `Данные собраны ${updated}. ${notes.join(" ")}`;
   } else if (!Number.isFinite(ageHours) || ageHours > 36) {
     status.classList.add("warn");
     status.textContent = `Последнее обновление: ${updated}. Данные старше 36 часов — проверьте запуск обновления.`;
@@ -212,7 +217,7 @@ fetch("events.json?"+Date.now()).then(r => r.json()).then(d => {
   document.getElementById("peak-range").onchange = peaks;
   render(); peaks();
   document.getElementById("foot").innerHTML = "Источники: " + Object.entries(d.sources).map(([k,s]) =>
-    `<span class="${s.ok?"":"bad"}">${SRC_RU[k]||k} — ${s.count}${s.ok?"":" (сбой, показаны прошлые данные)"}</span>`).join(" · ");
+    `<span class="${s.ok&&!s.note?"":"bad"}">${SRC_RU[k]||k} — ${s.count}${s.ok?(s.note?" (резервная афиша)":""):" (сбой, показаны прошлые данные)"}</span>`).join(" · ");
 }).catch(err => { document.getElementById("hotel").textContent = "Не удалось загрузить data/events.json: " + err; });
 </script>
 </body>
