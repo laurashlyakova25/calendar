@@ -24,6 +24,7 @@ import json
 import math
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -176,29 +177,39 @@ def parse_crocus_lines(lines):
 
 
 def src_crocus_expo():
-    months = []
-    d = TODAY.replace(day=1)
-    for _ in range(14):
-        months.append((d.year, d.month))
-        d = (d + dt.timedelta(days=32)).replace(day=1)
-    def load_month(item):
-        y, m = item
-        url = f"https://www.crocus-expo.ru/exhibition/?year={y}&month={m:02d}"
-        try:
-            return parse_crocus_lines(html_to_lines(fetch(url, timeout=12))), None
-        except Exception as e:  # noqa
-            return [], f"crocus {y}-{m:02d}: {e}"
-    events, ok = [], 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
-        for items, error in pool.map(load_month, months):
-            events += items
-            if error:
-                log(f"  {error}")
-            else:
-                ok += 1
-    if ok == 0:
-        raise RuntimeError("Крокус Экспо не ответил ни на один запрос")
-    return events
+    # Не бомбардируем сайт 14 одновременными запросами по месяцам: некоторые
+    # запросы таймаутились с GitHub Actions. Годовая страница содержит весь
+    # календарь, поэтому достаточно одного запроса на каждый год горизонта.
+    horizon = TODAY + dt.timedelta(days=CONFIG["horizon_days"])
+    events = []
+    years = range(TODAY.year, horizon.year + 1)
+    for year in years:
+        url = f"https://www.crocus-expo.ru/exhibition/?year={year}"
+        last_error = None
+        for attempt in range(1, 3):
+            try:
+                page = fetch(url, timeout=35)
+                year_events = parse_crocus_lines(html_to_lines(page))
+                if not year_events:
+                    raise RuntimeError("афиша открылась, но события не распознаны")
+                events.extend(year_events)
+                last_error = None
+                log(f"  crocus {year}: получено событий {len(year_events)} (попытка {attempt})")
+                break
+            except Exception as e:  # noqa
+                last_error = e
+                log(f"  crocus {year}, попытка {attempt}: {e}")
+                if attempt < 2:
+                    time.sleep(2)
+        if last_error:
+            raise RuntimeError(f"Крокус Экспо за {year} год не загрузился: {last_error}")
+
+    unique = {}
+    for event in events:
+        if event["start"] < TODAY.isoformat() or event["start"] > horizon.isoformat():
+            continue
+        unique[(event["title"].casefold(), event["start"], event["end"])] = event
+    return list(unique.values())
 
 
 def src_kudago():
