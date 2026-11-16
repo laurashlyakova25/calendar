@@ -176,20 +176,26 @@ def parse_crocus_lines(lines):
 
 
 def src_crocus_expo():
-    events = []
     months = []
     d = TODAY.replace(day=1)
     for _ in range(14):
         months.append((d.year, d.month))
         d = (d + dt.timedelta(days=32)).replace(day=1)
-    ok = 0
-    for y, m in months:
+    def load_month(item):
+        y, m = item
         url = f"https://www.crocus-expo.ru/exhibition/?year={y}&month={m:02d}"
         try:
-            events += parse_crocus_lines(html_to_lines(fetch(url)))
-            ok += 1
+            return parse_crocus_lines(html_to_lines(fetch(url, timeout=12))), None
         except Exception as e:  # noqa
-            log(f"  crocus {y}-{m:02d}: {e}")
+            return [], f"crocus {y}-{m:02d}: {e}"
+    events, ok = [], 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        for items, error in pool.map(load_month, months):
+            events += items
+            if error:
+                log(f"  {error}")
+            else:
+                ok += 1
     if ok == 0:
         raise RuntimeError("Крокус Экспо не ответил ни на один запрос")
     return events
@@ -354,7 +360,7 @@ def clean_event_title(value):
 def src_vdnh_expo():
     """Собирает события ВДНХ ЭКСПО из официального списка и карточек мероприятий."""
     root = "https://expo.vdnh.ru"
-    page = fetch(root + "/events/", timeout=15)
+    page = fetch(root + "/events", timeout=15)
     urls = list(dict.fromkeys(root + path for path in
                               re.findall(r"(?:https?://expo\.vdnh\.ru)?(/events/\d+)(?:[/\"?#]|$)", page)))
     def parse_card(url):
