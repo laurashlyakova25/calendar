@@ -357,6 +357,18 @@ def clean_event_title(value):
     return re.sub(r"\s*[|—–-]\s*(ВДНХ ЭКСПО|ВК\s*[«\"]?Тимирязев Центр).*?$", "", value, flags=re.I).strip()
 
 
+def previous_event_title(lines, index):
+    """Берёт ближайшее осмысленное название, пропуская служебный мусор в HTML-разметке."""
+    for candidate in reversed(lines[max(0, index - 5):index]):
+        candidate = clean_event_title(candidate)
+        if (not candidate or len(candidate) > 160 or parse_ru_date(candidate) or
+                re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|^\[", candidate) or
+                candidate.casefold() in {"календарь", "мероприятия", "контакты", "главная"}):
+            continue
+        return candidate
+    return ""
+
+
 def parse_vdnh_listing(page, page_url):
     """Разбирает карточки событий ВДНХ ЭКСПО из текстового списка."""
     out = []
@@ -455,8 +467,8 @@ def src_timiryazev():
         start, end = dates
         if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
             continue
-        title = clean_event_title(lines[i - 1])
-        if not title or len(title) > 150 or re.search(r"^(календарь|мероприятия|контакты|главная)", title, re.I):
+        title = previous_event_title(lines, i)
+        if not title or len(title) > 150:
             continue
         out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
                       "timiryazev", url="https://texpo.ru/expo/", detail="Тимирязев Центр"))
