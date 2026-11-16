@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T06:58",
+ "generated_at": "2026-11-16T07:20",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -21,7 +21,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 121
+   "count": 120
   },
   "manual": {
    "ok": true,
@@ -29,20 +29,6 @@
   }
  },
  "events": [
-  {
-   "id": "7418c087ea",
-   "title": "Выставки собак всех пород «Евразия 2026»",
-   "start": "2026-11-14",
-   "end": "2026-11-15",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://eurasia.rkf.org.ru",
-   "detail": "Национальная выставка собак · залов: 2"
-  },
   {
    "id": "c9e010f936",
    "title": "БИОТ 2026",
@@ -2293,13 +2279,6 @@
   }
  ],
  "days": {
-  "2026-11-15": {
-   "score": 1.6,
-   "events": [
-    "7418c087ea"
-   ],
-   "level": "low"
-  },
   "2026-11-16": {
    "score": 3.9,
    "events": [
