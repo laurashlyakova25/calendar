@@ -700,6 +700,24 @@ def day_contributions(e):
     return res
 
 
+def normalized_event_title(title):
+    title = re.split(r"[\(\[]", title.casefold(), maxsplit=1)[0]
+    title = re.sub(r"\b20\d{2}\b", "", title)
+    title = re.sub(r"\b(?:международная|международный|международные|выставка|выставочный|форум|экспо|expo|мфэс)\b", "", title)
+    return re.sub(r"[^0-9a-zа-яё]+", "", title)
+
+
+def same_event_from_different_sources(a, b):
+    """Схлопывает одинаковую выставку из нескольких афиш с небольшими вариантами названия."""
+    if (a["source"] == b["source"] or a["start"] != b["start"] or
+            a["venue"].casefold() != b["venue"].casefold()):
+        return False
+    ka, kb = normalized_event_title(a["title"]), normalized_event_title(b["title"])
+    if not ka or not kb:
+        return False
+    return ka == kb or min(len(ka), len(kb)) >= 5 and (ka in kb or kb in ka)
+
+
 def main():
     log(f"Сборка {TODAY} {'(offline)' if OFFLINE else ''}")
     all_events, status = [], {}
@@ -738,10 +756,10 @@ def main():
     for e in all_events:
         if dt.date.fromisoformat(e["end"]) < TODAY or dt.date.fromisoformat(e["start"]) > horizon:
             continue
-        title_for_key = re.split(r"[\(\[]", e["title"].casefold(), maxsplit=1)[0]
-        normalized_title = re.sub(r"[^0-9a-zа-яё]+", "", re.sub(r"\b20\d{2}\b", "", title_for_key))
+        normalized_title = normalized_event_title(e["title"])
         event_key = (normalized_title, e["start"], e["venue"].casefold())
-        if e["id"] in seen or event_key in seen_event_keys:
+        is_cross_source_duplicate = any(same_event_from_different_sources(e, old) for old in events)
+        if e["id"] in seen or event_key in seen_event_keys or is_cross_source_duplicate:
             continue
         seen.add(e["id"])
         seen_event_keys.add(event_key)
