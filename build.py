@@ -455,36 +455,56 @@ def src_vdnh_expo():
 
 
 def src_timiryazev():
-    """Собирает события из официального календаря Тимирязев Центра."""
+    """Собирает даты и названия из карточек официального календаря Тимирязев Центра."""
     page = fetch("https://texpo.ru/expo/", timeout=15)
     venue = find_venue("Тимирязев Центр")
-    anchors = []
+    horizon = TODAY + dt.timedelta(days=CONFIG["horizon_days"])
+    year_tokens = {str(year) for year in range(TODAY.year, horizon.year + 1)}
+    urls = []
     for match in re.finditer(r"(?is)<a\b([^>]*)>(.*?)</a>", page):
-        title = clean_event_title(" ".join(html_to_lines(match.group(2))))
-        if (not title or len(title) > 150 or
-                re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|^\[", title) or
-                re.search(r"(?i)получить|билет|купить|подробнее|перейти|читать далее|календарь|мероприятия|контакты", title)):
+        href = re.search(r"(?i)\bhref\s*=\s*['\"]([^'\"]+)", match.group(1))
+        if not href:
             continue
-        anchors.append((match, title))
-    out = []
-    for i, (anchor, title) in enumerate(anchors):
-        next_anchor = anchors[i + 1][0].start() if i + 1 < len(anchors) else len(page)
-        block = " ".join(html_to_lines(anchor.group(2)) + html_to_lines(page[anchor.end():next_anchor]))
-        dates = parse_ru_date(block)
-        if not dates:
+        url = urllib.parse.urljoin("https://texpo.ru/expo/", href.group(1))
+        path = urllib.parse.urlparse(url).path
+        if (urllib.parse.urlparse(url).netloc != "texpo.ru" or
+                not re.fullmatch(r"/expo/[^/]+/[^/]+/?", path) or
+                not any(year in path for year in year_tokens)):
             continue
-        start, end = dates
-        if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
-            continue
-        title = clean_event_title(RU_DATE_RE.sub("", title, count=1))
-        if not title:
-            continue
-        href = re.search(r"(?i)\bhref\s*=\s*['\"]([^'\"]+)", anchor.group(1))
-        event_url = urllib.parse.urljoin("https://texpo.ru/expo/", href.group(1)) if href else "https://texpo.ru/expo/"
-        out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
-                      "timiryazev", url=event_url, detail="Тимирязев Центр"))
+        if url not in urls:
+            urls.append(url)
+
+    def parse_event(url):
+        try:
+            card = fetch(url, timeout=8)
+            h1 = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", card)
+            if not h1:
+                return None
+            title = clean_event_title(" ".join(html_to_lines(h1.group(1))))
+            if not title or re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|получить бесплатный билет", title):
+                return None
+            dates = next((d for line in html_to_lines(card) if (d := parse_ru_date(line))), None)
+            if not dates:
+                return None
+            start, end = dates
+            if end < TODAY or start > horizon:
+                return None
+            return ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                      "timiryazev", url=url, detail="Тимирязев Центр")
+        except Exception as e:  # noqa
+            return (url, str(e))
+
+    out, failures = [], 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+        for result in pool.map(parse_event, urls[:120]):
+            if isinstance(result, tuple):
+                failures += 1
+                log(f"  Тимирязев Центр карточка {result[0]}: {result[1]}")
+            elif result:
+                out.append(result)
+    log(f"  timiryazev: проверено карточек {min(len(urls), 120)}, будущих событий {len(out)}")
     if not out:
-        raise RuntimeError("в календаре Тимирязев Центра не найдены будущие события")
+        raise RuntimeError(f"не удалось разобрать карточки Тимирязев Центра (ссылок: {len(urls)}, ошибок: {failures})")
     return out
 
 
