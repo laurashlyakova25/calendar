@@ -457,21 +457,28 @@ def src_vdnh_expo():
 def src_timiryazev():
     """Собирает события из официального календаря Тимирязев Центра."""
     page = fetch("https://texpo.ru/expo/", timeout=15)
-    lines = html_to_lines(page)
     venue = find_venue("Тимирязев Центр")
+    anchors = list(re.finditer(r"(?is)<a\b([^>]*)>(.*?)</a>", page))
     out = []
-    for i, line in enumerate(lines):
-        dates = parse_ru_date(line)
-        if not dates or i == 0:
+    for i, anchor in enumerate(anchors):
+        next_anchor = anchors[i + 1].start() if i + 1 < len(anchors) else len(page)
+        block = " ".join(html_to_lines(anchor.group(2)) + html_to_lines(page[anchor.end():next_anchor]))
+        dates = parse_ru_date(block)
+        if not dates:
             continue
         start, end = dates
         if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
             continue
-        title = previous_event_title(lines, i)
-        if not title or len(title) > 150:
+        title = clean_event_title(" ".join(html_to_lines(anchor.group(2))))
+        title = clean_event_title(RU_DATE_RE.sub("", title, count=1))
+        if (not title or len(title) > 150 or
+                re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|^\[", title) or
+                title.casefold() in {"календарь", "мероприятия", "контакты", "главная"}):
             continue
+        href = re.search(r"(?i)\bhref\s*=\s*['\"]([^'\"]+)", anchor.group(1))
+        event_url = urllib.parse.urljoin("https://texpo.ru/expo/", href.group(1)) if href else "https://texpo.ru/expo/"
         out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
-                      "timiryazev", url="https://texpo.ru/expo/", detail="Тимирязев Центр"))
+                      "timiryazev", url=event_url, detail="Тимирязев Центр"))
     if not out:
         raise RuntimeError("в календаре Тимирязев Центра не найдены будущие события")
     return out
