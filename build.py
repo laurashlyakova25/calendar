@@ -44,6 +44,11 @@ MONTHS = {
     "января": 1, "февраля": 2, "марта": 3, "апреля": 4, "мая": 5, "июня": 6,
     "июля": 7, "августа": 8, "сентября": 9, "октября": 10, "ноября": 11, "декабря": 12,
 }
+MONTHS_NOMINATIVE = {
+    "январь": 1, "февраль": 2, "март": 3, "апрель": 4, "май": 5, "июнь": 6,
+    "июль": 7, "август": 8, "сентябрь": 9, "октябрь": 10, "ноябрь": 11, "декабрь": 12,
+}
+SOURCE_NOTES = {}
 
 
 def log(*a):
@@ -183,6 +188,7 @@ def src_crocus_expo():
     horizon = TODAY + dt.timedelta(days=CONFIG["horizon_days"])
     events = []
     years = range(TODAY.year, horizon.year + 1)
+    official_error = None
     for year in years:
         url = f"https://www.crocus-expo.ru/exhibition/?year={year}"
         last_error = None
@@ -202,7 +208,67 @@ def src_crocus_expo():
                 if attempt < 2:
                     time.sleep(2)
         if last_error:
-            raise RuntimeError(f"Крокус Экспо за {year} год не загрузился: {last_error}")
+            official_error = f"Крокус Экспо за {year} год не загрузился: {last_error}"
+            break
+
+    if official_error:
+        # Резервная афиша обновляется отдельно от сайта площадки. Она может
+        # быть неполной, поэтому объединяем её с последним полным кэшем.
+        backup_url = "https://expoafisha.ru/ploshchadki/crocus-expo/raspisanie/"
+        backup_page = fetch(backup_url, timeout=35)
+        lines = html_to_lines(backup_page)
+        month_heading = re.compile(r"^(январь|февраль|март|апрель|май|июнь|июль|август|сентябрь|октябрь|ноябрь|декабрь)\s+(20\d{2})\b", re.I)
+        date_heading = re.compile(r"^(\d{1,2})\s*[–—-]\s*(\d{1,2})\s+([а-яё]+)(?:\s*[–—-]\s*([а-яё]+))?\b", re.I)
+        active_year = TODAY.year
+        active_month = TODAY.month
+        scraped = []
+        for i, line in enumerate(lines):
+            heading = month_heading.search(line.casefold())
+            if heading:
+                active_month = MONTHS_NOMINATIVE[heading.group(1).casefold()]
+                active_year = int(heading.group(2))
+                continue
+            dm = date_heading.search(line.casefold())
+            if not dm or "примерно" in line.casefold():
+                continue
+            start_day, end_day = int(dm.group(1)), int(dm.group(2))
+            month1_name = dm.group(4) or dm.group(3)
+            month2_name = dm.group(4) or dm.group(3)
+            month1 = MONTHS.get(dm.group(3).casefold()) or MONTHS_NOMINATIVE.get(dm.group(3).casefold()) or active_month
+            month2 = MONTHS.get(month2_name.casefold()) or MONTHS_NOMINATIVE.get(month2_name.casefold()) or month1
+            year1 = active_year
+            year2 = year1 + (1 if month2 < month1 else 0)
+            try:
+                start = dt.date(year1, month1, start_day)
+                end = dt.date(year2, month2, end_day)
+            except ValueError:
+                continue
+            venue_i = next((j for j in range(i + 1, min(i + 7, len(lines)))
+                            if find_venue(lines[j])), None)
+            if venue_i is None:
+                continue
+            title = next((lines[j].strip(" #") for j in range(venue_i - 1, i, -1)
+                          if lines[j].strip(" #") and not re.search(r"(?i)^(выставка|конференция|форум)(?:\s|$)", lines[j].strip(" #"))), "")
+            if not title or title.startswith(("Ещё ", "Архив ")):
+                continue
+            weight = 3
+            scraped.append(ev(title, start, end, "Крокус Экспо", weight, "выставка", "crocus_expo",
+                              url=backup_url, detail="Резервная афиша ЭкспоАфиша · залов не указано"))
+
+        if not scraped:
+            raise RuntimeError(f"{official_error}; резервная афиша не дала событий")
+        cache_path = DATA / "cache_crocus_expo.json"
+        cached = json.loads(cache_path.read_text(encoding="utf-8")) if cache_path.exists() else []
+        combined = {}
+        for event in cached + scraped:
+            if event["start"] < TODAY.isoformat() or event["start"] > horizon.isoformat():
+                continue
+            key = (normalized_event_title(event["title"]), event["start"])
+            if key not in combined or "Резервная афиша" not in combined[key].get("detail", ""):
+                combined[key] = event
+        SOURCE_NOTES["crocus_expo"] = "Основной сайт не ответил; сохранены прежние события и добавлены данные резервной афиши ЭкспоАфиша. Список может быть неполным."
+        log(f"  crocus fallback: добавлено событий {len(scraped)}, всего в объединённом календаре {len(combined)}")
+        return list(combined.values())
 
     unique = {}
     for event in events:
@@ -741,6 +807,8 @@ def main():
             if name in ("crocus_expo", "kudago", "concertinfo", "timepad", "vdnh_expo", "timiryazev", "expocentr"):
                 cache.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
             status[name] = {"ok": True, "count": len(items)}
+            if name in SOURCE_NOTES:
+                status[name]["note"] = SOURCE_NOTES[name]
             if name == "holidays" and HOLIDAY_FALLBACK_YEARS:
                 status[name]["note"] = "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
             log(f"  {name}: {len(items)} событий")
