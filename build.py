@@ -458,10 +458,17 @@ def src_timiryazev():
     """Собирает события из официального календаря Тимирязев Центра."""
     page = fetch("https://texpo.ru/expo/", timeout=15)
     venue = find_venue("Тимирязев Центр")
-    anchors = list(re.finditer(r"(?is)<a\b([^>]*)>(.*?)</a>", page))
+    anchors = []
+    for match in re.finditer(r"(?is)<a\b([^>]*)>(.*?)</a>", page):
+        title = clean_event_title(" ".join(html_to_lines(match.group(2))))
+        if (not title or len(title) > 150 or
+                re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|^\[", title) or
+                re.search(r"(?i)получить|билет|купить|подробнее|перейти|читать далее|календарь|мероприятия|контакты", title)):
+            continue
+        anchors.append((match, title))
     out = []
-    for i, anchor in enumerate(anchors):
-        next_anchor = anchors[i + 1].start() if i + 1 < len(anchors) else len(page)
+    for i, (anchor, title) in enumerate(anchors):
+        next_anchor = anchors[i + 1][0].start() if i + 1 < len(anchors) else len(page)
         block = " ".join(html_to_lines(anchor.group(2)) + html_to_lines(page[anchor.end():next_anchor]))
         dates = parse_ru_date(block)
         if not dates:
@@ -469,11 +476,8 @@ def src_timiryazev():
         start, end = dates
         if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
             continue
-        title = clean_event_title(" ".join(html_to_lines(anchor.group(2))))
         title = clean_event_title(RU_DATE_RE.sub("", title, count=1))
-        if (not title or len(title) > 150 or
-                re.search(r"(?i)value_[a-z_]+|=>|\[.*_SORT.*\]|^\[", title) or
-                title.casefold() in {"календарь", "мероприятия", "контакты", "главная"}):
+        if not title:
             continue
         href = re.search(r"(?i)\bhref\s*=\s*['\"]([^'\"]+)", anchor.group(1))
         event_url = urllib.parse.urljoin("https://texpo.ru/expo/", href.group(1)) if href else "https://texpo.ru/expo/"
@@ -714,7 +718,8 @@ def main():
     for e in all_events:
         if dt.date.fromisoformat(e["end"]) < TODAY or dt.date.fromisoformat(e["start"]) > horizon:
             continue
-        normalized_title = re.sub(r"[^0-9a-zа-яё]+", "", re.sub(r"\b20\d{2}\b", "", e["title"].casefold()))
+        title_for_key = re.split(r"[\(\[]", e["title"].casefold(), maxsplit=1)[0]
+        normalized_title = re.sub(r"[^0-9a-zа-яё]+", "", re.sub(r"\b20\d{2}\b", "", title_for_key))
         event_key = (normalized_title, e["start"], e["venue"].casefold())
         if e["id"] in seen or event_key in seen_event_keys:
             continue
