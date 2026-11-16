@@ -6,18 +6,19 @@
          python build.py --offline  (без интернета, только кэш и ручные события)
 
 Что делает:
-  1. Собирает события из источников (Крокус Экспо, Concertinfo, TimePad,
-     производственный календарь и необязательный файл manual_events.csv).
+  1. Собирает события из афиш выставочных площадок, Concertinfo,
+     производственного календаря и необязательного manual_events.csv.
   2. Если источник не ответил, берёт его прошлые данные из cache_<источник>.json,
      чтобы календарь не «пустел» из-за сбоя одного сайта.
   3. Считает баллы спроса по дням и пишет events.json, который читает index.html.
 
-Только стандартная библиотека Python, ничего устанавливать не нужно.
+Для чтения официального PDF-календаря Экспоцентра используется pypdf из requirements.txt.
 """
 import csv
 import datetime as dt
 import hashlib
 import html
+import io
 import json
 import math
 import re
@@ -55,6 +56,14 @@ def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ru,en"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode(r.headers.get_content_charset() or "utf-8", errors="replace")
+
+
+def fetch_bytes(url, timeout=30):
+    if OFFLINE:
+        raise RuntimeError("offline mode")
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "ru,en"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
 
 
 def html_to_lines(page):
@@ -314,6 +323,148 @@ def src_timepad():
     return out
 
 
+RU_DATE_RE = re.compile(
+    r"(?<!\d)(\d{1,2})\s*(?:[–—-]\s*(\d{1,2}))?\s+"
+    r"(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)"
+    r"(?:\s*[–—-]\s*(\d{1,2})\s+"
+    r"(января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря))?"
+    r"\s+(20\d{2})\b", re.I)
+
+
+def parse_ru_date(text):
+    """Читает диапазоны дат афиш вида «26—29 января 2027» и «29 сентября — 3 октября 2027»."""
+    m = RU_DATE_RE.search(text.replace("ё", "е").lower())
+    if not m:
+        return None
+    d1, d2, month1, d3, month2, year = m.groups()
+    month1 = MONTHS[month1]
+    start = dt.date(int(year), month1, int(d1))
+    end = (dt.date(int(year), MONTHS[month2], int(d3)) if d3 else
+           dt.date(int(year), month1, int(d2 or d1)))
+    return start, end
+
+
+def clean_event_title(value):
+    value = html.unescape(re.sub(r"<[^>]+>", " ", value))
+    value = re.sub(r"\s+", " ", value).strip(" \t\r\n—–-•|·")
+    return re.sub(r"\s*[|—–-]\s*(ВДНХ ЭКСПО|ВК\s*[«\"]?Тимирязев Центр).*?$", "", value, flags=re.I).strip()
+
+
+def src_vdnh_expo():
+    """Собирает события ВДНХ ЭКСПО из официального списка и карточек мероприятий."""
+    root = "https://expo.vdnh.ru"
+    page = fetch(root + "/events/", timeout=15)
+    urls = list(dict.fromkeys(root + path for path in
+                              re.findall(r"(?:https?://expo\.vdnh\.ru)?(/events/\d+)(?:[/\"?#]|$)", page)))
+    out, failures = [], 0
+    for url in urls[:80]:
+        try:
+            card = fetch(url, timeout=10)
+            h1 = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", card)
+            if not h1:
+                h1 = re.search(r'(?is)<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)', card)
+            title = clean_event_title(h1.group(1)) if h1 else ""
+            dates = next((d for line in html_to_lines(card) if (d := parse_ru_date(line))), None)
+            if not title or not dates:
+                continue
+            start, end = dates
+            if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
+                continue
+            venue = find_venue("ВДНХ ЭКСПО")
+            if not venue:
+                raise RuntimeError("площадка ВДНХ не настроена в config.json")
+            out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                          "vdnh_expo", url=url, detail="ВДНХ ЭКСПО"))
+        except Exception as e:  # noqa
+            failures += 1
+            log(f"  ВДНХ ЭКСПО карточка {url}: {e}")
+    if not urls or not out:
+        raise RuntimeError(f"не удалось разобрать карточки ВДНХ ЭКСПО (ссылок: {len(urls)}, ошибок: {failures})")
+    log(f"  vdnh_expo: просмотрено карточек {min(len(urls), 80)}, найдено предстоящих событий {len(out)}")
+    return out
+
+
+def src_timiryazev():
+    """Собирает события из официального календаря Тимирязев Центра."""
+    page = fetch("https://texpo.ru/expo/", timeout=15)
+    lines = html_to_lines(page)
+    venue = find_venue("Тимирязев Центр")
+    out = []
+    for i, line in enumerate(lines):
+        dates = parse_ru_date(line)
+        if not dates or i == 0:
+            continue
+        start, end = dates
+        if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
+            continue
+        title = clean_event_title(lines[i - 1])
+        if not title or len(title) > 150 or re.search(r"^(календарь|мероприятия|контакты|главная)", title, re.I):
+            continue
+        out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                      "timiryazev", url="https://texpo.ru/expo/", detail="Тимирязев Центр"))
+    if not out:
+        raise RuntimeError("в календаре Тимирязев Центра не найдены будущие события")
+    return out
+
+
+PDF_DATE_RE = re.compile(
+    r"(?<!\d)(\d{1,2})\s*(?:\.\s*(\d{1,2}))?\s*[–—-]\s*"
+    r"(\d{1,2})\s*\.\s*(\d{1,2})(?!\d)|(?<!\d)(\d{1,2})\s*\.\s*(\d{1,2})(?!\d)"
+)
+
+
+def parse_expo_pdf_date(match, year):
+    if match.group(1):
+        day1, month1, day2, month2 = match.group(1, 2, 3, 4)
+        month1 = int(month1 or month2)
+        return dt.date(year, month1, int(day1)), dt.date(year, int(month2), int(day2))
+    day, month = match.group(5, 6)
+    value = dt.date(year, int(month), int(day))
+    return value, value
+
+
+def src_expocentr():
+    """Читает официальные PDF-календари выставок Экспоцентра с названиями площадок."""
+    try:
+        from pypdf import PdfReader
+    except ImportError as e:
+        raise RuntimeError("не установлен pypdf для чтения календаря PDF") from e
+    out, years_ok = [], 0
+    horizon_year = (TODAY + dt.timedelta(days=CONFIG["horizon_days"])).year
+    for year in range(TODAY.year, horizon_year + 1):
+        url = (f"https://docs.expocentr.ru/common/img/uploaded/docs/{year}/rus/"
+               f"Expocentre_Calendar_{year}_rus.pdf")
+        try:
+            reader = PdfReader(io.BytesIO(fetch_bytes(url, timeout=15)))
+            raw = "\n".join(page.extract_text(extraction_mode="layout") or "" for page in reader.pages)
+            if not raw.strip():
+                raise RuntimeError("в PDF нет извлекаемого текста")
+            years_ok += 1
+        except Exception as e:  # noqa
+            log(f"  Экспоцентр {year}: {e}")
+            continue
+        for line in raw.splitlines():
+            match = PDF_DATE_RE.search(line)
+            if not match:
+                continue
+            start, end = parse_expo_pdf_date(match, year)
+            if end < TODAY or start > TODAY + dt.timedelta(days=CONFIG["horizon_days"]):
+                continue
+            tail = line[match.end():].strip(" \t|·")
+            venue = find_venue(tail)
+            if not venue:
+                continue  # Не приписываем событие площадке, если PDF не указал место.
+            title = re.split(r"(?i)\s+(?:МВЦ|ВК)\s*[«\"]", tail, maxsplit=1)[0].strip(" \t—–-|")
+            title = clean_event_title(title)
+            if not title or len(title) > 180:
+                continue
+            out.append(ev(title, start, end, venue["name"], venue["weight"], "выставка/форум",
+                          "expocentr", url=url, detail=f"Календарь АО «Экспоцентр» · {venue['name']}"))
+    if not years_ok:
+        raise RuntimeError("не удалось скачать официальные календари Экспоцентра")
+    return out
+
+
 FIXED_HOLIDAYS = {(1, d) for d in range(1, 9)} | {(2, 23), (3, 8), (5, 1), (5, 9), (6, 12), (11, 4)}
 
 
@@ -416,6 +567,9 @@ SOURCES = {
     "crocus_expo": src_crocus_expo,
     "concertinfo": src_concertinfo,
     "timepad": src_timepad,
+    "vdnh_expo": src_vdnh_expo,
+    "timiryazev": src_timiryazev,
+    "expocentr": src_expocentr,
     "kudago": src_kudago,
     "holidays": src_holidays,
     "manual": src_manual,
@@ -454,7 +608,7 @@ def main():
         cache = DATA / f"cache_{name}.json"
         try:
             items = fn()
-            if name in ("crocus_expo", "kudago", "concertinfo", "timepad"):
+            if name in ("crocus_expo", "kudago", "concertinfo", "timepad", "vdnh_expo", "timiryazev", "expocentr"):
                 cache.write_text(json.dumps(items, ensure_ascii=False, indent=1), encoding="utf-8")
             status[name] = {"ok": True, "count": len(items)}
             if name == "holidays" and HOLIDAY_FALLBACK_YEARS:
@@ -479,12 +633,16 @@ def main():
     all_events = [e for e in all_events if e["source"] != "timepad" or
                   (re.sub(r"[^0-9a-zа-яё]+", "", e["title"].casefold()), e["start"], e["venue"]) not in other_event_keys]
     seen, events = set(), []
+    seen_event_keys = set()
     for e in all_events:
         if dt.date.fromisoformat(e["end"]) < TODAY or dt.date.fromisoformat(e["start"]) > horizon:
             continue
-        if e["id"] in seen:
+        normalized_title = re.sub(r"[^0-9a-zа-яё]+", "", re.sub(r"\b20\d{2}\b", "", e["title"].casefold()))
+        event_key = (normalized_title, e["start"], e["venue"].casefold())
+        if e["id"] in seen or event_key in seen_event_keys:
             continue
         seen.add(e["id"])
+        seen_event_keys.add(event_key)
         events.append(e)
     events.sort(key=lambda e: (e["start"], -e["weight"]))
 
