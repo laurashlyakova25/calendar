@@ -191,6 +191,7 @@ def src_crocus_expo():
     official_error = None
     for year in years:
         url = f"https://www.crocus-expo.ru/exhibition/?year={year}"
+        log(f"  crocus: загружаю официальную афишу за {year} год")
         last_error = None
         for attempt in range(1, 3):
             try:
