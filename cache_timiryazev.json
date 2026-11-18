@@ -210,6 +210,48 @@
   "detail": "Тимирязев Центр"
  },
  {
+  "id": "228e7660a5",
+  "title": "Связь",
+  "start": "2027-04-06",
+  "end": "2027-04-09",
+  "venue": "Тимирязев Центр",
+  "km": 8.3,
+  "base_weight": 3,
+  "weight": 3.0,
+  "category": "выставка/форум",
+  "source": "timiryazev",
+  "url": "https://texpo.ru/expo/aprel-2027/svyaz%202027/",
+  "detail": "Тимирязев Центр"
+ },
+ {
+  "id": "01c08775e7",
+  "title": "RENWEX",
+  "start": "2027-04-06",
+  "end": "2027-04-09",
+  "venue": "Тимирязев Центр",
+  "km": 8.3,
+  "base_weight": 3,
+  "weight": 3.0,
+  "category": "выставка/форум",
+  "source": "timiryazev",
+  "url": "https://texpo.ru/expo/aprel-2027/renwex%202027/",
+  "detail": "Тимирязев Центр"
+ },
+ {
+  "id": "470c361f31",
+  "title": "CAFEX 2027",
+  "start": "2027-04-14",
+  "end": "2027-04-16",
+  "venue": "Тимирязев Центр",
+  "km": 8.3,
+  "base_weight": 3,
+  "weight": 3.0,
+  "category": "выставка/форум",
+  "source": "timiryazev",
+  "url": "https://texpo.ru/expo/aprel-2027/cafex-2027/",
+  "detail": "Тимирязев Центр"
+ },
+ {
   "id": "2750259fda",
   "title": "ParkSeason Expo",
   "start": "2027-04-22",
