@@ -1,19 +1,5 @@
 [
  {
-  "id": "9e4ca43c4b",
-  "title": "ЭЛЕКТРИЧЕСКИЕ СЕТИ",
-  "start": "2026-11-17",
-  "end": "2026-11-19",
-  "venue": "Тимирязев Центр",
-  "km": 8.3,
-  "base_weight": 3,
-  "weight": 3.0,
-  "category": "выставка/форум",
-  "source": "timiryazev",
-  "url": "https://texpo.ru/expo/noyabr-2026/mezhdunarodnyy-forum-elektricheskie-seti-/",
-  "detail": "Тимирязев Центр"
- },
- {
   "id": "4d154f32e5",
   "title": "Comic Con Игромир",
   "start": "2026-12-03",
@@ -95,6 +81,20 @@
   "category": "выставка/форум",
   "source": "timiryazev",
   "url": "https://texpo.ru/expo/fevral-2027/mir-stekla-20271/",
+  "detail": "Тимирязев Центр"
+ },
+ {
+  "id": "7957022358",
+  "title": "ИНЛЕГМАШ",
+  "start": "2027-02-24",
+  "end": "2027-02-26",
+  "venue": "Тимирязев Центр",
+  "km": 8.3,
+  "base_weight": 3,
+  "weight": 3.0,
+  "category": "выставка/форум",
+  "source": "timiryazev",
+  "url": "https://texpo.ru/expo/fevral-2027/inlegmash2027/",
   "detail": "Тимирязев Центр"
  },
  {

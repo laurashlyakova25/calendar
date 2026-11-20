@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T07:02",
+ "generated_at": "2026-11-20T07:00",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -13,7 +13,7 @@
  "sources": {
   "crocus_expo": {
    "ok": true,
-   "count": 96
+   "count": 98
   },
   "concertinfo": {
    "ok": true,
@@ -33,7 +33,8 @@
   },
   "holidays": {
    "ok": true,
-   "count": 120
+   "count": 123,
+   "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
    "ok": true,
@@ -41,20 +42,6 @@
   }
  },
  "events": [
-  {
-   "id": "9e4ca43c4b",
-   "title": "ЭЛЕКТРИЧЕСКИЕ СЕТИ",
-   "start": "2026-11-17",
-   "end": "2026-11-19",
-   "venue": "Тимирязев Центр",
-   "km": 8.3,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "выставка/форум",
-   "source": "timiryazev",
-   "url": "https://texpo.ru/expo/noyabr-2026/mezhdunarodnyy-forum-elektricheskie-seti-/",
-   "detail": "Тимирязев Центр"
-  },
   {
    "id": "232c7bc4b0",
    "title": "Международная выставка по архитектуре, реставрации, культуре и археологии «АРКА»",
@@ -934,21 +921,6 @@
    "detail": "VK Stadium"
   },
   {
-   "id": "4342d48dc4",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-02-21",
-   "end": "2027-02-23",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "b86837fc2b",
    "title": "Государственный праздник",
    "start": "2027-02-23",
@@ -1006,8 +978,8 @@
    "detail": "Тимирязев Центр"
   },
   {
-   "id": "350b0c405e",
-   "title": "«ИНЛЕГМАШ»",
+   "id": "7957022358",
+   "title": "ИНЛЕГМАШ",
    "start": "2027-02-24",
    "end": "2027-02-26",
    "venue": "Тимирязев Центр",
@@ -1015,9 +987,9 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "выставка/форум",
-   "source": "expocentr",
-   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2027/rus/Expocentre_Calendar_2027_rus.pdf",
-   "detail": "Календарь АО «Экспоцентр» · Тимирязев Центр"
+   "source": "timiryazev",
+   "url": "https://texpo.ru/expo/fevral-2027/inlegmash2027/",
+   "detail": "Тимирязев Центр"
   },
   {
    "id": "bb653ff00c",
@@ -1849,36 +1821,6 @@
    "per_day": true
   },
   {
-   "id": "74e921d7f9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-01",
-   "end": "2027-05-03",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "85843fe2d9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-08",
-   "end": "2027-05-10",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "be88b741a5",
    "title": "Государственный праздник",
    "start": "2027-05-09",
@@ -2001,21 +1943,6 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "9e1c0136fb",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-06-12",
-   "end": "2027-06-14",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -2358,6 +2285,20 @@
    "detail": "Международная выставка зооиндустрии · залов: 2"
   },
   {
+   "id": "5de103d9e6",
+   "title": "МОСКОВСКАЯ МЕЖДУНАРОДНАЯ ОПТИЧЕСКАЯ ВЫСТАВКА (MIOF)",
+   "start": "2027-09-22",
+   "end": "2027-09-24",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.optica-expo.ru",
+   "detail": "Международная специализированная выставка · залов: 1"
+  },
+  {
    "id": "e4573f40dc",
    "title": "Ария",
    "start": "2027-09-25",
@@ -2398,6 +2339,20 @@
    "source": "crocus_expo",
    "url": "https://rdsummit.ru",
    "detail": "Научно-образовательное мероприятие для специалистов в сфере медицинской диагностики со специализированной выставкой диагностического оборудования и расходных материалов, специального программного обеспечения · залов: 2"
+  },
+  {
+   "id": "f245786970",
+   "title": "МИР Охоты и Рыбалки",
+   "start": "2027-09-30",
+   "end": "2027-10-03",
+   "venue": "Крокус Экспо",
+   "km": 15.1,
+   "base_weight": 2,
+   "weight": 1.4,
+   "category": "выставка",
+   "source": "crocus_expo",
+   "url": "https://www.huntfishexpo.ru",
+   "detail": "Международная выставка · залов: 1"
   },
   {
    "id": "ebdfa55c05",
@@ -2448,12 +2403,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.expocoating-moscow.ru",
-   "detail": "25-я международная выставка материалов и оборудования для обработки поверхности, нанесения покрытий и гальванических производств · залов: 2"
+   "detail": "25-я международная выставка материалов и оборудования для обработки поверхности, нанесения покрытий и гальванических производств · залов: 3"
   },
   {
    "id": "0931dcf804",
@@ -2462,12 +2417,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.fasttec.ru",
-   "detail": "23-я международная выставка крепежных изделий · залов: 2"
+   "detail": "23-я международная выставка крепежных изделий · залов: 3"
   },
   {
    "id": "2c421651da",
@@ -2476,12 +2431,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.heatpower-expo.ru",
-   "detail": "12-я международная выставка промышленного котельного, теплообменного и электрогенерирующего оборудования · залов: 2"
+   "detail": "12-я международная выставка промышленного котельного, теплообменного и электрогенерирующего оборудования · залов: 3"
   },
   {
    "id": "b4bf9fc3c7",
@@ -2490,12 +2445,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.pcvexpo.ru",
-   "detail": "26-я международная выставка промышленных насосов, компрессоров и трубопроводной арматуры, приводов и двигателей · залов: 2"
+   "detail": "26-я международная выставка промышленных насосов, компрессоров и трубопроводной арматуры, приводов и двигателей · залов: 3"
   },
   {
    "id": "7786afaf45",
@@ -2504,12 +2459,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.ndt-russia.ru",
-   "detail": "27-я международная выставка оборудования для неразрушающего контроля · залов: 2"
+   "detail": "27-я международная выставка оборудования для неразрушающего контроля · залов: 3"
   },
   {
    "id": "8a9d579095",
@@ -2518,12 +2473,12 @@
    "end": "2027-10-28",
    "venue": "Крокус Экспо",
    "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
+   "base_weight": 4,
+   "weight": 2.8,
    "category": "выставка",
    "source": "crocus_expo",
    "url": "https://www.testing-control.ru",
-   "detail": "24-я международная выставка испытательного и контрольно-измерительного оборудования · залов: 2"
+   "detail": "24-я международная выставка испытательного и контрольно-измерительного оборудования · залов: 3"
   },
   {
    "id": "2d72ba58a0",
@@ -2549,21 +2504,6 @@
    "base_weight": 3,
    "weight": 3.0,
    "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "6aacbaf865",
-   "title": "Длинные выходные (4 дн.)",
-   "start": "2027-11-04",
-   "end": "2027-11-07",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
    "source": "holidays",
    "url": "",
    "detail": "",
@@ -2739,14 +2679,6 @@
   }
  ],
  "days": {
-  "2026-11-19": {
-   "score": 2.9,
-   "events": [
-    "9e4ca43c4b",
-    "232c7bc4b0"
-   ],
-   "level": "low"
-  },
   "2026-11-20": {
    "score": 2.6,
    "events": [
@@ -3357,7 +3289,7 @@
    "level": "medium"
   },
   "2027-02-20": {
-   "score": 7.2,
+   "score": 8.2,
    "events": [
     "e99926e462",
     "2db16609be",
@@ -3367,33 +3299,30 @@
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 6.2,
+   "score": 5.2,
    "events": [
     "2db16609be",
-    "4f9651e01f",
-    "4342d48dc4"
+    "4f9651e01f"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 4.7,
+   "score": 2.7,
    "events": [
     "2db16609be",
     "4f9651e01f",
-    "4342d48dc4",
     "fd716fe61d"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-02-23": {
-   "score": 14.7,
+   "score": 12.7,
    "events": [
-    "4342d48dc4",
     "b86837fc2b",
     "fd716fe61d",
     "fbe2149e3c",
     "e9484b5dc6",
-    "350b0c405e",
+    "7957022358",
     "bb653ff00c"
    ],
    "level": "high"
@@ -3404,7 +3333,7 @@
     "fd716fe61d",
     "fbe2149e3c",
     "e9484b5dc6",
-    "350b0c405e",
+    "7957022358",
     "bb653ff00c"
    ],
    "level": "high"
@@ -3415,7 +3344,7 @@
     "fd716fe61d",
     "fbe2149e3c",
     "e9484b5dc6",
-    "350b0c405e",
+    "7957022358",
     "bb653ff00c"
    ],
    "level": "high"
@@ -3426,7 +3355,7 @@
     "fd716fe61d",
     "fbe2149e3c",
     "e9484b5dc6",
-    "350b0c405e",
+    "7957022358",
     "bb653ff00c"
    ],
    "level": "low"
@@ -3981,49 +3910,35 @@
    "level": "low"
   },
   "2027-05-01": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "6a3d661803",
-    "74e921d7f9"
-   ],
-   "level": "medium"
-  },
-  "2027-05-02": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
+    "6a3d661803"
    ],
    "level": "low"
   },
-  "2027-05-03": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
-   ],
+  "2027-05-02": {
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-05-08": {
-   "score": 2.0,
-   "events": [
-    "85843fe2d9"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-05-09": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "85843fe2d9",
     "be88b741a5"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-05-10": {
-   "score": 5.4,
+   "score": 3.4,
    "events": [
-    "85843fe2d9",
     "d94fddc647"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-05-11": {
    "score": 4.9,
@@ -4173,27 +4088,23 @@
    "level": "low"
   },
   "2027-06-12": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "8f8f18e6d4",
-    "9e1c0136fb"
-   ],
-   "level": "medium"
-  },
-  "2027-06-13": {
-   "score": 2.0,
-   "events": [
-    "9e1c0136fb"
+    "8f8f18e6d4"
    ],
    "level": "low"
   },
+  "2027-06-13": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
   "2027-06-14": {
-   "score": 4.9,
+   "score": 2.9,
    "events": [
-    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -4582,39 +4493,43 @@
    "level": "medium"
   },
   "2027-09-21": {
-   "score": 6.4,
+   "score": 7.3,
    "events": [
     "e99a252d6b",
     "e5d0fcfda4",
     "2e45f05f4b",
-    "95bec7edf3"
+    "95bec7edf3",
+    "5de103d9e6"
    ],
    "level": "medium"
   },
   "2027-09-22": {
-   "score": 7.0,
+   "score": 8.4,
    "events": [
     "e99a252d6b",
     "e5d0fcfda4",
     "2e45f05f4b",
-    "95bec7edf3"
+    "95bec7edf3",
+    "5de103d9e6"
    ],
    "level": "medium"
   },
   "2027-09-23": {
-   "score": 3.6,
+   "score": 5.0,
    "events": [
     "e99a252d6b",
     "e5d0fcfda4",
     "2e45f05f4b",
-    "95bec7edf3"
+    "95bec7edf3",
+    "5de103d9e6"
    ],
-   "level": "low"
+   "level": "medium"
   },
   "2027-09-24": {
-   "score": 0.6,
+   "score": 1.1,
    "events": [
-    "95bec7edf3"
+    "95bec7edf3",
+    "5de103d9e6"
    ],
    "level": "low"
   },
@@ -4646,37 +4561,44 @@
    "level": "medium"
   },
   "2027-09-29": {
-   "score": 4.9,
+   "score": 5.9,
    "events": [
     "b93eb5c531",
-    "d5a2f6777e"
+    "d5a2f6777e",
+    "f245786970"
    ],
    "level": "medium"
   },
   "2027-09-30": {
-   "score": 4.9,
+   "score": 6.3,
    "events": [
     "b93eb5c531",
-    "d5a2f6777e"
+    "d5a2f6777e",
+    "f245786970"
    ],
    "level": "medium"
   },
   "2027-10-01": {
-   "score": 1.5,
+   "score": 2.9,
    "events": [
     "b93eb5c531",
-    "d5a2f6777e"
+    "d5a2f6777e",
+    "f245786970"
    ],
    "level": "low"
   },
   "2027-10-02": {
-   "score": 1.0,
-   "events": [],
+   "score": 2.4,
+   "events": [
+    "f245786970"
+   ],
    "level": "low"
   },
   "2027-10-03": {
-   "score": 1.0,
-   "events": [],
+   "score": 1.4,
+   "events": [
+    "f245786970"
+   ],
    "level": "low"
   },
   "2027-10-09": {
@@ -4753,7 +4675,7 @@
    "level": "low"
   },
   "2027-10-25": {
-   "score": 12.6,
+   "score": 15.5,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -4767,7 +4689,7 @@
    "level": "high"
   },
   "2027-10-26": {
-   "score": 16.8,
+   "score": 21.0,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -4781,7 +4703,7 @@
    "level": "high"
   },
   "2027-10-27": {
-   "score": 16.8,
+   "score": 21.0,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -4795,7 +4717,7 @@
    "level": "high"
   },
   "2027-10-28": {
-   "score": 5.0,
+   "score": 6.3,
    "events": [
     "e6b2f116ba",
     "63c8aae5d4",
@@ -4819,34 +4741,23 @@
    "level": "low"
   },
   "2027-11-04": {
-   "score": 5.0,
+   "score": 3.0,
    "events": [
-    "4955f3e502",
-    "6aacbaf865"
-   ],
-   "level": "medium"
-  },
-  "2027-11-05": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
+    "4955f3e502"
    ],
    "level": "low"
   },
   "2027-11-06": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-11-07": {
-   "score": 4.1,
+   "score": 3.1,
    "events": [
-    "6aacbaf865",
     "b91855a9ff"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-11-08": {
    "score": 11.8,
@@ -5100,6 +5011,11 @@
    "level": "low"
   },
   "2027-12-19": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
+  "2027-12-25": {
    "score": 1.0,
    "events": [],
    "level": "low"
