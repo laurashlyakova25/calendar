@@ -210,20 +210,6 @@
   "detail": "Лукойл Арена"
  },
  {
-  "id": "8de15a51a8",
-  "title": "Мукка",
-  "start": "2026-11-20",
-  "end": "2026-11-20",
-  "venue": "VK Stadium",
-  "km": 7.3,
-  "base_weight": 2,
-  "weight": 2.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/38320/",
-  "detail": "VK Stadium"
- },
- {
   "id": "8572a37ff5",
   "title": "Танцы Минус",
   "start": "2026-11-21",

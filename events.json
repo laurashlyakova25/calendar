@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T07:00",
+ "generated_at": "2026-11-21T06:59",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -17,7 +17,7 @@
   },
   "concertinfo": {
    "ok": true,
-   "count": 27
+   "count": 26
   },
   "vdnh_expo": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 123,
+   "count": 124,
    "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
@@ -42,34 +42,6 @@
   }
  },
  "events": [
-  {
-   "id": "232c7bc4b0",
-   "title": "Международная выставка по архитектуре, реставрации, культуре и археологии «АРКА»",
-   "start": "2026-11-18",
-   "end": "2026-11-20",
-   "venue": "ВДНХ",
-   "km": 7.1,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выставка/форум",
-   "source": "vdnh_expo",
-   "url": "https://expo.vdnh.ru/events/26",
-   "detail": "ВДНХ ЭКСПО"
-  },
-  {
-   "id": "8de15a51a8",
-   "title": "Мукка",
-   "start": "2026-11-20",
-   "end": "2026-11-20",
-   "venue": "VK Stadium",
-   "km": 7.3,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/38320/",
-   "detail": "VK Stadium"
-  },
   {
    "id": "f841c3f936",
    "title": "Юбилей Свердловского рок-клуба",
@@ -1300,6 +1272,20 @@
    "source": "crocus_expo",
    "url": "https://christmasbox.ru",
    "detail": "Международная B2B-выставка · залов: 1"
+  },
+  {
+   "id": "bc2efeceff",
+   "title": "49-я выставка «Аттракционы и развлекательное оборудование РАППА ЭКСПО-2027»",
+   "start": "2027-03-17",
+   "end": "2027-03-19",
+   "venue": "ВДНХ",
+   "km": 7.1,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выставка/форум",
+   "source": "vdnh_expo",
+   "url": "https://expo.vdnh.ru/events/44",
+   "detail": "ВДНХ ЭКСПО"
   },
   {
    "id": "0799de94d8",
@@ -2679,14 +2665,6 @@
   }
  ],
  "days": {
-  "2026-11-20": {
-   "score": 2.6,
-   "events": [
-    "232c7bc4b0",
-    "8de15a51a8"
-   ],
-   "level": "low"
-  },
   "2026-11-21": {
    "score": 6.0,
    "events": [
@@ -3490,7 +3468,7 @@
    "level": "high"
   },
   "2027-03-16": {
-   "score": 24.7,
+   "score": 26.1,
    "events": [
     "598e302d2c",
     "3db150ce06",
@@ -3504,12 +3482,13 @@
     "62d32d01c3",
     "04802261eb",
     "c58ee6ba72",
-    "4feb44489f"
+    "4feb44489f",
+    "bc2efeceff"
    ],
    "level": "high"
   },
   "2027-03-17": {
-   "score": 24.7,
+   "score": 26.7,
    "events": [
     "598e302d2c",
     "3db150ce06",
@@ -3523,12 +3502,13 @@
     "62d32d01c3",
     "04802261eb",
     "c58ee6ba72",
-    "4feb44489f"
+    "4feb44489f",
+    "bc2efeceff"
    ],
    "level": "high"
   },
   "2027-03-18": {
-   "score": 7.4,
+   "score": 9.4,
    "events": [
     "598e302d2c",
     "3db150ce06",
@@ -3542,9 +3522,17 @@
     "62d32d01c3",
     "04802261eb",
     "c58ee6ba72",
-    "4feb44489f"
+    "4feb44489f",
+    "bc2efeceff"
    ],
-   "level": "medium"
+   "level": "high"
+  },
+  "2027-03-19": {
+   "score": 0.6,
+   "events": [
+    "bc2efeceff"
+   ],
+   "level": "low"
   },
   "2027-03-20": {
    "score": 5.0,
@@ -5016,6 +5004,11 @@
    "level": "low"
   },
   "2027-12-25": {
+   "score": 1.0,
+   "events": [],
+   "level": "low"
+  },
+  "2027-12-26": {
    "score": 1.0,
    "events": [],
    "level": "low"
