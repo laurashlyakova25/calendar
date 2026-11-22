@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T06:59",
+ "generated_at": "2026-11-22T07:02",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,28 +12,36 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": true,
-   "count": 98
+   "ok": false,
+   "count": 98,
+   "error": "Крокус Экспо за 2026 год не загрузился: <urlopen error timed out>; резервная афиша не дала событий",
+   "from_cache": true
   },
   "concertinfo": {
    "ok": true,
-   "count": 26
+   "count": 24
   },
   "vdnh_expo": {
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "count": 8,
+   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
+   "from_cache": true
   },
   "timiryazev": {
-   "ok": true,
-   "count": 21
+   "ok": false,
+   "count": 21,
+   "error": "<urlopen error timed out>",
+   "from_cache": true
   },
   "expocentr": {
-   "ok": true,
-   "count": 21
+   "ok": false,
+   "count": 21,
+   "error": "не удалось скачать официальные календари Экспоцентра",
+   "from_cache": true
   },
   "holidays": {
    "ok": true,
-   "count": 124,
+   "count": 123,
    "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
@@ -42,34 +50,6 @@
   }
  },
  "events": [
-  {
-   "id": "f841c3f936",
-   "title": "Юбилей Свердловского рок-клуба",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "venue": "ВТБ Арена",
-   "km": 4.0,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/38137/",
-   "detail": "ВТБ Арена"
-  },
-  {
-   "id": "8572a37ff5",
-   "title": "Танцы Минус",
-   "start": "2026-11-21",
-   "end": "2026-11-21",
-   "venue": "VK Stadium",
-   "km": 7.3,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/39384/",
-   "detail": "VK Stadium"
-  },
   {
    "id": "bff8e4356e",
    "title": "Международный муниципальный форум",
@@ -2665,14 +2645,6 @@
   }
  ],
  "days": {
-  "2026-11-21": {
-   "score": 6.0,
-   "events": [
-    "f841c3f936",
-    "8572a37ff5"
-   ],
-   "level": "medium"
-  },
   "2026-11-22": {
    "score": 5.8,
    "events": [

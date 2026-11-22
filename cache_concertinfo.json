@@ -1,19 +1,5 @@
 [
  {
-  "id": "f841c3f936",
-  "title": "Юбилей Свердловского рок-клуба",
-  "start": "2026-11-21",
-  "end": "2026-11-21",
-  "venue": "ВТБ Арена",
-  "km": 4.0,
-  "base_weight": 3,
-  "weight": 3.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/38137/",
-  "detail": "ВТБ Арена"
- },
- {
   "id": "99cc9a2cf2",
   "title": "The Hatters - 10 лет. Большие Шоу",
   "start": "2026-11-27",
@@ -208,20 +194,6 @@
   "source": "concertinfo",
   "url": "https://concertinfo.ru/gig/40604/",
   "detail": "Лукойл Арена"
- },
- {
-  "id": "8572a37ff5",
-  "title": "Танцы Минус",
-  "start": "2026-11-21",
-  "end": "2026-11-21",
-  "venue": "VK Stadium",
-  "km": 7.3,
-  "base_weight": 2,
-  "weight": 2.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/39384/",
-  "detail": "VK Stadium"
  },
  {
   "id": "481ce84080",
