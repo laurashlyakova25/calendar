@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T07:02",
+ "generated_at": "2026-11-23T07:14",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,36 +12,28 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": false,
-   "count": 98,
-   "error": "Крокус Экспо за 2026 год не загрузился: <urlopen error timed out>; резервная афиша не дала событий",
-   "from_cache": true
+   "ok": true,
+   "count": 98
   },
   "concertinfo": {
    "ok": true,
    "count": 24
   },
   "vdnh_expo": {
-   "ok": false,
-   "count": 8,
-   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
-   "from_cache": true
+   "ok": true,
+   "count": 8
   },
   "timiryazev": {
-   "ok": false,
-   "count": 21,
-   "error": "<urlopen error timed out>",
-   "from_cache": true
+   "ok": true,
+   "count": 21
   },
   "expocentr": {
-   "ok": false,
-   "count": 21,
-   "error": "не удалось скачать официальные календари Экспоцентра",
-   "from_cache": true
+   "ok": true,
+   "count": 21
   },
   "holidays": {
    "ok": true,
-   "count": 123,
+   "count": 122,
    "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
@@ -2645,14 +2637,6 @@
   }
  ],
  "days": {
-  "2026-11-22": {
-   "score": 5.8,
-   "events": [
-    "bff8e4356e",
-    "8397727ded"
-   ],
-   "level": "medium"
-  },
   "2026-11-23": {
    "score": 11.1,
    "events": [
