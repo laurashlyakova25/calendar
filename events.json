@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-24T07:06",
+ "generated_at": "2026-11-25T07:15",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,16 +12,20 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": true,
-   "count": 97
+   "ok": false,
+   "count": 97,
+   "error": "Крокус Экспо за 2026 год не загрузился: The read operation timed out; резервная афиша не дала событий",
+   "from_cache": true
   },
   "concertinfo": {
    "ok": true,
    "count": 24
   },
   "vdnh_expo": {
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "count": 8,
+   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
+   "from_cache": true
   },
   "timiryazev": {
    "ok": true,
@@ -41,20 +45,6 @@
   }
  },
  "events": [
-  {
-   "id": "bff8e4356e",
-   "title": "Международный муниципальный форум",
-   "start": "2026-11-23",
-   "end": "2026-11-24",
-   "venue": "Национальный центр «Россия»",
-   "km": 3.6,
-   "base_weight": 4.0,
-   "weight": 4.0,
-   "category": "форум",
-   "source": "manual",
-   "url": "https://b2b.onetwotrip.com/blog/news/delovye-sobytiya-v-noyabre-2026-goda/",
-   "detail": ""
-  },
   {
    "id": "5ae3297c10",
    "title": "«Мебель»",
@@ -2711,17 +2701,6 @@
   }
  ],
  "days": {
-  "2026-11-24": {
-   "score": 9.5,
-   "events": [
-    "bff8e4356e",
-    "5ae3297c10",
-    "426ae71721",
-    "0afd66df3f",
-    "914de62111"
-   ],
-   "level": "high"
-  },
   "2026-11-25": {
    "score": 8.3,
    "events": [
