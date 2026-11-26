@@ -1,33 +1,5 @@
 [
  {
-  "id": "914de62111",
-  "title": "Электроника России",
-  "start": "2026-11-24",
-  "end": "2026-11-26",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 2,
-  "weight": 1.4,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.rus-elektronika.ru",
-  "detail": "Международная выставка-форум · залов: 1"
- },
- {
-  "id": "426ae71721",
-  "title": "Pharmtech & Ingredients",
-  "start": "2026-11-24",
-  "end": "2026-11-27",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 4,
-  "weight": 2.8,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://pharmtech-expo.ru",
-  "detail": "28-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 3"
- },
- {
   "id": "6e7e4af886",
   "title": "Зимняя выставка кошек",
   "start": "2026-11-28",
@@ -1106,20 +1078,6 @@
   "detail": "34-я международная выставка парфюмерно-косметической отрасли · залов: 3"
  },
  {
-  "id": "e6b2f116ba",
-  "title": "PIR Expo. Russian hospitality week",
-  "start": "2027-10-25",
-  "end": "2027-10-28",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 4,
-  "weight": 2.8,
-  "category": "выставка",
-  "source": "crocus_expo",
-  "url": "https://www.crocus-expo.ru/exhibition/",
-  "detail": "Международная специализированная выставка · залов: 3"
- },
- {
   "id": "2d72ba58a0",
   "title": "Реклама-2027",
   "start": "2027-10-26",
@@ -1132,6 +1090,20 @@
   "source": "crocus_expo",
   "url": "https://www.reklama-expo.ru",
   "detail": "34-я международная специализированная выставка для производителей и заказчиков рекламы · залов: 1"
+ },
+ {
+  "id": "326b4232e6",
+  "title": "PIR Expo. Russian hospitality week",
+  "start": "2027-10-26",
+  "end": "2027-10-29",
+  "venue": "Крокус Экспо",
+  "km": 15.1,
+  "base_weight": 4,
+  "weight": 2.8,
+  "category": "выставка",
+  "source": "crocus_expo",
+  "url": "https://www.crocus-expo.ru/exhibition/",
+  "detail": "Международная специализированная выставка · залов: 3"
  },
  {
   "id": "63c8aae5d4",

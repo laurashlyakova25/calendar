@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T07:15",
+ "generated_at": "2026-11-26T07:09",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -12,20 +12,16 @@
  },
  "sources": {
   "crocus_expo": {
-   "ok": false,
-   "count": 97,
-   "error": "Крокус Экспо за 2026 год не загрузился: The read operation timed out; резервная афиша не дала событий",
-   "from_cache": true
+   "ok": true,
+   "count": 95
   },
   "concertinfo": {
    "ok": true,
    "count": 24
   },
   "vdnh_expo": {
-   "ok": false,
-   "count": 8,
-   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
-   "from_cache": true
+   "ok": true,
+   "count": 8
   },
   "timiryazev": {
    "ok": true,
@@ -37,7 +33,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 120
+   "count": 121
   },
   "manual": {
    "ok": true,
@@ -60,20 +56,6 @@
    "detail": "Календарь АО «Экспоцентр» · Крокус Экспо"
   },
   {
-   "id": "426ae71721",
-   "title": "Pharmtech & Ingredients",
-   "start": "2026-11-24",
-   "end": "2026-11-27",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 4,
-   "weight": 2.8,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://pharmtech-expo.ru",
-   "detail": "28-я международная выставка оборудования, сырья и технологий для фармацевтического производства · залов: 3"
-  },
-  {
    "id": "0afd66df3f",
    "title": "XXX Международная выставка средств обеспечения безопасности государства «Интерполитех-2026»",
    "start": "2026-11-24",
@@ -86,20 +68,6 @@
    "source": "vdnh_expo",
    "url": "https://expo.vdnh.ru/events/30",
    "detail": "ВДНХ ЭКСПО"
-  },
-  {
-   "id": "914de62111",
-   "title": "Электроника России",
-   "start": "2026-11-24",
-   "end": "2026-11-26",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 2,
-   "weight": 1.4,
-   "category": "выставка",
-   "source": "crocus_expo",
-   "url": "https://www.rus-elektronika.ru",
-   "detail": "Международная выставка-форум · залов: 1"
   },
   {
    "id": "99cc9a2cf2",
@@ -2390,10 +2358,10 @@
    "detail": "34-я международная выставка парфюмерно-косметической отрасли · залов: 3"
   },
   {
-   "id": "e6b2f116ba",
+   "id": "326b4232e6",
    "title": "PIR Expo. Russian hospitality week",
-   "start": "2027-10-25",
-   "end": "2027-10-28",
+   "start": "2027-10-26",
+   "end": "2027-10-29",
    "venue": "Крокус Экспо",
    "km": 15.1,
    "base_weight": 4,
@@ -2698,33 +2666,35 @@
    "source": "expocentr",
    "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2027/rus/Expocentre_Calendar_2027_rus.pdf",
    "detail": "Календарь АО «Экспоцентр» · Крокус Экспо"
+  },
+  {
+   "id": "811fc3b9a9",
+   "title": "Новогодняя ночь",
+   "start": "2027-12-31",
+   "end": "2027-12-31",
+   "venue": "",
+   "km": null,
+   "base_weight": 8,
+   "weight": 8.0,
+   "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   }
  ],
  "days": {
-  "2026-11-25": {
-   "score": 8.3,
-   "events": [
-    "5ae3297c10",
-    "426ae71721",
-    "0afd66df3f",
-    "914de62111"
-   ],
-   "level": "medium"
-  },
   "2026-11-26": {
-   "score": 4.4,
+   "score": 1.2,
    "events": [
     "5ae3297c10",
-    "426ae71721",
-    "0afd66df3f",
-    "914de62111"
+    "0afd66df3f"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2026-11-27": {
-   "score": 8.2,
+   "score": 7.4,
    "events": [
-    "426ae71721",
     "99cc9a2cf2",
     "f5345e6324",
     "e0ca908611",
@@ -4675,16 +4645,14 @@
    "level": "low"
   },
   "2027-10-24": {
-   "score": 3.0,
-   "events": [
-    "e6b2f116ba"
-   ],
+   "score": 1.0,
+   "events": [],
    "level": "low"
   },
   "2027-10-25": {
-   "score": 15.5,
+   "score": 14.7,
    "events": [
-    "e6b2f116ba",
+    "326b4232e6",
     "63c8aae5d4",
     "0931dcf804",
     "2c421651da",
@@ -4698,7 +4666,7 @@
   "2027-10-26": {
    "score": 21.0,
    "events": [
-    "e6b2f116ba",
+    "326b4232e6",
     "63c8aae5d4",
     "0931dcf804",
     "2c421651da",
@@ -4712,7 +4680,7 @@
   "2027-10-27": {
    "score": 21.0,
    "events": [
-    "e6b2f116ba",
+    "326b4232e6",
     "63c8aae5d4",
     "0931dcf804",
     "2c421651da",
@@ -4724,9 +4692,9 @@
    "level": "high"
   },
   "2027-10-28": {
-   "score": 6.3,
+   "score": 8.3,
    "events": [
-    "e6b2f116ba",
+    "326b4232e6",
     "63c8aae5d4",
     "0931dcf804",
     "2c421651da",
@@ -4736,6 +4704,13 @@
     "2d72ba58a0"
    ],
    "level": "medium"
+  },
+  "2027-10-29": {
+   "score": 0.8,
+   "events": [
+    "326b4232e6"
+   ],
+   "level": "low"
   },
   "2027-10-30": {
    "score": 1.0,
@@ -5042,6 +5017,13 @@
    "score": 1.0,
    "events": [],
    "level": "low"
+  },
+  "2027-12-31": {
+   "score": 8.0,
+   "events": [
+    "811fc3b9a9"
+   ],
+   "level": "medium"
   }
  }
 }
