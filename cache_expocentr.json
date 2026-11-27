@@ -1,19 +1,5 @@
 [
  {
-  "id": "5ae3297c10",
-  "title": "«Мебель»",
-  "start": "2026-11-23",
-  "end": "2026-11-26",
-  "venue": "Крокус Экспо",
-  "km": 15.1,
-  "base_weight": 3,
-  "weight": 2.1,
-  "category": "выставка/форум",
-  "source": "expocentr",
-  "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2026/rus/Expocentre_Calendar_2026_rus.pdf",
-  "detail": "Календарь АО «Экспоцентр» · Крокус Экспо"
- },
- {
   "id": "054020982a",
   "title": "«Здоровый образ жизни»",
   "start": "2026-12-07",

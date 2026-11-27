@@ -1,19 +1,5 @@
 [
  {
-  "id": "0afd66df3f",
-  "title": "XXX Международная выставка средств обеспечения безопасности государства «Интерполитех-2026»",
-  "start": "2026-11-24",
-  "end": "2026-11-26",
-  "venue": "ВДНХ",
-  "km": 7.1,
-  "base_weight": 2,
-  "weight": 2.0,
-  "category": "выставка/форум",
-  "source": "vdnh_expo",
-  "url": "https://expo.vdnh.ru/events/30",
-  "detail": "ВДНХ ЭКСПО"
- },
- {
   "id": "e0ca908611",
   "title": "Мода в спорте 4.0",
   "start": "2026-11-28",
@@ -109,6 +95,20 @@
   "category": "выставка/форум",
   "source": "vdnh_expo",
   "url": "https://expo.vdnh.ru/events/44",
+  "detail": "ВДНХ ЭКСПО"
+ },
+ {
+  "id": "defe5b8991",
+  "title": "Выставка Vodexpo 2027",
+  "start": "2027-04-14",
+  "end": "2027-04-16",
+  "venue": "ВДНХ",
+  "km": 7.1,
+  "base_weight": 2,
+  "weight": 2.0,
+  "category": "выставка/форум",
+  "source": "vdnh_expo",
+  "url": "https://expo.vdnh.ru/events/45",
   "detail": "ВДНХ ЭКСПО"
  }
 ]

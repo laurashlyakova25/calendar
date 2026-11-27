@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T07:09",
+ "generated_at": "2026-11-27T07:13",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -29,11 +29,12 @@
   },
   "expocentr": {
    "ok": true,
-   "count": 21
+   "count": 20
   },
   "holidays": {
    "ok": true,
-   "count": 121
+   "count": 14,
+   "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
    "ok": true,
@@ -41,34 +42,6 @@
   }
  },
  "events": [
-  {
-   "id": "5ae3297c10",
-   "title": "«Мебель»",
-   "start": "2026-11-23",
-   "end": "2026-11-26",
-   "venue": "Крокус Экспо",
-   "km": 15.1,
-   "base_weight": 3,
-   "weight": 2.1,
-   "category": "выставка/форум",
-   "source": "expocentr",
-   "url": "https://docs.expocentr.ru/common/img/uploaded/docs/2026/rus/Expocentre_Calendar_2026_rus.pdf",
-   "detail": "Календарь АО «Экспоцентр» · Крокус Экспо"
-  },
-  {
-   "id": "0afd66df3f",
-   "title": "XXX Международная выставка средств обеспечения безопасности государства «Интерполитех-2026»",
-   "start": "2026-11-24",
-   "end": "2026-11-26",
-   "venue": "ВДНХ",
-   "km": 7.1,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выставка/форум",
-   "source": "vdnh_expo",
-   "url": "https://expo.vdnh.ru/events/30",
-   "detail": "ВДНХ ЭКСПО"
-  },
   {
    "id": "99cc9a2cf2",
    "title": "The Hatters - 10 лет. Большие Шоу",
@@ -435,141 +408,6 @@
    "detail": "VK Stadium"
   },
   {
-   "id": "71a9d198f4",
-   "title": "Длинные выходные (11 дн.)",
-   "start": "2026-12-31",
-   "end": "2027-01-10",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "bfd0111636",
-   "title": "Государственный праздник",
-   "start": "2027-01-01",
-   "end": "2027-01-01",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "3ae8fc4347",
-   "title": "Государственный праздник",
-   "start": "2027-01-02",
-   "end": "2027-01-02",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "bd54c3554f",
-   "title": "Государственный праздник",
-   "start": "2027-01-03",
-   "end": "2027-01-03",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "42a4c6dcdc",
-   "title": "Государственный праздник",
-   "start": "2027-01-04",
-   "end": "2027-01-04",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "d38ac4417c",
-   "title": "Государственный праздник",
-   "start": "2027-01-05",
-   "end": "2027-01-05",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "d9a2436634",
-   "title": "Государственный праздник",
-   "start": "2027-01-06",
-   "end": "2027-01-06",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "9441908f86",
-   "title": "Государственный праздник",
-   "start": "2027-01-07",
-   "end": "2027-01-07",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "45c601bf43",
-   "title": "Государственный праздник",
-   "start": "2027-01-08",
-   "end": "2027-01-08",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "31cef5768d",
    "title": "AGRAVIA (АГРАВИЯ)",
    "start": "2027-01-20",
@@ -822,36 +660,6 @@
    "detail": "VK Stadium"
   },
   {
-   "id": "4342d48dc4",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-02-21",
-   "end": "2027-02-23",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "b86837fc2b",
-   "title": "Государственный праздник",
-   "start": "2027-02-23",
-   "end": "2027-02-23",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "fd716fe61d",
    "title": "CPM — Collection Première Moscow — Международная специализированная выставка индустрии моды",
    "start": "2027-02-23",
@@ -948,36 +756,6 @@
    "source": "timiryazev",
    "url": "https://texpo.ru/expo/aprel-2027/cabex2027/",
    "detail": "Тимирязев Центр"
-  },
-  {
-   "id": "cd9dac28b8",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-03-06",
-   "end": "2027-03-08",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "62d03aca7d",
-   "title": "Государственный праздник",
-   "start": "2027-03-08",
-   "end": "2027-03-08",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
   },
   {
    "id": "be576d3e46",
@@ -1624,6 +1402,20 @@
    "detail": "Тимирязев Центр"
   },
   {
+   "id": "defe5b8991",
+   "title": "Выставка Vodexpo 2027",
+   "start": "2027-04-14",
+   "end": "2027-04-16",
+   "venue": "ВДНХ",
+   "km": 7.1,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выставка/форум",
+   "source": "vdnh_expo",
+   "url": "https://expo.vdnh.ru/events/45",
+   "detail": "ВДНХ ЭКСПО"
+  },
+  {
    "id": "51870e126d",
    "title": "Горшенев с симфоническим оркестром: Кукрыниксы. ХХХ ЛЕТ",
    "start": "2027-04-17",
@@ -1736,66 +1528,6 @@
    "detail": "Тимирязев Центр"
   },
   {
-   "id": "6a3d661803",
-   "title": "Государственный праздник",
-   "start": "2027-05-01",
-   "end": "2027-05-01",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "74e921d7f9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-01",
-   "end": "2027-05-03",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "85843fe2d9",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-05-08",
-   "end": "2027-05-10",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "be88b741a5",
-   "title": "Государственный праздник",
-   "start": "2027-05-09",
-   "end": "2027-05-09",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "d94fddc647",
    "title": "Металлообработка-2027",
    "start": "2027-05-11",
@@ -1892,36 +1624,6 @@
    "source": "crocus_expo",
    "url": "https://www.elektro-expo.ru",
    "detail": "35-я международная выставка «Электрооборудование. Светотехника. Автоматизация зданий и сооружений» · залов: 2"
-  },
-  {
-   "id": "8f8f18e6d4",
-   "title": "Государственный праздник",
-   "start": "2027-06-12",
-   "end": "2027-06-12",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "9e1c0136fb",
-   "title": "Длинные выходные (3 дн.)",
-   "start": "2027-06-12",
-   "end": "2027-06-14",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
   },
   {
    "id": "c053b4a61b",
@@ -2470,36 +2172,6 @@
    "detail": "34-я международная специализированная выставка для производителей и заказчиков рекламы · залов: 1"
   },
   {
-   "id": "4955f3e502",
-   "title": "Государственный праздник",
-   "start": "2027-11-04",
-   "end": "2027-11-04",
-   "venue": "",
-   "km": null,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "праздник",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
-   "id": "6aacbaf865",
-   "title": "Длинные выходные (4 дн.)",
-   "start": "2027-11-04",
-   "end": "2027-11-07",
-   "venue": "",
-   "km": null,
-   "base_weight": 2,
-   "weight": 2.0,
-   "category": "выходные",
-   "source": "holidays",
-   "url": "",
-   "detail": "",
-   "per_day": true
-  },
-  {
    "id": "b91855a9ff",
    "title": "«Химия»",
    "start": "2027-11-08",
@@ -2681,17 +2353,39 @@
    "url": "",
    "detail": "",
    "per_day": true
+  },
+  {
+   "id": "90db067fa7",
+   "title": "Государственный праздник",
+   "start": "2028-01-01",
+   "end": "2028-01-01",
+   "venue": "",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
+  },
+  {
+   "id": "b8e98169e6",
+   "title": "Длинные выходные (9 дн.)",
+   "start": "2028-01-01",
+   "end": "2028-01-09",
+   "venue": "",
+   "km": null,
+   "base_weight": 2,
+   "weight": 2.0,
+   "category": "выходные",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   }
  ],
  "days": {
-  "2026-11-26": {
-   "score": 1.2,
-   "events": [
-    "5ae3297c10",
-    "0afd66df3f"
-   ],
-   "level": "low"
-  },
   "2026-11-27": {
    "score": 7.4,
    "events": [
@@ -2910,101 +2604,12 @@
    "level": "low"
   },
   "2026-12-31": {
-   "score": 12.0,
+   "score": 10.0,
    "events": [
     "53077082e1",
-    "f1e4865697",
-    "71a9d198f4"
+    "f1e4865697"
    ],
    "level": "high"
-  },
-  "2027-01-01": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "bfd0111636"
-   ],
-   "level": "medium"
-  },
-  "2027-01-02": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "3ae8fc4347"
-   ],
-   "level": "medium"
-  },
-  "2027-01-03": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "bd54c3554f"
-   ],
-   "level": "medium"
-  },
-  "2027-01-04": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "42a4c6dcdc"
-   ],
-   "level": "medium"
-  },
-  "2027-01-05": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "d38ac4417c"
-   ],
-   "level": "medium"
-  },
-  "2027-01-06": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "d9a2436634"
-   ],
-   "level": "medium"
-  },
-  "2027-01-07": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "9441908f86"
-   ],
-   "level": "medium"
-  },
-  "2027-01-08": {
-   "score": 5.0,
-   "events": [
-    "71a9d198f4",
-    "45c601bf43"
-   ],
-   "level": "medium"
-  },
-  "2027-01-09": {
-   "score": 2.0,
-   "events": [
-    "71a9d198f4"
-   ],
-   "level": "low"
-  },
-  "2027-01-10": {
-   "score": 2.0,
-   "events": [
-    "71a9d198f4"
-   ],
-   "level": "low"
-  },
-  "2027-01-16": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-01-17": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
   },
   "2027-01-19": {
    "score": 5.9,
@@ -3036,16 +2641,6 @@
     "31cef5768d",
     "44a318e50d"
    ],
-   "level": "low"
-  },
-  "2027-01-23": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-01-24": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-01-25": {
@@ -3091,19 +2686,19 @@
    "level": "low"
   },
   "2027-01-30": {
-   "score": 3.0,
+   "score": 2.0,
    "events": [
     "800ecfa5e1"
    ],
    "level": "low"
   },
   "2027-01-31": {
-   "score": 4.9,
+   "score": 3.9,
    "events": [
     "32fa595166",
     "5946aca70a"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-02-01": {
    "score": 5.6,
@@ -3137,16 +2732,6 @@
    ],
    "level": "low"
   },
-  "2027-02-06": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-02-07": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-02-09": {
    "score": 2.0,
    "events": [
@@ -3169,16 +2754,6 @@
     "970a642282",
     "f98493a9b5"
    ],
-   "level": "low"
-  },
-  "2027-02-13": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-02-14": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-02-15": {
@@ -3245,29 +2820,25 @@
    "level": "medium"
   },
   "2027-02-21": {
-   "score": 6.2,
+   "score": 4.2,
    "events": [
     "2db16609be",
-    "4f9651e01f",
-    "4342d48dc4"
+    "4f9651e01f"
    ],
    "level": "medium"
   },
   "2027-02-22": {
-   "score": 4.7,
+   "score": 2.7,
    "events": [
     "2db16609be",
     "4f9651e01f",
-    "4342d48dc4",
     "fd716fe61d"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-02-23": {
-   "score": 14.7,
+   "score": 9.7,
    "events": [
-    "4342d48dc4",
-    "b86837fc2b",
     "fd716fe61d",
     "fbe2149e3c",
     "e9484b5dc6",
@@ -3309,17 +2880,12 @@
    ],
    "level": "low"
   },
-  "2027-02-27": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-02-28": {
-   "score": 4.4,
+   "score": 3.4,
    "events": [
     "d6a92f2f0c"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-03-01": {
    "score": 7.0,
@@ -3353,28 +2919,6 @@
    ],
    "level": "low"
   },
-  "2027-03-06": {
-   "score": 2.0,
-   "events": [
-    "cd9dac28b8"
-   ],
-   "level": "low"
-  },
-  "2027-03-07": {
-   "score": 2.0,
-   "events": [
-    "cd9dac28b8"
-   ],
-   "level": "low"
-  },
-  "2027-03-08": {
-   "score": 5.0,
-   "events": [
-    "cd9dac28b8",
-    "62d03aca7d"
-   ],
-   "level": "medium"
-  },
   "2027-03-09": {
    "score": 1.0,
    "events": [
@@ -3405,7 +2949,7 @@
    "level": "low"
   },
   "2027-03-13": {
-   "score": 7.0,
+   "score": 6.0,
    "events": [
     "2f10110602",
     "70e954e2f7"
@@ -3413,7 +2957,7 @@
    "level": "medium"
   },
   "2027-03-14": {
-   "score": 3.1,
+   "score": 2.1,
    "events": [
     "598e302d2c"
    ],
@@ -3506,16 +3050,11 @@
    "level": "low"
   },
   "2027-03-20": {
-   "score": 5.0,
+   "score": 4.0,
    "events": [
     "0799de94d8"
    ],
    "level": "medium"
-  },
-  "2027-03-21": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
   },
   "2027-03-22": {
    "score": 11.8,
@@ -3580,15 +3119,10 @@
    "level": "medium"
   },
   "2027-03-27": {
-   "score": 4.0,
+   "score": 3.0,
    "events": [
     "246a625f9d"
    ],
-   "level": "medium"
-  },
-  "2027-03-28": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-03-29": {
@@ -3639,16 +3173,6 @@
    ],
    "level": "low"
   },
-  "2027-04-03": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-04-04": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-04-05": {
    "score": 4.2,
    "events": [
@@ -3690,13 +3214,8 @@
    ],
    "level": "low"
   },
-  "2027-04-10": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-04-11": {
-   "score": 3.4,
+   "score": 2.4,
    "events": [
     "601c9ca109",
     "2e0d43b458"
@@ -3718,7 +3237,7 @@
    "level": "high"
   },
   "2027-04-13": {
-   "score": 16.8,
+   "score": 18.2,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -3729,12 +3248,13 @@
     "4396f87a66",
     "d892a8ca90",
     "470c361f31",
-    "75da358519"
+    "75da358519",
+    "defe5b8991"
    ],
    "level": "high"
   },
   "2027-04-14": {
-   "score": 17.6,
+   "score": 19.6,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -3745,12 +3265,13 @@
     "4396f87a66",
     "d892a8ca90",
     "470c361f31",
-    "75da358519"
+    "75da358519",
+    "defe5b8991"
    ],
    "level": "high"
   },
   "2027-04-15": {
-   "score": 7.3,
+   "score": 9.3,
    "events": [
     "601c9ca109",
     "2e0d43b458",
@@ -3760,26 +3281,28 @@
     "4396f87a66",
     "d892a8ca90",
     "470c361f31",
-    "75da358519"
+    "75da358519",
+    "defe5b8991"
    ],
-   "level": "medium"
+   "level": "high"
   },
   "2027-04-16": {
-   "score": 0.9,
+   "score": 1.5,
    "events": [
-    "470c361f31"
+    "470c361f31",
+    "defe5b8991"
    ],
    "level": "low"
   },
   "2027-04-17": {
-   "score": 3.0,
+   "score": 2.0,
    "events": [
     "51870e126d"
    ],
    "level": "low"
   },
   "2027-04-18": {
-   "score": 3.0,
+   "score": 2.0,
    "events": [
     "ac6d1c1866"
    ],
@@ -3820,13 +3343,8 @@
    ],
    "level": "low"
   },
-  "2027-04-24": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-04-25": {
-   "score": 2.5,
+   "score": 1.5,
    "events": [
     "7441774130"
    ],
@@ -3868,50 +3386,12 @@
    ],
    "level": "low"
   },
-  "2027-05-01": {
-   "score": 5.0,
-   "events": [
-    "6a3d661803",
-    "74e921d7f9"
-   ],
-   "level": "medium"
-  },
-  "2027-05-02": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
-   ],
-   "level": "low"
-  },
-  "2027-05-03": {
-   "score": 2.0,
-   "events": [
-    "74e921d7f9"
-   ],
-   "level": "low"
-  },
-  "2027-05-08": {
-   "score": 2.0,
-   "events": [
-    "85843fe2d9"
-   ],
-   "level": "low"
-  },
-  "2027-05-09": {
-   "score": 5.0,
-   "events": [
-    "85843fe2d9",
-    "be88b741a5"
-   ],
-   "level": "medium"
-  },
   "2027-05-10": {
-   "score": 5.4,
+   "score": 3.4,
    "events": [
-    "85843fe2d9",
     "d94fddc647"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-05-11": {
    "score": 4.9,
@@ -3940,26 +3420,6 @@
     "d94fddc647",
     "9653836b27"
    ],
-   "level": "low"
-  },
-  "2027-05-15": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-05-16": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-05-22": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-05-23": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-05-24": {
@@ -4012,26 +3472,6 @@
    ],
    "level": "medium"
   },
-  "2027-05-29": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-05-30": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-06-05": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-06-06": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-06-07": {
    "score": 1.5,
    "events": [
@@ -4060,28 +3500,12 @@
    ],
    "level": "low"
   },
-  "2027-06-12": {
-   "score": 5.0,
-   "events": [
-    "8f8f18e6d4",
-    "9e1c0136fb"
-   ],
-   "level": "medium"
-  },
-  "2027-06-13": {
-   "score": 2.0,
-   "events": [
-    "9e1c0136fb"
-   ],
-   "level": "low"
-  },
   "2027-06-14": {
-   "score": 4.9,
+   "score": 2.9,
    "events": [
-    "9e1c0136fb",
     "c053b4a61b"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-06-15": {
    "score": 4.2,
@@ -4109,16 +3533,6 @@
    "events": [
     "c053b4a61b"
    ],
-   "level": "low"
-  },
-  "2027-06-19": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-06-20": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-06-21": {
@@ -4150,17 +3564,12 @@
    "level": "low"
   },
   "2027-06-26": {
-   "score": 10.1,
+   "score": 9.1,
    "events": [
     "3eac60b77c",
     "ee7afe0a8a"
    ],
    "level": "high"
-  },
-  "2027-06-27": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
   },
   "2027-07-01": {
    "score": 4.9,
@@ -4177,82 +3586,32 @@
    "level": "medium"
   },
   "2027-07-03": {
-   "score": 3.1,
+   "score": 2.1,
    "events": [
     "125dfe29d2"
    ],
    "level": "low"
   },
-  "2027-07-04": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-07-10": {
-   "score": 4.0,
+   "score": 3.0,
    "events": [
     "cf47d6c037"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-07-11": {
-   "score": 8.0,
+   "score": 7.0,
    "events": [
     "5615578125"
    ],
    "level": "medium"
   },
-  "2027-07-17": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-07-18": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-07-24": {
-   "score": 8.0,
+   "score": 7.0,
    "events": [
     "ef0928ce22"
    ],
    "level": "medium"
-  },
-  "2027-07-25": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-07-31": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-01": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-07": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-08": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-14": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-15": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
   },
   "2027-08-16": {
    "score": 7.3,
@@ -4299,16 +3658,6 @@
    ],
    "level": "low"
   },
-  "2027-08-21": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-22": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-08-25": {
    "score": 1.0,
    "events": [
@@ -4330,23 +3679,8 @@
    ],
    "level": "low"
   },
-  "2027-08-28": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-08-29": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-09-04": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-09-05": {
-   "score": 2.5,
+   "score": 1.5,
    "events": [
     "fb39367c3b"
    ],
@@ -4389,16 +3723,6 @@
     "c7ba088298",
     "42597d98d6"
    ],
-   "level": "low"
-  },
-  "2027-09-11": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-09-12": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-09-13": {
@@ -4448,13 +3772,8 @@
    ],
    "level": "low"
   },
-  "2027-09-18": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-09-19": {
-   "score": 2.5,
+   "score": 1.5,
    "events": [
     "e99a252d6b"
    ],
@@ -4511,15 +3830,10 @@
    "level": "low"
   },
   "2027-09-25": {
-   "score": 4.0,
+   "score": 3.0,
    "events": [
     "e4573f40dc"
    ],
-   "level": "medium"
-  },
-  "2027-09-26": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-09-27": {
@@ -4565,27 +3879,17 @@
    "level": "low"
   },
   "2027-10-02": {
-   "score": 2.4,
-   "events": [
-    "f245786970"
-   ],
-   "level": "low"
-  },
-  "2027-10-03": {
    "score": 1.4,
    "events": [
     "f245786970"
    ],
    "level": "low"
   },
-  "2027-10-09": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-10-10": {
-   "score": 1.0,
-   "events": [],
+  "2027-10-03": {
+   "score": 0.4,
+   "events": [
+    "f245786970"
+   ],
    "level": "low"
   },
   "2027-10-11": {
@@ -4628,25 +3932,10 @@
    "level": "low"
   },
   "2027-10-16": {
-   "score": 1.8,
+   "score": 0.8,
    "events": [
     "95f1c1b7b7"
    ],
-   "level": "low"
-  },
-  "2027-10-17": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-10-23": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-10-24": {
-   "score": 1.0,
-   "events": [],
    "level": "low"
   },
   "2027-10-25": {
@@ -4712,45 +4001,12 @@
    ],
    "level": "low"
   },
-  "2027-10-30": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-10-31": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-11-04": {
-   "score": 5.0,
-   "events": [
-    "4955f3e502",
-    "6aacbaf865"
-   ],
-   "level": "medium"
-  },
-  "2027-11-05": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
-   ],
-   "level": "low"
-  },
-  "2027-11-06": {
-   "score": 2.0,
-   "events": [
-    "6aacbaf865"
-   ],
-   "level": "low"
-  },
   "2027-11-07": {
-   "score": 4.1,
+   "score": 2.1,
    "events": [
-    "6aacbaf865",
     "b91855a9ff"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-11-08": {
    "score": 11.8,
@@ -4801,16 +4057,6 @@
    ],
    "level": "low"
   },
-  "2027-11-13": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-11-14": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-11-15": {
    "score": 2.4,
    "events": [
@@ -4843,13 +4089,8 @@
    ],
    "level": "low"
   },
-  "2027-11-20": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-11-21": {
-   "score": 3.0,
+   "score": 2.0,
    "events": [
     "e8b7e8a29d"
    ],
@@ -4898,16 +4139,6 @@
    ],
    "level": "low"
   },
-  "2027-11-27": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-11-28": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-11-29": {
    "score": 1.5,
    "events": [
@@ -4943,18 +4174,13 @@
    ],
    "level": "low"
   },
-  "2027-12-04": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-12-05": {
-   "score": 4.9,
+   "score": 3.9,
    "events": [
     "c4af138b38",
     "62c7bdaafb"
    ],
-   "level": "medium"
+   "level": "low"
   },
   "2027-12-06": {
    "score": 5.6,
@@ -4988,40 +4214,18 @@
    ],
    "level": "low"
   },
-  "2027-12-11": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-12-12": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-12-18": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-12-19": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-12-25": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
-  "2027-12-26": {
-   "score": 1.0,
-   "events": [],
-   "level": "low"
-  },
   "2027-12-31": {
    "score": 8.0,
    "events": [
     "811fc3b9a9"
+   ],
+   "level": "medium"
+  },
+  "2028-01-01": {
+   "score": 5.0,
+   "events": [
+    "90db067fa7",
+    "b8e98169e6"
    ],
    "level": "medium"
   }
