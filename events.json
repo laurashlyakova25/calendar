@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T07:13",
+ "generated_at": "2026-11-28T07:03",
  "hotel": {
   "name": "Chekhoff Hotel Moscow",
   "metro": "Пушкинская",
@@ -17,11 +17,13 @@
   },
   "concertinfo": {
    "ok": true,
-   "count": 24
+   "count": 22
   },
   "vdnh_expo": {
-   "ok": true,
-   "count": 8
+   "ok": false,
+   "count": 8,
+   "error": "официальный сайт и резервный каталог ВДНХ ЭКСПО недоступны",
+   "from_cache": true
   },
   "timiryazev": {
    "ok": true,
@@ -33,7 +35,7 @@
   },
   "holidays": {
    "ok": true,
-   "count": 14,
+   "count": 15,
    "note": "официальный календарь недоступен, взяты базовые праздники и поправки из config.json"
   },
   "manual": {
@@ -42,34 +44,6 @@
   }
  },
  "events": [
-  {
-   "id": "99cc9a2cf2",
-   "title": "The Hatters - 10 лет. Большие Шоу",
-   "start": "2026-11-27",
-   "end": "2026-11-27",
-   "venue": "ВТБ Арена",
-   "km": 4.0,
-   "base_weight": 3,
-   "weight": 3.0,
-   "category": "концерт/шоу",
-   "source": "concertinfo",
-   "url": "https://concertinfo.ru/gig/37105/",
-   "detail": "ВТБ Арена"
-  },
-  {
-   "id": "f5345e6324",
-   "title": "Гудтаймс",
-   "start": "2026-11-27",
-   "end": "2026-11-27",
-   "venue": "VK Stadium",
-   "km": 7.3,
-   "base_weight": 2.0,
-   "weight": 2.0,
-   "category": "концерт/шоу",
-   "source": "manual",
-   "url": "https://msk.kassir.ru/selection/samyie-ojidaemyie-kontsertyi",
-   "detail": ""
-  },
   {
    "id": "801273da5b",
    "title": "The Hatters - 10 лет. Большие Шоу",
@@ -2383,19 +2357,24 @@
    "url": "",
    "detail": "",
    "per_day": true
+  },
+  {
+   "id": "c709ab2a9c",
+   "title": "Государственный праздник",
+   "start": "2028-01-02",
+   "end": "2028-01-02",
+   "venue": "",
+   "km": null,
+   "base_weight": 3,
+   "weight": 3.0,
+   "category": "праздник",
+   "source": "holidays",
+   "url": "",
+   "detail": "",
+   "per_day": true
   }
  ],
  "days": {
-  "2026-11-27": {
-   "score": 7.4,
-   "events": [
-    "99cc9a2cf2",
-    "f5345e6324",
-    "e0ca908611",
-    "6e7e4af886"
-   ],
-   "level": "medium"
-  },
   "2026-11-28": {
    "score": 7.4,
    "events": [
@@ -4226,6 +4205,14 @@
    "events": [
     "90db067fa7",
     "b8e98169e6"
+   ],
+   "level": "medium"
+  },
+  "2028-01-02": {
+   "score": 5.0,
+   "events": [
+    "b8e98169e6",
+    "c709ab2a9c"
    ],
    "level": "medium"
   }

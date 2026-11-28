@@ -1,19 +1,5 @@
 [
  {
-  "id": "99cc9a2cf2",
-  "title": "The Hatters - 10 лет. Большие Шоу",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "venue": "ВТБ Арена",
-  "km": 4.0,
-  "base_weight": 3,
-  "weight": 3.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/37105/",
-  "detail": "ВТБ Арена"
- },
- {
   "id": "801273da5b",
   "title": "The Hatters - 10 лет. Большие Шоу",
   "start": "2026-11-28",
@@ -194,20 +180,6 @@
   "source": "concertinfo",
   "url": "https://concertinfo.ru/gig/40604/",
   "detail": "Лукойл Арена"
- },
- {
-  "id": "481ce84080",
-  "title": "ГУДТАЙМС",
-  "start": "2026-11-27",
-  "end": "2026-11-27",
-  "venue": "VK Stadium",
-  "km": 7.3,
-  "base_weight": 2,
-  "weight": 2.0,
-  "category": "концерт/шоу",
-  "source": "concertinfo",
-  "url": "https://concertinfo.ru/gig/38476/",
-  "detail": "VK Stadium"
  },
  {
   "id": "02d9afda63",
